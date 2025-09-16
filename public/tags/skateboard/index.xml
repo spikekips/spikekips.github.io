@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skateboard on </title>
+    <link>//localhost:1313/tags/skateboard/</link>
+    <description>Recent content in Skateboard on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2025 13:43:53 -0600</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/skateboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Halloween Skate Event</title>
+      <link>//localhost:1313/pics/halloweenskateevent/</link>
+      <pubDate>Mon, 15 Sep 2025 13:43:53 -0600</pubDate>
+      <guid>//localhost:1313/pics/halloweenskateevent/</guid>
+      <description>&lt;h2 id=&#34;photos-from-a-halloween-skate-event&#34;&gt;Photos From A Halloween Skate Event&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
