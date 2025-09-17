@@ -10,3 +10,9 @@ series: "pics"
 ---
 
 Kaboom
+
+![Yellow Ball](/ball1.jpg 'alt')
+yellow ball
+
+![Yellow Ball Different Angle](/ball2.jpg 'alt')
+Another Yellow Ball

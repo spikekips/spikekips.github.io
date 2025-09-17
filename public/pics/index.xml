@@ -13,7 +13,7 @@
       <link>//localhost:1313/pics/4thofjuly/</link>
       <pubDate>Mon, 15 Sep 2025 13:43:53 -0600</pubDate>
       <guid>//localhost:1313/pics/4thofjuly/</guid>
-      <description>&lt;p&gt;Kaboom&lt;/p&gt;</description>
+      <description>&lt;p&gt;Kaboom&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/ball1.jpg&#34; alt=&#34;Yellow Ball&#34; title=&#34;alt&#34;&gt;&#xA;yellow ball&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;//localhost:1313/ball2.jpg&#34; alt=&#34;Yellow Ball Different Angle&#34; title=&#34;alt&#34;&gt;&#xA;Another Yellow Ball&lt;/p&gt;</description>
     </item>
     <item>
       <title>Halloween Skate Event</title>
