@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "About Me"
-date: 2022-11-23T13:43:53-06:00
+date: 2024-11-23T13:43:53-06:00
 draft: false
 #tags: ["hugo","introduction"]
 #series: "How to use poison"
