@@ -11,11 +11,11 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     brand = "Spike"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
-    description = "My Website" # Used as default meta description if not specified in front matter
+    description = "Welcome to my site! Reach out if you have any tech issues." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
-    front_page_content = ["about", "services"] # Equivalent to the default value, add page bundle names to include them on the front page.
+    front_page_content = ["services", "about"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -26,12 +26,9 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     
     #My Menu
     menu = [
-        {Name = "Services", URL = "/services/"},
-        #{Name = "Duck", URL = "//"},
-
-        #{Name = "Photos", URL = "/pics/", Pre = "Recent", HasChildren = true, Limit = 3},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 3},
+        {Name = "Services", URL = "/services/", HasChildren = false},
         {Name = "About", URL = "/about/", HasChildren = false},
+        #{Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 3},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 

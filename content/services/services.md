@@ -26,6 +26,6 @@ I am located in **Augusta, Maine, 04330**.
 
 - **Home Calls**: I provide home call services for all repairs, making it easy for you to get the help you need without leaving your home.
 - **Data Recovery**: Please note that I do not work on broken hardware for data recovery attempts.
-- **Custom Builds**: If you're looking to build a custom computer, I can assist you with the entire process, including sourcing parts.
+- **Custom Builds**: If you're looking to build a custom computer, I can assist you with the entire process, including sourcing parts. So long as you order the parts or pay me to order them.
 
 Feel free to reach out for any inquiries or to schedule a service!
