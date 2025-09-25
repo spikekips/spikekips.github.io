@@ -1,6 +1,6 @@
 ---
 title: "Services"
-date: 2024-11-22T13:43:53-06:00
+date: 2025-09-22T13:43:53-06:00
 draft: false
 layout: single
 description: "Expert computer repair services in Augusta, Maine by Samuele Pike. Specializing in diagnostics, repairs, custom builds, and convenient home call services. Affordable rates starting at $45. Contact us today for reliable tech support!"
