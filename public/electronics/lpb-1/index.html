@@ -47,20 +47,20 @@
 
 
 
-  
-  
-  
 
 
+  
+  
+  
 
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Spike - Pics</title>
-<meta property="og:title" content=Spike&#32;-&#32;Pics />
-<meta name="twitter:title" content=Spike&#32;-&#32;Pics />
-<meta itemprop="name" content=Spike&#32;-&#32;Pics />
-<meta name="application-name" content=Spike&#32;-&#32;Pics />
+<title itemprop="name">Spike - LPB-1</title>
+<meta property="og:title" content=Spike&#32;-&#32;LPB-1 />
+<meta name="twitter:title" content=Spike&#32;-&#32;LPB-1 />
+<meta itemprop="name" content=Spike&#32;-&#32;LPB-1 />
+<meta name="application-name" content=Spike&#32;-&#32;LPB-1 />
 <meta property="og:site_name" content="" />
 
 
@@ -70,18 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="//localhost:1313/pics/" />
-<link rel="canonical" href="//localhost:1313/pics/" itemprop="url" />
-<meta name="url" content="//localhost:1313/pics/" />
-<meta name="twitter:url" content="//localhost:1313/pics/" />
-<meta property="og:url" content="//localhost:1313/pics/" />
+<base href="//localhost:1313/electronics/lpb-1/" />
+<link rel="canonical" href="//localhost:1313/electronics/lpb-1/" itemprop="url" />
+<meta name="url" content="//localhost:1313/electronics/lpb-1/" />
+<meta name="twitter:url" content="//localhost:1313/electronics/lpb-1/" />
+<meta property="og:url" content="//localhost:1313/electronics/lpb-1/" />
 
 
-<meta property="og:updated_time" content="2025-09-15T13:43:53-06:00" />
+<meta property="og:updated_time" content="2026-01-19T12:00:00-06:00" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
-<link href="//localhost:1313/pics/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -371,13 +370,95 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1 class="title">Pics</h1>
-<ul class="entries">
-    
-</ul>
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
+  </h1>
 
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2026-01-19T12:00:00-0600" class="post-date">
+        January 19, 2026
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <p>The LPB-1(Linear Power Booster) is a guitar pedal that acts as a pre-amp</p>
+<h2 id="equations">Equations</h2>
+<h3 id="starting-values">Starting Values</h3>
+<p>V<sub>CC</sub> = 9V</p>
+<p>V<sub>BE</sub> = .7V</p>
+<p>h<sub>fe</sub> = 300</p>
+<p>R1 = 1MΩ</p>
+<p>R2 = 100kΩ</p>
+<p>RC = 10kΩ</p>
+<p>RE = 390Ω</p>
+<h3 id="calculated-values">Calculated Values</h3>
+<p>$V_{B} \cong \frac{R2}{R1+R2}*V_{CC} = \frac{R2}{R1+R2}*V_{CC} = 818mV$</p>
+<p>$V_{E} = V_{B} - V_{BE} = 818mV - 700mV = 118mV$</p>
+<p>$I_{E} = \frac{V_{E}}{RE} = \frac{118mV}{390Ω} = 303uA$</p>
+<p>$I_{C} \cong I_{E} = 303uA$</p>
+<p>$V_{C} = V_{CC}-I_{C} = 9-303uA = 5.97V$</p>
+<p>$I1 = \frac{V_{CC}-V_{B}}{R1} = \frac{9V-818mV}{1MΩ} = 8.18uA$</p>
+<p>$I2 = \frac{V_{B}}{R2} = \frac{818mV}{100kΩ} = 8.18uA$</p>
+<p>$R_{B} = \frac{R1xR2}{R1+R2} = \frac{1MΩx100kΩ}{1MΩ+100kΩ} = 90uΩ$</p>
+<p>$I_{B} = \frac{V_{B}}{R_{B}+1x300xRE} = \frac{818mV}{90uΩ+1x300x390Ω} = 1.008uA \cong \frac{I_{C}}{h_{fe}}$</p>
+<p>$V_{CE} = V_{CE} - V_{E} = 5.85$</p>
+<h3 id="q-point-calculations">Q-Point Calculations</h3>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+	    
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#equations">Equations</a>
+      <ul>
+        <li><a href="#starting-values">Starting Values</a></li>
+        <li><a href="#calculated-values">Calculated Values</a></li>
+        <li><a href="#q-point-calculations">Q-Point Calculations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
     </body>
 </html>

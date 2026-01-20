@@ -6,8 +6,15 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Nov 2024 13:43:53 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 12:00:00 -0600</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LPB-1</title>
+      <link>//localhost:1313/electronics/lpb-1/</link>
+      <pubDate>Mon, 19 Jan 2026 12:00:00 -0600</pubDate>
+      <guid>//localhost:1313/electronics/lpb-1/</guid>
+      <description>&lt;p&gt;The LPB-1(Linear Power Booster) is a guitar pedal that acts as a pre-amp&lt;/p&gt;&#xA;&lt;h2 id=&#34;equations&#34;&gt;Equations&lt;/h2&gt;&#xA;&lt;h3 id=&#34;starting-values&#34;&gt;Starting Values&lt;/h3&gt;&#xA;&lt;p&gt;V&lt;sub&gt;CC&lt;/sub&gt; = 9V&lt;/p&gt;&#xA;&lt;p&gt;V&lt;sub&gt;BE&lt;/sub&gt; = .7V&lt;/p&gt;&#xA;&lt;p&gt;h&lt;sub&gt;fe&lt;/sub&gt; = 300&lt;/p&gt;&#xA;&lt;p&gt;R1 = 1MΩ&lt;/p&gt;&#xA;&lt;p&gt;R2 = 100kΩ&lt;/p&gt;&#xA;&lt;p&gt;RC = 10kΩ&lt;/p&gt;&#xA;&lt;p&gt;RE = 390Ω&lt;/p&gt;&#xA;&lt;h3 id=&#34;calculated-values&#34;&gt;Calculated Values&lt;/h3&gt;&#xA;&lt;p&gt;$V_{B} \cong \frac{R2}{R1+R2}*V_{CC} = \frac{R2}{R1+R2}*V_{CC} = 818mV$&lt;/p&gt;&#xA;&lt;p&gt;$V_{E} = V_{B} - V_{BE} = 818mV - 700mV = 118mV$&lt;/p&gt;&#xA;&lt;p&gt;$I_{E} = \frac{V_{E}}{RE} = \frac{118mV}{390Ω} = 303uA$&lt;/p&gt;&#xA;&lt;p&gt;$I_{C} \cong I_{E} = 303uA$&lt;/p&gt;&#xA;&lt;p&gt;$V_{C} = V_{CC}-I_{C} = 9-303uA = 5.97V$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>//localhost:1313/about/about/</link>
