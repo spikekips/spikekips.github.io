@@ -47,4 +47,6 @@ $V_{CE} = V_{CE} - V_{E} = 5.85$
 
 ### Q-Point Calculations
 
-test
+$V_{CE}$ Ideal Cutoff $= V_{CC}  = 9V$ 
+
+$I_{C}$ Ideal Saturation $= \frac{V_{CC}}{RC} = \frac{9V}{10k\Omega} = 900uA$
