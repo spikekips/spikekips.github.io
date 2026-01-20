@@ -47,3 +47,4 @@ $V_{CE} = V_{CE} - V_{E} = 5.85$
 
 ### Q-Point Calculations
 
+test
