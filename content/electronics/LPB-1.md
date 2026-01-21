@@ -50,3 +50,13 @@ $V_{CE} = V_{CE} - V_{E} = 5.85$
 $V_{CE}$ Ideal Cutoff $= V_{CC}  = 9V$ 
 
 $I_{C}$ Ideal Saturation $= \frac{V_{CC}}{RC} = \frac{9V}{10k\Omega} = 900uA$
+
+$I_{C (max)}$ Max Saturation $= \frac{V_{CC}-V_{RE}}{RC} = \frac{9V-118mV}{10k\Omega} = 888uA$
+
+$V_{C (min)}$ Min Cutoff $= V_{RE} = 118mV$
+
+$V_{CEQ} = V_{C} = 5.97V$
+
+$I_{CQ} = I_{C} - \frac{V_{CEQ}}{I_{C}} = 900uA - \frac{5.97V}{10k\Omega} = 303uA$
+
+$$
