@@ -58,5 +58,3 @@ $V_{C (min)}$ Min Cutoff $= V_{RE} = 118mV$
 $V_{CEQ} = V_{C} = 5.97V$
 
 $I_{CQ} = I_{C} - \frac{V_{CEQ}}{I_{C}} = 900uA - \frac{5.97V}{10k\Omega} = 303uA$
-
-$$
