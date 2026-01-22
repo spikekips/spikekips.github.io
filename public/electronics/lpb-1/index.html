@@ -378,6 +378,8 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <p>The LPB-1(Linear Power Booster) is a guitar pedal that acts as a pre-amp</p>
+<p>Note: This is can definitely be wrong. This is basically my notes. my amplification factor was of by 2x so instead of an hfe of 300 it ended up being around 550-600 in my simulation</p>
+<p><img src="/LPB-1Schematic.png" alt="Schematic" title="alt"></p>
 <h2 id="equations">Equations</h2>
 <h3 id="starting-values">Starting Values</h3>
 <p>V<sub>CC</sub> = 9V</p>
@@ -405,7 +407,9 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p>$V_{C (min)}$ Min Cutoff $= V_{RE} = 118mV$</p>
 <p>$V_{CEQ} = V_{C} = 5.97V$</p>
 <p>$I_{CQ} = I_{C} - \frac{V_{CEQ}}{I_{C}} = 900uA - \frac{5.97V}{10k\Omega} = 303uA$</p>
-<p><img src="/desmos.png" alt="desmos" title="alt"></p>
+<p>$I_{BQ} = \frac{I_{CQ}}{300} = 1.01uA$</p>
+<p><img src="/desmos.png" alt="desmos" title="alt">
+<img src="/LPB-1SIM.png" alt="Spice Sim" title="alt"></p>
 
   
   <hr>
