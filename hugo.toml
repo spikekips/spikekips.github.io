@@ -9,6 +9,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderHooks.image]
+      enableDefault = true
+      [markup.goldmark.renderHooks.link]
+        enableDefault = true
     [markup.goldmark.extensions]
       strikethrough = false
       [markup.goldmark.extensions.extras]
@@ -17,6 +21,8 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
           [markup.goldmark.extensions.passthrough.delimiters]
             block = [['\[', '\]'], ['$$', '$$']]
             inline = [['\(', '\)']]
+
+
 
 
 
