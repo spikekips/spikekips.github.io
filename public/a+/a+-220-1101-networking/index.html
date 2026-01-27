@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.7750550c0319f5de56d916b91e642bf72a5bd09ee50b201dc2ed9db69d6177a8.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Spike - Networking</title>
+<meta property="og:title" content=Spike&#32;-&#32;Networking />
+<meta name="twitter:title" content=Spike&#32;-&#32;Networking />
+<meta itemprop="name" content=Spike&#32;-&#32;Networking />
+<meta name="application-name" content=Spike&#32;-&#32;Networking />
+<meta property="og:site_name" content="" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="//localhost:1313/a&#43;/a&#43;-220-1101-networking/" />
+<link rel="canonical" href="//localhost:1313/a&#43;/a&#43;-220-1101-networking/" itemprop="url" />
+<meta name="url" content="//localhost:1313/a&#43;/a&#43;-220-1101-networking/" />
+<meta name="twitter:url" content="//localhost:1313/a&#43;/a&#43;-220-1101-networking/" />
+<meta property="og:url" content="//localhost:1313/a&#43;/a&#43;-220-1101-networking/" />
+
+
+<meta property="og:updated_time" content="2026-01-19T12:00:00-06:00" />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.148.2">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.a2a7b8bcb6a4cf0411256d3307ba7b11fb85ad9a54a6495efbba1b109d479b1c.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5A5A5A;
+        --link-color: #268BD2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #000;
+        --code-background-color: #E5E5E5;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #EEE;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9D9D9D;
+        --link-color: #268BD2;
+        --date-color: #9A9A9A;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #FFF;
+        --code-background-color: #515151;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+        
+            <a href="//localhost:1313/">
+                <h1>Spike</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    Welcome to my site! Reach out if you have any tech issues.
+    </p>
+</div>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/electronics/">Electronics</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
+                            </li>
+                        
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+                    <li class="heading">
+                        <a href="/a&#43;/">Comptia A&#43; Notes</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
+                            </li>
+                        
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+
+    </ul>
+</nav>
+
+        
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/spikekips">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Instagram" href="https://www.instagram.com/thefrspike/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Facebook" href="https://www.facebook.com/sam.pike.132240/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Email" href="mailto://samuele.j.pike@gmail.com">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+
+
+        <p class="footnote">
+powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+    <br>
+    &copy; 2026 . All rights reserved.
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="//localhost:1313/a&#43;/a&#43;-220-1101-networking/">Networking</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2026-01-19T12:00:00-0600" class="post-date">
+        January 19, 2026
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>22 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <h1 id="general-information">General Information</h1>
+<pre><code>- Understanding all types of networks and their corresponding connections is vital if you are in an IT support position
+- You will need to know everything about TCP/IP, Wi-Fi, and SOHO connections
+- About 20% of the CompTIA A+ 1101 test concerns various aspects of networking
+- Around 25% of the questions concerning networking will begin with a scenario.
+</code></pre>
+<ul>
+<li>
+<h1 id="transmission-control-protocol-tcp-and-user-datagram-protocol-udp-ports">Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) Ports</h1>
+<ul>
+<li>
+<p>For the CompTIA A+ exam, you must be able to <strong>compare and contrast</strong> TCP and UDP ports and protocols and their respective purposes</p>
+</li>
+<li>
+<h2 id="memorizing-port-numbers">Memorizing port numbers</h2>
+<ul>
+<li>Highly recommended for this section.</li>
+</ul>
+</li>
+<li>
+<h2 id="ports-and-protocols">Ports and Protocols</h2>
+<ul>
+<li>For this exam, you should know the following TCP/UDP port numbers, the protocols that run over those ports, and the <strong>primary use</strong> for each</li>
+<li>A port is the unique identifier number for transmission control and direction</li>
+<li>A protocol is a set of rules that govern communications.</li>
+<li>
+<h3 id="file-transfer-protocol-ftp">File Transfer Protocol (FTP)</h3>
+<ul>
+<li>File Transfer Protocol (FTP) is used to manipulate files</li>
+<li>FTP can copy files, list and manipulate directories, and view file contents</li>
+<li>FTP runs on ports 20 and 21</li>
+<li><strong>Port 21</strong> is mainly used for file management and <strong>port 20</strong> is used for data transfer</li>
+<li>FTP is <strong>not secure</strong> and transmits in <strong>plain text</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="secure-shell-ssh">Secure Shell (SSH)</h3>
+<ul>
+<li>Secure Shell (SSH) is a connection-oriented protocol used to set up secure Telnet connections for remote logins</li>
+<li>SSH is <strong>secure</strong> and runs on <strong>port 22</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="telnet">Telnet</h3>
+<ul>
+<li>Telnet is a terminal emulation program that allows for remote access to text on another computer</li>
+<li>Telnet is <strong>not secure</strong> and transmits <strong>plaintext</strong></li>
+<li>Telnet uses <strong>port 23</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="simple-mail-transfer-protocol-smtp">Simple Mail Transfer Protocol (SMTP)</h3>
+<ul>
+<li>Simple Mail Transfer Protocol (SMTP) is used to send <strong>email only</strong> and is a <strong>push protocol</strong></li>
+<li>SMTP uses <strong>port 25</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="domain-name-system-dns">Domain Name System (DNS)</h3>
+<ul>
+<li>The Domain Name System (DNS) is used to resolve hostnames to IP addresses and uses <strong>port 53</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="dynamic-host-configuration-protocol-dhcp">Dynamic Host Configuration Protocol (DHCP)</h3>
+<ul>
+<li>Dynamic Host Configuration Protocol (DHCP) <strong>assigns IP addresses</strong> dynamically to network clients</li>
+<li>DHCP uses <strong>port 67</strong> for the server and <strong>port 68</strong> for the client.</li>
+</ul>
+</li>
+<li>
+<h3 id="hypertext-transfer-protocol-http">Hypertext Transfer Protocol (HTTP)</h3>
+<ul>
+<li>Hypertext Transfer Protocol (HTTP) manages communications between a web server and a client to view internet content</li>
+<li>HTTP is <strong>not secure</strong> and transmits in <strong>plain text</strong></li>
+<li>HTTP uses <strong>port 80</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="post-office-protocol-3-pop3">Post Office Protocol 3 (POP3)</h3>
+<ul>
+<li>Post Office Protocol 3 (POP3) is used for <strong>downloading email</strong></li>
+<li>POP3 uses <strong>port 110</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="network-basic-inputoutput-system-netbiosnetbios-over-tcpip-netbt">Network Basic Input/Output System (NetBIOS)/NetBIOS over TCP/IP (NetBT)</h3>
+<ul>
+<li>Network Basic Input/Output System (NetBIOS) is an API for <strong>communication between computers</strong> over a network</li>
+<li>NetBIOS works over OSI layer 4 and needs to work with a layer 5 protocol, namely TCP/IP, to function properly</li>
+<li>NetBIOS over TCP/IP is called NetBT</li>
+<li>NetBIOS runs on <strong>ports 137/139</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="internet-message-access-protocol-imap">Internet Message Access Protocol (IMAP)</h3>
+<ul>
+<li>Internet Message Access Protocol (IMAP) is currently in its fourth version, or IMAP4, and is used for downloading email</li>
+<li>IMAP4 is <strong>secure</strong> and runs over <strong>port 143</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="simple-network-management-protocol-snmp">Simple Network Management Protocol (SNMP)</h3>
+<ul>
+<li>Simple Network Management Protocol (SNMP) is used for network management</li>
+<li>SNMP uses <strong>port 161</strong> for sending and receiving requests and <strong>port 162</strong> for receiving transmissions from managed devices.</li>
+</ul>
+</li>
+<li>
+<h3 id="lightweight-directory-access-protocol-ldap">Lightweight Directory Access Protocol (LDAP)</h3>
+<ul>
+<li>Lightweight Directory Access Protocol (LDAP) is used for <strong>accessing information</strong> stored in an information directory</li>
+<li>LDAP uses <strong>port 389</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="hypertext-transfer-protocol-secure-https">Hypertext Transfer Protocol Secure (HTTPS)</h3>
+<ul>
+<li>Hypertext Transfer Protocol Secure (HTTPS) is the <strong>secure version of HTTP</strong></li>
+<li>HTTPS uses <strong>port 443</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="server-message-block-smbcommon-internet-file-system-cifs">Server Message Block (SMB)/Common Internet File System (CIFS)</h3>
+<ul>
+<li>Server Message Block (SMB) is primarily a <strong>Microsoft protocol</strong> used for <strong>shared file access</strong></li>
+<li>Common Internet File System (CIFS) is an enhanced version of SMB</li>
+<li>SMB/CIFS use <strong>port 445</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="remote-desktop-protocol-rdps">Remote Desktop Protocol (RDP)s</h3>
+<ul>
+<li>Remote Desktop Protocol (RDP) allows for remote connection to computers</li>
+<li>RDP uses <strong>port 3389</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="tcp--vs-udp">TCP  vs. UDP</h2>
+<ul>
+<li>
+<h3 id="transmission-control-protocol-tcp">Transmission Control Protocol (TCP)</h3>
+<ul>
+<li>is a connection-oriented protocol used to send and receive data over a network</li>
+<li>Before data is sent, a connection is established with the receiving host</li>
+<li>It is considered a <strong>reliable protocol</strong> because the receiving host acknowledges that it received the data</li>
+<li>TCP is used in cases where receiving the proper data is more important than speed</li>
+</ul>
+</li>
+<li>
+<h3 id="user-datagram-protocol-udp">User Datagram Protocol (UDP)</h3>
+<ul>
+<li>is a <strong>connectionless protocol</strong></li>
+<li>Data is sent without any assurance that the receiving host is actually receiving the data</li>
+<li>For that reason, it is considered an <strong>unreliable protocol</strong></li>
+<li>The advantage of UDP over TCP is that it is faster.</li>
+</ul>
+</li>
+<li>
+<h3 id="connectionless">Connectionless</h3>
+<ul>
+<li>Connectionless protocols allow for data to flow without guaranteeing an established connection</li>
+<li>This allows for faster data flow but does not guarantee reliable data flow</li>
+<li>UDP is connectionless.</li>
+</ul>
+</li>
+<li>
+<h3 id="dhcp">DHCP</h3>
+<ul>
+<li>Dynamic Host Configuration Protocol (DHCP) is used to dynamically <strong>assign IP configuration information</strong> to clients through a lease and uses UDP as its transport protocol</li>
+<li>DHCP runs on <strong>port 67/68</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="tftp">TFTP</h3>
+<ul>
+<li>Trivial File Transfer Protocol (TFTP) is a <strong>faster version of FTP</strong> that <strong>uses UDP</strong> rather than TCP as its transport protocol</li>
+<li>TFTP uses <strong>port 69</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="connection-oriented">Connection-Oriented</h3>
+<ul>
+<li>Connection-oriented communication establishes a set connection before data flow begins between two devices</li>
+<li>TCP is connection-oriented.</li>
+</ul>
+</li>
+<li>
+<h3 id="https">HTTPS</h3>
+<ul>
+<li>Hypertext Transfer Protocol Secure (HTTPS) is a connection-oriented protocol that uses TCP as its transport protocol</li>
+<li>HTTPS uses <strong>port 443</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="ssh">SSH</h3>
+<ul>
+<li>Secure Shell (SSH) is a connection-oriented protocol that uses TCP as its transport protocol</li>
+<li>SSH uses <strong>port 22</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="common-networking-hardware">Common Networking Hardware</h1>
+<ul>
+<li>
+<p>Networking hardware includes the physical components used to achieve network connectivity</p>
+</li>
+<li>
+<p>You must be able to <strong>compare and contrast</strong> common networking hardware.</p>
+</li>
+<li>
+<h2 id="routers">Routers</h2>
+<ul>
+<li>A router is a device that connects multiple network devices and determines the best path for reaching a specified device using routing tables</li>
+<li>Routers are <strong>OSI Layer 3</strong> devices and make decisions based on logical addresses</li>
+<li>Key functions of a router include <strong>connecting multiple network devices</strong> to one another, breaking up broadcast domains, and connecting one LAN to another LAN on a WAN.</li>
+</ul>
+</li>
+<li>
+<h2 id="switches">Switches</h2>
+<ul>
+<li>A switch is a device that works at <strong>OSI Layer 2</strong>, examines the header of incoming packets for the MAC address, and forwards the packet to the correct location</li>
+<li>Switches can be managed or unmanaged.</li>
+<li>
+<h3 id="managed-switch">Managed Switch</h3>
+<ul>
+<li>A managed switch is one that <strong>allows for port configuration</strong>, traffic management, and traffic monitoring</li>
+<li>Managed switches offer quality of service (QoS), redundancy, port mirroring, and VLANs.</li>
+</ul>
+</li>
+<li>
+<h3 id="unmanaged-switch">Unmanaged Switch</h3>
+<ul>
+<li>An unmanaged switch does <em>not</em> allow for configuration and passes on all data for a MAC address to its ports.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="access-points">Access Points</h2>
+<ul>
+<li>An access point is technically any device to which a host can connect in order to access a network</li>
+<li>Wired access points include <strong>hubs</strong> and <strong>switches</strong></li>
+<li>However, the term usually refers to a wireless access point (WAP) that allows Wi-Fi devices to connect to a network.</li>
+</ul>
+</li>
+<li>
+<h2 id="patch-panel">Patch Panel</h2>
+<ul>
+<li>A patch panel is a dumb device that is essentially a large rack-mounted HUB whose sole purpose is to <strong>connect cables</strong> together</li>
+<li>A <strong>dumb device</strong> is a device that broadcasts all data coming in through the input port out over all output ports</li>
+<li>A dumb device, like a patch panel, makes no logical decisions and simply serves as a connection and relay point.</li>
+</ul>
+</li>
+<li>
+<h2 id="firewall">Firewall</h2>
+<ul>
+<li>A firewall is a <strong>security appliance</strong>, either hardware or software, that filters network traffic based on a preconfigured set of rules.</li>
+</ul>
+</li>
+<li>
+<h2 id="power-over-ethernet-poe">Power over Ethernet (PoE)</h2>
+<ul>
+<li>Power over Ethernet (PoE) is a technology that <strong>delivers power to devices</strong> over data lines, such as an ethernet cable, rather than having a separate power cord.</li>
+<li>
+<h3 id="poe-injectors">POE Injectors</h3>
+<ul>
+<li>An injector is a <strong>midspan device</strong> that sits between the switch and the access point and supplies power via an ethernet connection.</li>
+</ul>
+</li>
+<li>
+<h3 id="poe-switch">POE Switch</h3>
+<ul>
+<li>A switch sits in front of the midspan injector device and provides <strong>power to the ethernet cable</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="poe-standards">PoE Standards</h3>
+<ul>
+<li>PoE standards are the <strong>IEEE 802.3 standards</strong> that define PoE specifications.</li>
+<li><strong>PoE- 802.3af-15.4 W</strong> WAPs, static surveillance cameras, VoIP phones</li>
+<li><strong>PoE+- 802.3at-30W</strong> alarm systems, PTZ cameras, video IP phones</li>
+<li><strong>PoE++- 802.3bt (Type 3)-60 W</strong> multi-radio WAPs, video conferencing equipment</li>
+<li><strong>PoE++- 802.3bt (Type 4)-100 W</strong> laptops, flat-screen monitors</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="hub">Hub</h2>
+<ul>
+<li>A HUB is a dumb <strong>Layer 1</strong> device that sends all incoming data to all connected devices as a broadcast</li>
+<li>Hubs are also known as <strong>multiport repeaters</strong>.</li>
+</ul>
+</li>
+<li>
+<h2 id="cable-modem">Cable Modem</h2>
+<ul>
+<li>A cable modem is a device that connects to a cable line to provide <strong>connectivity</strong></li>
+<li>A cable modem is technically no longer a modem, however, since it does not modulate and demodulate analog signals.</li>
+</ul>
+</li>
+<li>
+<h2 id="digital-subscriber-line-dsl">Digital Subscriber Line (DSL)</h2>
+<ul>
+<li>A digital subscriber line (DSL) modem provides connectivity <strong>via a telephone line</strong>.</li>
+</ul>
+</li>
+<li>
+<h2 id="optical-network-terminal-ont">Optical Network Terminal (ONT)</h2>
+<ul>
+<li>An optical network terminal (ONT) modem is one that provides connectivity <strong>via a fiber-optic line</strong>.</li>
+</ul>
+</li>
+<li>
+<h2 id="network-interface-card-nic">Network Interface Card (NIC)</h2>
+<ul>
+<li>A network interface card (NIC), also known as a <strong>network adapter card</strong>, is used to provide the physical interface between a computer and the cabling used for connectivity.</li>
+</ul>
+</li>
+<li>
+<h2 id="software-defined-networking-sdn">Software-Defined Networking (SDN)</h2>
+<ul>
+<li>Software-defined networking (SDN) sets up a network virtually <strong>via the cloud</strong></li>
+<li>The SDN replaces the functionality of the router in a network.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="protocols-for-wireless-networking">Protocols for Wireless Networking</h1>
+<ul>
+<li>
+<p>You must be able to <strong>compare and contrast</strong> wireless networking protocols and what they have in common and where they differ.</p>
+</li>
+<li>
+<h2 id="frequencies">Frequencies</h2>
+<ul>
+<li>
+<h3 id="frequency">Frequency</h3>
+<ul>
+<li>The frequency of a wireless protocol refers to the audio range in which the technology broadcasts</li>
+<li>The <strong>two operating frequencies for Wi-Fi</strong> are 2.4 GHz and 5 GHz</li>
+<li>The frequency has an impact on transmission range and data throughput.</li>
+</ul>
+</li>
+<li>
+<h3 id="24-ghz">2.4 GHz</h3>
+<ul>
+<li>This relatively low frequency (compared with 5 GHz) has a <strong>greater transmission range</strong> because it passes through objects such as walls and floors better</li>
+<li>On the negative side, <strong>throughput is slower</strong> and it is an open frequency range that other devices use</li>
+<li>Devices like cordless phones and microwave ovens can <strong>interfere</strong> with it.</li>
+</ul>
+</li>
+<li>
+<h3 id="5-ghz">5 GHz</h3>
+<ul>
+<li>At this higher frequency, <strong>throughput is faster</strong></li>
+<li>On the negative side, the <strong>transmission range is shorter</strong> as the signal is attenuated by objects such as walls and floors.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="channels">Channels</h2>
+<ul>
+<li>
+<h3 id="wireless-channel-info">Wireless Channel info</h3>
+<ul>
+<li>Channels are different frequencies that are used for communications between the end-user device and the wireless access point</li>
+<li>The <strong>2.4 GHz range</strong> has 14 channels, but the top three cannot be used in <strong>North America</strong>, so the U.S</li>
+<li>Has <strong>11 available channels</strong></li>
+<li>Devices will automatically select a channel, but if there seems to be interference, we can manually select another channel</li>
+<li>The <strong>5 GHz range</strong> also has channels, but there is more room in the RF spectrum at that range, so we never have to set those channels.</li>
+</ul>
+</li>
+<li>
+<h3 id="wireless-channel-regulations">Wireless Channel Regulations</h3>
+<ul>
+<li>The Federal Communications Commission (FCC) has defined 14 different 22 MHz communications channels but only allows for the use of the first 11 channels.</li>
+</ul>
+</li>
+<li>
+<h3 id="24-ghz--vs-5-ghz">2.4 GHz  vs. 5 GHz</h3>
+<ul>
+<li>There are 25 defined 20 MHz channels at 5 GHz, 24 of which can be used for Wi-Fi communications, while 2.4 GHz only has 14 defined channels, 11 of which can be used.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="bluetooth">Bluetooth</h2>
+<ul>
+<li>Bluetooth allows devices to communicate over short distances (10 meters) in a personal area network (PAN)</li>
+<li>It is typically used to <strong>connect peripherals</strong>, such as headphones, to a laptop or smartphone</li>
+<li>It is the IEEE 802.15.1 standard.</li>
+</ul>
+</li>
+<li>
+<h2 id="80211">802.11</h2>
+<ul>
+<li>
+<h3 id="80211-wifi-spec">802.11 WiFi Spec</h3>
+<ul>
+<li>The Wi-Fi specification 802.11 is part of the IEEE 802 wireless networking standards</li>
+<li>It is used for Wi-Fi communications</li>
+<li>They all use the ethernet protocol and carrier sense multiple access with collision avoidance (CSMA/CA) media access method</li>
+<li>The main characteristics that differentiate them are their operating frequencies, theoretical maximum data speed, and throughput.</li>
+<li>
+<h3 id="80211a">802.11a</h3>
+<pre><code>  						- 5 GHz frequency, 54 Mbps maximum throughput, 120 meters range
+</code></pre>
+</li>
+<li>
+<h3 id="80211b">802.11b</h3>
+<pre><code>  						- 2.4 GHz frequency, 11 Mbps maximum throughput, 140 meters range
+</code></pre>
+</li>
+<li>
+<h3 id="80211g">802.11g</h3>
+<pre><code>  						- 2.4 GHz frequency, 54 Mbps maximum throughput, 140 meters range
+</code></pre>
+</li>
+<li>
+<h3 id="80211n">802.11n</h3>
+<pre><code>  						- 5/2.4 GHz frequency, 600 Mbps maximum throughput, 250 meters range
+</code></pre>
+</li>
+<li>
+<h3 id="80211ac-wi-fi-5">802.11ac (Wi-Fi 5)</h3>
+<pre><code>  						- 5 GHz frequency, 6.5 Gbps maximum throughput, 140 meters range
+</code></pre>
+</li>
+<li>
+<h3 id="80211ax-wi-fi-6">802.11ax (Wi-Fi 6)</h3>
+<pre><code>  						- 5/2.4 GHz frequency, 9.6 Gbps maximum throughput, 140 meters range
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="licensed-frequencies">Licensed Frequencies</h2>
+<ul>
+<li>Licensed frequencies are frequencies whose use is granted by the <strong>FCC</strong> in the US.</li>
+</ul>
+</li>
+<li>
+<h2 id="unlicensed-frequencies">Unlicensed Frequencies</h2>
+<ul>
+<li>Unlicensed frequencies are frequencies that can be used by anyone, such as 2.4 and 5 GHz</li>
+<li>The common use of these frequencies, however, often causes <strong>interference</strong> and can create susceptibility to <strong>eavesdropping</strong>.</li>
+</ul>
+</li>
+<li>
+<h2 id="wireless-power">Wireless Power</h2>
+<ul>
+<li>Power can be transmitted via long-range fixed wireless and is commonly known as wireless power transfer (WPT)</li>
+<li>Power is generated by the transmitting station and sent via microwave or laser light to the receiver who turns the transmission back into electricity.</li>
+</ul>
+</li>
+<li>
+<h2 id="regulatory-requirements-for-wireless-power">Regulatory Requirements for Wireless Power</h2>
+<ul>
+<li>WPT technology is regulated by the FCC in the US.</li>
+</ul>
+</li>
+<li>
+<h2 id="near-field-communication-nfc">Near-Field Communication (NFC)</h2>
+<ul>
+<li>Near-field communication (NFC) has a <strong>very short range</strong> of a few inches</li>
+<li>It is used for contactless communications between devices that are right next to one another</li>
+<li>The most common use today is for contactless payment systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="radio-frequency-identification-rfid">Radio-Frequency Identification (RFID)</h2>
+<ul>
+<li>Radio-frequency identification (RFID) uses a <strong>radio signal</strong> to send information from an RFID tag with identifying information</li>
+<li>This is commonly used to streamline the inventory of tracking applications.</li>
+</ul>
+</li>
+<li>
+<h2 id="long-range-fixed-wireless">Long-Range Fixed Wireless</h2>
+<ul>
+<li>A long-ranged fixed wireless connection is a point-to-point wireless technology that employs the use of directional antennas to send and receive network signals usually from <strong>10 to 20 km</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="networked-host-services">Networked Host Services</h1>
+<ul>
+<li>
+<p>You need to have a working understanding of the properties and purpose of network-delivered services in a client-server environment and know how to <strong>summarize</strong> them</p>
+</li>
+<li>
+<p>Know the difference between a <strong>client application</strong> and a <strong>server application</strong></p>
+</li>
+<li>
+<p>Client applications request services from a server application.</p>
+</li>
+<li>
+<h2 id="server-roles">Server Roles</h2>
+<ul>
+<li>You are expected to have a working understanding of the following network services</li>
+<li>
+<h3 id="servers">Servers</h3>
+<ul>
+<li>A server is not necessarily a stand-alone piece of hardware</li>
+<li>A server is usually a <strong>process running in memory</strong> on a networked system that responds to requests from a remote client system.</li>
+</ul>
+</li>
+<li>
+<h3 id="dns">DNS</h3>
+<ul>
+<li><strong>Domain name system</strong> (DNS) servers resolve hostnames to IP addresses</li>
+<li>Two public DNS servers are needed for an enterprise to host a website, with one DNS server acting as redundancy</li>
+<li>Records of hostname IP address sets are held in a zone file</li>
+<li>If the DNS address is not located in the zone file, it requests the information from a higher-level DNS server called the <strong>root server</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="dhcp-1">DHCP</h3>
+<ul>
+<li>A Dynamic Host Configuration Protocol (DHCP) server provides <strong>IP configuration information</strong>, such as an IP address, subnet mask, default gateway, and DNS server address, automatically to clients</li>
+<li>The scope of a DHCP server contains the information that is permitted to be shared with a client.</li>
+</ul>
+</li>
+<li>
+<h3 id="fileshare">Fileshare</h3>
+<ul>
+<li>A fileshare or file server is a <strong>central repository</strong> for the storage, management, and access of network files</li>
+<li>A network can also use network-attached storage (NAS) for a file server.</li>
+</ul>
+</li>
+<li>
+<h3 id="print-servers">Print Servers</h3>
+<ul>
+<li>A print server is a server that manages print requests and connects printers to a network.</li>
+</ul>
+</li>
+<li>
+<h3 id="mail-servers">Mail Servers</h3>
+<ul>
+<li>A mail server is responsible for sending, receiving, and managing emails</li>
+<li>A mail server must be running a <strong>specialized server package</strong>, such as Microsoft Exchange, Sendmail, Postfix, or Exim, to be considered a mail server.</li>
+</ul>
+</li>
+<li>
+<h3 id="syslog">Syslog</h3>
+<ul>
+<li>The syslog server in a client-server model is responsible for <strong>collecting information</strong> obtained through system monitoring, such as <strong>login events or errors</strong></li>
+<li>Messages compiled in a syslog server include the facility code, the severity level, and a textual description of the logged events</li>
+<li>Syslog servers are composed of <strong>three primary components</strong>: the listener, the database, and the management and filtering software.</li>
+</ul>
+</li>
+<li>
+<h3 id="web-servers">Web Servers</h3>
+<ul>
+<li>A web server listens for incoming requests</li>
+<li>The requests are executed by the web server and provide the requested content, including text, images, videos, and the running of scripts</li>
+<li>Common web server platforms include Microsoft’s Internet Information Services (IIS) and Apache.</li>
+</ul>
+</li>
+<li>
+<h3 id="authentication-authorization-and-accounting-aaa">Authentication, Authorization, and Accounting (AAA)</h3>
+<ul>
+<li>An authentication, authorization, and accounting (triple A or AAA) server is an access control server that acts as a gatekeeper for critical network components</li>
+<li>AAA servers are also known as domain controllers</li>
+<li>Examples of AAA servers include remote access service (RAS), Remote Authentication Dial-In User Service (RADIUS), Terminal Access Controller Access-Control System Plus (TACACS+), and Kerberos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="internet-appliances">Internet Appliances</h2>
+<ul>
+<li>An internet appliance is a device that aids in internet access and helps users access the internet safely.</li>
+<li>
+<h3 id="spam-gateways">Spam Gateways</h3>
+<ul>
+<li>A spam gateway, also known as an <strong>antispam gateway</strong>, is an internet appliance whose purpose is to <strong>block malicious emails</strong> from accessing the network.</li>
+</ul>
+</li>
+<li>
+<h3 id="unified-threat-management-utm">Unified Threat Management (UTM)</h3>
+<ul>
+<li>Unified threat management (UTM) acts to <strong>centralize security management</strong> on a network</li>
+<li>UTM typically provides packeting filtering and inspection, IPS, gateway antimalware, spam blocking, malicious website blocking, and application control.</li>
+</ul>
+</li>
+<li>
+<h3 id="load-balancers">Load Balancers</h3>
+<ul>
+<li>A load balancer is responsible for <strong>evenly distributing</strong> requests over servers to balance the system</li>
+<li>Common load balancing configurations include identical, cross-region, and content-based load balancing.</li>
+</ul>
+</li>
+<li>
+<h3 id="proxy-servers">Proxy Servers</h3>
+<ul>
+<li>A proxy server <strong>makes requests for resources</strong> on behalf of a client</li>
+<li>The proxy server acts as an intermediary between the client and the target server.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="legacyembedded-systems">Legacy/Embedded Systems</h2>
+<ul>
+<li>
+<h3 id="legacy-systems">Legacy systems</h3>
+<ul>
+<li>are older systems that for one reason or another have not been updated</li>
+<li>It is usually due to essential applications that will not run on the updated platform</li>
+</ul>
+</li>
+<li>
+<h3 id="embedded-systems">Embedded systems</h3>
+<ul>
+<li>are devices other than computers that have computer technology running within</li>
+<li>Like legacy systems, these may not be able to stay updated.</li>
+</ul>
+</li>
+<li>
+<h3 id="supervisory-control-and-data-acquisition-scada">Supervisory Control and Data Acquisition (SCADA)</h3>
+<ul>
+<li>Supervisory control and data acquisition (SCADA) is an example of a <strong>critical legacy system category</strong></li>
+<li>A SCADA system is a high-level management system used to control manufacturing machines and processes, manage large-scale infrastructure settings, and run building components.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="internet-of-things-iot-devices">Internet of Things (IoT) Devices</h2>
+<ul>
+<li>An internet of things (IoT) device connects to the network through a central controller or coordinating device</li>
+<li>Common examples of IoT devices include <strong>smart devices</strong> such as thermostats and home automation and security devices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="basic-wiredwireless-small-officehome-office-soho-networks">Basic Wired/Wireless Small Office/Home Office (SOHO) Networks</h1>
+<ul>
+<li>
+<p>When setting up a small office/home office (SOHO) network, keep the following steps in mind:</p>
+</li>
+<li>
+<p>Understand relevant regulations.</p>
+</li>
+<li>
+<p>Make a map.</p>
+</li>
+<li>
+<p>Locate the server(s).</p>
+</li>
+<li>
+<p>Identify client computer locations.</p>
+</li>
+<li>
+<p>Locate network resources.</p>
+</li>
+<li>
+<p>Determine user connectivity type.</p>
+</li>
+<li>
+<p>Designate additional connectivity options if needed.</p>
+</li>
+<li>
+<p>You must be able to install and configure basic wired and wireless SOHO networks</p>
+</li>
+<li>
+<p>On the CompTIA A+ exam, these concepts will be addressed in scenario-based questions.</p>
+</li>
+<li>
+<h2 id="internet-protocol-ip-addressing">Internet Protocol (IP) Addressing</h2>
+<ul>
+<li>Internet protocol (IP) addressing is the assignment of a unique device identifier on a local network or the internet</li>
+<li>The IP address is responsible for managing logical network addresses.</li>
+<li>
+<h3 id="ipv4">IPv4</h3>
+<ul>
+<li>An IPv4 address is a <strong>32-bit hierarchical address</strong> that identifies a host on a network and is typically written in dotted-decimal notation</li>
+<li>The 32-bit address is divided into 4 bytes, or octets, containing 8 bits each (ex: 192.168.10.55)</li>
+<li>IPv4 addresses are divided into designated classes, A, B, C, D, E, and F, based on the first 3 bits of the IP address</li>
+<li>IPv4 addresses are <strong>finite</strong> and are running out.</li>
+<li>
+<h3 id="private-addresses">Private addresses</h3>
+<pre><code>  					- A private IP address is **not routable** on the internet.
+</code></pre>
+</li>
+<li>
+<h3 id="class-a-private-address-range">Class A private address range</h3>
+<pre><code>  					- 10.0.0.0–10.255.255.255
+</code></pre>
+</li>
+<li>
+<h3 id="class-b-private-address-range">Class B private address range</h3>
+<pre><code>  					- 172.16.0.0–172.31.255.255
+</code></pre>
+</li>
+<li>
+<h3 id="class-c-private-address-range">Class C private address range</h3>
+<pre><code>  					- 192.168.0.0.–192.168.255.255
+</code></pre>
+</li>
+<li>
+<h3 id="public-addresses">Public addresses</h3>
+<pre><code>  					- Public addresses are **routable on the internet**
+</code></pre>
+<ul>
+<li>Public addresses are purchased and <strong>only one computer</strong> can hold any given public address at a time.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="ipv6">IPv6</h3>
+<ul>
+<li>IPv6 addresses are <strong>128-bit addresses</strong> expressed in <strong>hexadecimal notation</strong> and are composed of eight 16-bit fields separated by colons (ex: <strong>2001:0db8:3c4d:0012:0000:0000:1234:56ab</strong>, which can be reduced to <strong>2001:db8:3c4d:12::1234:56ab</strong>)</li>
+</ul>
+</li>
+<li>
+<h3 id="automatic-private-ip-addressing-apipa">Automatic Private IP Addressing (APIPA)</h3>
+<ul>
+<li>Automatic private IP addressing (APIPA) assigns an IP address to a device that was not assigned a static or dynamic IP address</li>
+<li>The address will be <strong>in the 169.254.0.0 network</strong></li>
+<li>This is generally not useful, other than being an indication that the device failed to get an IP address through normal means</li>
+<li>These addresses are also referred to as link-local addresses.</li>
+</ul>
+</li>
+<li>
+<h3 id="static">Static</h3>
+<ul>
+<li>A static address is one that is <strong>set manually</strong> by a user or administrator</li>
+<li>A device that is assigned a static address will keep that address until someone changes the configuration.</li>
+</ul>
+</li>
+<li>
+<h3 id="dynamic">Dynamic</h3>
+<ul>
+<li>A dynamic address is one that is <strong>automatically assigned</strong>, typically by a router or DHCP server</li>
+<li>The next time a device that was dynamically assigned an IP address joins the network, it may be assigned a different IP address.</li>
+</ul>
+</li>
+<li>
+<h3 id="gateway">Gateway</h3>
+<ul>
+<li>A gateway is a <strong>router that connects your network</strong> to another network, typically the Internet</li>
+<li>When configuring a device on the network, you specify the internal IP address of the gateway as a default destination to send traffic.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="common-network-configuration-concepts">Common Network Configuration Concepts</h1>
+<ul>
+<li>
+<p>You must be able to <strong>compare and contrast</strong> common network configuration concepts for the CompTIA A+ exam.</p>
+</li>
+<li>
+<h2 id="dns-1">DNS</h2>
+<ul>
+<li>The domain name system (DNS) has only one function: to <strong>resolve hostnames to IP addresses</strong></li>
+<li>DNS settings are usually given out via DHCP along with IP address information, but this can be done manually as well</li>
+<li>This allows the user (client) to resolve domain names to IP addresses in order to perform searches or lookups</li>
+<li>These are usually given out in a primary and secondary fashion for redundancy purposes.</li>
+</ul>
+</li>
+<li>
+<h2 id="address">Address</h2>
+<ul>
+<li>Addresses are contained on the DNS server in <strong>zone files</strong></li>
+<li>The zone file maintains records of hostname-to-IP address mappings and contains information such as the name of the server or computer, internet protocol address, record type, computer address, and comments.</li>
+<li>
+<h3 id="a">A</h3>
+<ul>
+<li><em>A</em> is a common DNS record type that signifies that the host record is an <strong>IPv4</strong> address.</li>
+</ul>
+</li>
+<li>
+<h3 id="aaaa">AAAA</h3>
+<ul>
+<li><em>AAAA</em>, pronounced “quad A”, is a common DNS record type that signifies the host record is an <strong>IPv6</strong> address.</li>
+</ul>
+</li>
+<li>
+<h3 id="mail-exchanger-mx">Mail Exchanger (MX)</h3>
+<ul>
+<li>A mail exchanger (MX) record is a common DNS record type that signifies that the host record is the name or address of an email server.</li>
+</ul>
+</li>
+<li>
+<h3 id="text-txt">Text (TXT)</h3>
+<ul>
+<li>A text (TXT) record is a common DNS record type that signifies that the host record is a text record for human-readable or machine-readable data.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="spam-management">Spam Management</h2>
+<ul>
+<li>Spam management is the process of determining if data is spam or valid.</li>
+</ul>
+</li>
+<li>
+<h3 id="dkim">DKIM</h3>
+<ul>
+<li>DomainKeys Identified Mail (DKIM) is a type of spam management that authenticates using <strong>encryption</strong> through a public-private key pair.</li>
+</ul>
+</li>
+<li>
+<h3 id="spf">SPF</h3>
+<ul>
+<li>Sender Policy Framework (SPF) is a type of spam management that authenticates an email server <strong>based on its IP address</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="dmarc">DMARC</h3>
+<ul>
+<li>Domain-based Message Authentication, Reporting and Conformance (DMARC) is a type of spam management that <strong>combines DKIM and SPF</strong> in one framework and offers <strong>more control</strong> over what the user can do with spam email.</li>
+</ul>
+</li>
+<li>
+<h2 id="dhcp-2">DHCP</h2>
+<ul>
+<li>The Dynamic Host Configuration Protocol (DHCP) automatically assigns all of the settings needed to access resources on your LAN or the internet</li>
+<li>It can provide IP address, subnet, gateway, and DNS information</li>
+<li>If you want to ensure that a device gets a specific IP address, you can configure a DHCP reservation in the DHCP server.</li>
+<li>
+<h3 id="leases">Leases</h3>
+<ul>
+<li>A lease is a temporary IP configuration assigned by the DHCP server to a client</li>
+<li>A lease typically includes an IP address, subnet mask, default gateway, and DNS server address.</li>
+</ul>
+</li>
+<li>
+<h3 id="reservations">Reservations</h3>
+<ul>
+<li>A reservation is the reserving of an IP address for a specific client based on the client’s MAC address and is primarily used for devices that require a static IP address.</li>
+</ul>
+</li>
+<li>
+<h3 id="dhcp-scope">DHCP Scope</h3>
+<ul>
+<li>The scope is information provided outside the IP address and the subnet mask issued by the DHCP server, such as the default gateway, DNS server address, or domain name.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="virtual-lan-vlan">Virtual LAN (VLAN)</h2>
+<ul>
+<li>A virtual local area network (VLAN) is a <strong>logical subnet</strong>, typically configured on a switch, that acts as a separate subnet</li>
+<li>Without VLANs, every device connected to a switch would be on the same subnet</li>
+<li>By configuring VLANs on the switch, you can have devices on that one switch in different subnets or VLANs.</li>
+</ul>
+</li>
+<li>
+<h2 id="virtual-private-network-vpn">Virtual Private Network (VPN)</h2>
+<ul>
+<li>A virtual private network (VPN) is an <strong>encrypted connection</strong> between two networks or between a host and a network</li>
+<li>When a host connects to a network over a VPN, it is assigned a separate IP address that is in the network’s address range.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="internet-connection-types-and-network-types">Internet Connection Types and Network Types</h1>
+<ul>
+<li>
+<p>For this exam, you should understand the specific networks and internet connections listed below and <strong>understand the differences</strong> between them.</p>
+</li>
+<li>
+<h2 id="internet-connection-types">Internet Connection Types</h2>
+<ul>
+<li>Internet connection types are methods, either wired or wireless, through which a device can connect to the internet.</li>
+<li>
+<h3 id="satellite">Satellite</h3>
+<ul>
+<li>A satellite connection is a wireless connection type that employs the use of satellites to achieve connectivity</li>
+<li>Satellite connections are typically slower than wired broadband connections and require a satellite dish</li>
+<li>Weather and misalignment can affect connectivity.</li>
+</ul>
+</li>
+<li>
+<h3 id="fiber">Fiber</h3>
+<ul>
+<li>A fiber connection is a type of wired connection that uses a fiber-optic cable made of thin flexible glass or plastic fiber surrounded by a rubberized outer sheath to send data via light signals</li>
+<li>Fiber offers fast data transmission</li>
+<li>There are <strong>two types</strong> of fiber varieties: <strong>single-mode fiber (SMF)</strong> and <strong>multimode fiber (MMF)</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="cable">Cable</h3>
+<ul>
+<li>A cable connection is a type of wired connection that uses a cable, either <strong>coaxial/coax</strong> or <strong>twisted pair</strong>, for data transmission</li>
+<li>Coax and twisted pair cables use different connector types and cable specifications.</li>
+</ul>
+</li>
+<li>
+<h3 id="dsl">DSL</h3>
+<ul>
+<li>A digital subscriber line (DSL) is a type of <strong>wired connection</strong> that uses existing phone lines paired with a DSL modem to provide internet service.</li>
+</ul>
+</li>
+<li>
+<h3 id="cellular">Cellular</h3>
+<ul>
+<li>A cellular connection is a type of wireless connection type that uses a <strong>provider’s cellular network</strong> for connectivity.</li>
+</ul>
+</li>
+<li>
+<h3 id="wisp">WISP</h3>
+<ul>
+<li>A wireless internet service provider (WISP) is a wireless connection type in which an internet service provider (ISP) offers connectivity using wireless technology</li>
+<li>WISP connections are <strong>fixed point-to-point connections</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="network-types">Network Types</h2>
+<ul>
+<li>Network types define the general area that is covered by a network.</li>
+<li>
+<h3 id="lan">LAN</h3>
+<ul>
+<li>A local area network (LAN) is a collection of devices connected to one another in <strong>one physical area</strong>, such as an office building, and can be small or large.</li>
+</ul>
+</li>
+<li>
+<h3 id="wan">WAN</h3>
+<ul>
+<li>A wide area network (WAN) is a network that covers a <strong>large geographical area</strong> and is composed of multiple LANs</li>
+<li>The internet is a WAN.</li>
+</ul>
+</li>
+<li>
+<h3 id="pan">PAN</h3>
+<ul>
+<li>A personal area network (PAN) is composed of primarily <strong>Bluetooth-connected devices</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="man">MAN</h3>
+<ul>
+<li>A metropolitan area network (MAN) is a network larger than a LAN but smaller than a WAN and <strong>limited to a smaller geographical area</strong>, such as a city or a campus.</li>
+</ul>
+</li>
+<li>
+<h3 id="san">SAN</h3>
+<ul>
+<li>A storage area network (SAN) is a network area composed of <strong>storage devices</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="wlan">WLAN</h3>
+<ul>
+<li>A wireless local area network (WLAN) is a LAN in which the <strong>connections are wireless</strong> rather than wired.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="networking-tools">Networking Tools</h1>
+<ul>
+<li>
+<p>For the CompTIA A+ exam, you should be able to evaluate a set of network requirements in a <strong>given scenario</strong> and select the best network tool for the job.</p>
+</li>
+<li>
+<h2 id="crimper">Crimper</h2>
+<ul>
+<li>A crimper is used to <strong>connect a connector to a cable</strong></li>
+<li>It is not usually practical to use cables of a fixed length</li>
+<li>It is also easier to run cable without the connectors on it</li>
+<li>So, the cable is run and cut to the desired length, and then the connector is crimped on using a crimper</li>
+<li>There are <strong>different types</strong> of crimpers for ethernet, coaxial, and fiber-optic cables.</li>
+</ul>
+</li>
+<li>
+<h2 id="cable-stripper">Cable Stripper</h2>
+<ul>
+<li>Cable strippers are used to <strong>remove the insulation</strong> from the end of a cable before the connector is crimped onto it.</li>
+</ul>
+</li>
+<li>
+<h2 id="wi-fi-analyzer">Wi-Fi Analyzer</h2>
+<ul>
+<li>A Wi-Fi analyzer is used to design, optimize, or troubleshoot a Wi-Fi network</li>
+<li>This device is used to show strong and weak spots in wireless coverage</li>
+<li>It is a way to <strong>visualize Wi-Fi network</strong> coverage.</li>
+</ul>
+</li>
+<li>
+<h2 id="tone-probe">Tone Probe</h2>
+<ul>
+<li>These devices are used to <strong>locate cables</strong> in a wiring closet</li>
+<li>The tone generator is typically placed at the user end, and a probe is waved around in the wiring closet to locate the connection</li>
+<li>It will make a distinctive noise when it is near the correct cable.</li>
+</ul>
+</li>
+<li>
+<h2 id="punchdown-tool">Punchdown Tool</h2>
+<ul>
+<li>A punchdown tool is used to <strong>connect the exposed ends of a wire into a wiring harness</strong>.</li>
+</ul>
+</li>
+<li>
+<h2 id="cable-tester">Cable Tester</h2>
+<ul>
+<li>This device is used to certify that the cable meets the standards of the <strong>wiring code</strong> and to ensure it can be used for communication</li>
+<li>It will identify broken wires or missing pin connections.</li>
+</ul>
+</li>
+<li>
+<h2 id="loopback-plug">Loopback Plug</h2>
+<ul>
+<li>A loopback plug is a special cable that is wired to <strong>transmit and receive on a single connector</strong></li>
+<li>There are loopback plugs for different types of connectors, like USB or ethernet, for testing network interface cards (NICs).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="network-tap">Network TAP</h2>
+<ul>
+<li>A network test access port (TAP) is a hardware device that creates a copy of <strong>network traffic</strong> for use by monitoring devices without interfering with network traffic</li>
+<li>A network TAP can be easily moved from location to location to identify problems.</li>
+</ul>
+</li>
+</ul>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="//localhost:1313/a&#43;/a&#43;-220-1102-operating-systems/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Operating Systems</a>
+        
+	    
+            <div class="next-post">
+                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Mobile Devices</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#memorizing-port-numbers">Memorizing port numbers</a></li>
+    <li><a href="#ports-and-protocols">Ports and Protocols</a>
+      <ul>
+        <li><a href="#file-transfer-protocol-ftp">File Transfer Protocol (FTP)</a></li>
+        <li><a href="#secure-shell-ssh">Secure Shell (SSH)</a></li>
+        <li><a href="#telnet">Telnet</a></li>
+        <li><a href="#simple-mail-transfer-protocol-smtp">Simple Mail Transfer Protocol (SMTP)</a></li>
+        <li><a href="#domain-name-system-dns">Domain Name System (DNS)</a></li>
+        <li><a href="#dynamic-host-configuration-protocol-dhcp">Dynamic Host Configuration Protocol (DHCP)</a></li>
+        <li><a href="#hypertext-transfer-protocol-http">Hypertext Transfer Protocol (HTTP)</a></li>
+        <li><a href="#post-office-protocol-3-pop3">Post Office Protocol 3 (POP3)</a></li>
+        <li><a href="#network-basic-inputoutput-system-netbiosnetbios-over-tcpip-netbt">Network Basic Input/Output System (NetBIOS)/NetBIOS over TCP/IP (NetBT)</a></li>
+        <li><a href="#internet-message-access-protocol-imap">Internet Message Access Protocol (IMAP)</a></li>
+        <li><a href="#simple-network-management-protocol-snmp">Simple Network Management Protocol (SNMP)</a></li>
+        <li><a href="#lightweight-directory-access-protocol-ldap">Lightweight Directory Access Protocol (LDAP)</a></li>
+        <li><a href="#hypertext-transfer-protocol-secure-https">Hypertext Transfer Protocol Secure (HTTPS)</a></li>
+        <li><a href="#server-message-block-smbcommon-internet-file-system-cifs">Server Message Block (SMB)/Common Internet File System (CIFS)</a></li>
+        <li><a href="#remote-desktop-protocol-rdps">Remote Desktop Protocol (RDP)s</a></li>
+      </ul>
+    </li>
+    <li><a href="#tcp--vs-udp">TCP  vs. UDP</a>
+      <ul>
+        <li><a href="#transmission-control-protocol-tcp">Transmission Control Protocol (TCP)</a></li>
+        <li><a href="#user-datagram-protocol-udp">User Datagram Protocol (UDP)</a></li>
+        <li><a href="#connectionless">Connectionless</a></li>
+        <li><a href="#dhcp">DHCP</a></li>
+        <li><a href="#tftp">TFTP</a></li>
+        <li><a href="#connection-oriented">Connection-Oriented</a></li>
+        <li><a href="#https">HTTPS</a></li>
+        <li><a href="#ssh">SSH</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#routers">Routers</a></li>
+    <li><a href="#switches">Switches</a>
+      <ul>
+        <li><a href="#managed-switch">Managed Switch</a></li>
+        <li><a href="#unmanaged-switch">Unmanaged Switch</a></li>
+      </ul>
+    </li>
+    <li><a href="#access-points">Access Points</a></li>
+    <li><a href="#patch-panel">Patch Panel</a></li>
+    <li><a href="#firewall">Firewall</a></li>
+    <li><a href="#power-over-ethernet-poe">Power over Ethernet (PoE)</a>
+      <ul>
+        <li><a href="#poe-injectors">POE Injectors</a></li>
+        <li><a href="#poe-switch">POE Switch</a></li>
+        <li><a href="#poe-standards">PoE Standards</a></li>
+      </ul>
+    </li>
+    <li><a href="#hub">Hub</a></li>
+    <li><a href="#cable-modem">Cable Modem</a></li>
+    <li><a href="#digital-subscriber-line-dsl">Digital Subscriber Line (DSL)</a></li>
+    <li><a href="#optical-network-terminal-ont">Optical Network Terminal (ONT)</a></li>
+    <li><a href="#network-interface-card-nic">Network Interface Card (NIC)</a></li>
+    <li><a href="#software-defined-networking-sdn">Software-Defined Networking (SDN)</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#frequencies">Frequencies</a>
+      <ul>
+        <li><a href="#frequency">Frequency</a></li>
+        <li><a href="#24-ghz">2.4 GHz</a></li>
+        <li><a href="#5-ghz">5 GHz</a></li>
+      </ul>
+    </li>
+    <li><a href="#channels">Channels</a>
+      <ul>
+        <li><a href="#wireless-channel-info">Wireless Channel info</a></li>
+        <li><a href="#wireless-channel-regulations">Wireless Channel Regulations</a></li>
+        <li><a href="#24-ghz--vs-5-ghz">2.4 GHz  vs. 5 GHz</a></li>
+      </ul>
+    </li>
+    <li><a href="#bluetooth">Bluetooth</a></li>
+    <li><a href="#80211">802.11</a>
+      <ul>
+        <li><a href="#80211-wifi-spec">802.11 WiFi Spec</a></li>
+        <li><a href="#80211a">802.11a</a></li>
+        <li><a href="#80211b">802.11b</a></li>
+        <li><a href="#80211g">802.11g</a></li>
+        <li><a href="#80211n">802.11n</a></li>
+        <li><a href="#80211ac-wi-fi-5">802.11ac (Wi-Fi 5)</a></li>
+        <li><a href="#80211ax-wi-fi-6">802.11ax (Wi-Fi 6)</a></li>
+      </ul>
+    </li>
+    <li><a href="#licensed-frequencies">Licensed Frequencies</a></li>
+    <li><a href="#unlicensed-frequencies">Unlicensed Frequencies</a></li>
+    <li><a href="#wireless-power">Wireless Power</a></li>
+    <li><a href="#regulatory-requirements-for-wireless-power">Regulatory Requirements for Wireless Power</a></li>
+    <li><a href="#near-field-communication-nfc">Near-Field Communication (NFC)</a></li>
+    <li><a href="#radio-frequency-identification-rfid">Radio-Frequency Identification (RFID)</a></li>
+    <li><a href="#long-range-fixed-wireless">Long-Range Fixed Wireless</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#server-roles">Server Roles</a>
+      <ul>
+        <li><a href="#servers">Servers</a></li>
+        <li><a href="#dns">DNS</a></li>
+        <li><a href="#dhcp-1">DHCP</a></li>
+        <li><a href="#fileshare">Fileshare</a></li>
+        <li><a href="#print-servers">Print Servers</a></li>
+        <li><a href="#mail-servers">Mail Servers</a></li>
+        <li><a href="#syslog">Syslog</a></li>
+        <li><a href="#web-servers">Web Servers</a></li>
+        <li><a href="#authentication-authorization-and-accounting-aaa">Authentication, Authorization, and Accounting (AAA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#internet-appliances">Internet Appliances</a>
+      <ul>
+        <li><a href="#spam-gateways">Spam Gateways</a></li>
+        <li><a href="#unified-threat-management-utm">Unified Threat Management (UTM)</a></li>
+        <li><a href="#load-balancers">Load Balancers</a></li>
+        <li><a href="#proxy-servers">Proxy Servers</a></li>
+      </ul>
+    </li>
+    <li><a href="#legacyembedded-systems">Legacy/Embedded Systems</a>
+      <ul>
+        <li><a href="#legacy-systems">Legacy systems</a></li>
+        <li><a href="#embedded-systems">Embedded systems</a></li>
+        <li><a href="#supervisory-control-and-data-acquisition-scada">Supervisory Control and Data Acquisition (SCADA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#internet-of-things-iot-devices">Internet of Things (IoT) Devices</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#internet-protocol-ip-addressing">Internet Protocol (IP) Addressing</a>
+      <ul>
+        <li><a href="#ipv4">IPv4</a></li>
+        <li><a href="#private-addresses">Private addresses</a></li>
+        <li><a href="#class-a-private-address-range">Class A private address range</a></li>
+        <li><a href="#class-b-private-address-range">Class B private address range</a></li>
+        <li><a href="#class-c-private-address-range">Class C private address range</a></li>
+        <li><a href="#public-addresses">Public addresses</a></li>
+        <li><a href="#ipv6">IPv6</a></li>
+        <li><a href="#automatic-private-ip-addressing-apipa">Automatic Private IP Addressing (APIPA)</a></li>
+        <li><a href="#static">Static</a></li>
+        <li><a href="#dynamic">Dynamic</a></li>
+        <li><a href="#gateway">Gateway</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#dns-1">DNS</a></li>
+    <li><a href="#address">Address</a>
+      <ul>
+        <li><a href="#a">A</a></li>
+        <li><a href="#aaaa">AAAA</a></li>
+        <li><a href="#mail-exchanger-mx">Mail Exchanger (MX)</a></li>
+        <li><a href="#text-txt">Text (TXT)</a></li>
+      </ul>
+    </li>
+    <li><a href="#spam-management">Spam Management</a>
+      <ul>
+        <li><a href="#dkim">DKIM</a></li>
+        <li><a href="#spf">SPF</a></li>
+        <li><a href="#dmarc">DMARC</a></li>
+      </ul>
+    </li>
+    <li><a href="#dhcp-2">DHCP</a>
+      <ul>
+        <li><a href="#leases">Leases</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#dhcp-scope">DHCP Scope</a></li>
+      </ul>
+    </li>
+    <li><a href="#virtual-lan-vlan">Virtual LAN (VLAN)</a></li>
+    <li><a href="#virtual-private-network-vpn">Virtual Private Network (VPN)</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#internet-connection-types">Internet Connection Types</a>
+      <ul>
+        <li><a href="#satellite">Satellite</a></li>
+        <li><a href="#fiber">Fiber</a></li>
+        <li><a href="#cable">Cable</a></li>
+        <li><a href="#dsl">DSL</a></li>
+        <li><a href="#cellular">Cellular</a></li>
+        <li><a href="#wisp">WISP</a></li>
+      </ul>
+    </li>
+    <li><a href="#network-types">Network Types</a>
+      <ul>
+        <li><a href="#lan">LAN</a></li>
+        <li><a href="#wan">WAN</a></li>
+        <li><a href="#pan">PAN</a></li>
+        <li><a href="#man">MAN</a></li>
+        <li><a href="#san">SAN</a></li>
+        <li><a href="#wlan">WLAN</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#crimper">Crimper</a></li>
+    <li><a href="#cable-stripper">Cable Stripper</a></li>
+    <li><a href="#wi-fi-analyzer">Wi-Fi Analyzer</a></li>
+    <li><a href="#tone-probe">Tone Probe</a></li>
+    <li><a href="#punchdown-tool">Punchdown Tool</a></li>
+    <li><a href="#cable-tester">Cable Tester</a></li>
+    <li><a href="#loopback-plug">Loopback Plug</a></li>
+    <li><a href="#network-tap">Network TAP</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>

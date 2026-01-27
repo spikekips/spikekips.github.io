@@ -1,0 +1,3034 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.7750550c0319f5de56d916b91e642bf72a5bd09ee50b201dc2ed9db69d6177a8.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Spike - Hardware &amp; Network</title>
+<meta property="og:title" content=Spike&#32;-&#32;Hardware&#32;&amp;&#32;Network />
+<meta name="twitter:title" content=Spike&#32;-&#32;Hardware&#32;&amp;&#32;Network />
+<meta itemprop="name" content=Spike&#32;-&#32;Hardware&#32;&amp;&#32;Network />
+<meta name="application-name" content=Spike&#32;-&#32;Hardware&#32;&amp;&#32;Network />
+<meta property="og:site_name" content="" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="//localhost:1313/aplusnotes/a&#43;-220-1102-security/" />
+<link rel="canonical" href="//localhost:1313/aplusnotes/a&#43;-220-1102-security/" itemprop="url" />
+<meta name="url" content="//localhost:1313/aplusnotes/a&#43;-220-1102-security/" />
+<meta name="twitter:url" content="//localhost:1313/aplusnotes/a&#43;-220-1102-security/" />
+<meta property="og:url" content="//localhost:1313/aplusnotes/a&#43;-220-1102-security/" />
+
+
+<meta property="og:updated_time" content="2026-01-19T12:00:00-06:00" />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.148.2">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.a2a7b8bcb6a4cf0411256d3307ba7b11fb85ad9a54a6495efbba1b109d479b1c.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5A5A5A;
+        --link-color: #268BD2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #000;
+        --code-background-color: #E5E5E5;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #EEE;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9D9D9D;
+        --link-color: #268BD2;
+        --date-color: #9A9A9A;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #FFF;
+        --code-background-color: #515151;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+        
+            <a href="//localhost:1313/">
+                <h1>Spike</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    Welcome to my site! Reach out if you have any tech issues.
+    </p>
+</div>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+        
+            
+
+            
+                
+                
+                    <li class="heading">
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/electronics/">Electronics</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
+                            </li>
+                        
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+
+    </ul>
+</nav>
+
+        
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/spikekips">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Instagram" href="https://www.instagram.com/thefrspike/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Facebook" href="https://www.facebook.com/sam.pike.132240/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Email" href="mailto://samuele.j.pike@gmail.com">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+
+
+        <p class="footnote">
+powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+    <br>
+    &copy; 2026 . All rights reserved.
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="//localhost:1313/aplusnotes/a&#43;-220-1102-security/">Hardware &amp; Network</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2026-01-19T12:00:00-0600" class="post-date">
+        January 19, 2026
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>52 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <h1 id="general-information">General Information</h1>
+<pre><code>- No IT system is totally functional without impeccable security, and there is a need for increasing proficiency in this area so that vital data is protected
+- This involves not only planning to deter threat actors but also having plans in place for procedures in case security is breached
+- You need to be ultimately conversant in all types of security vulnerabilities for devices and network connections
+- The CompTIA A+ 1102 test devotes **25% (one-fourth) of its questions** to security concept assessment
+- More than half (**60%**) of the questions about security will begin with a **scenario**.
+</code></pre>
+<ul>
+<li>
+<h1 id="security-measures">[[Security Measures]]</h1>
+<ul>
+<li>Security measures are practical concepts, both physical and logical, which are designed to maintain the integrity and security of a network, device, or program among others</li>
+<li>For the Comptia A+ 1102 test, you must be able to summarize various security measures and their purposes.</li>
+<li>
+<h2 id="physical-security-card">Physical Security #card</h2>
+collapsed:: true
+<ul>
+<li>When thinking about cybersecurity, it’s sometimes easy to forget what an important role <a href="https://uniontestprep.com/comptia-a-core-series-exam/blog/what-are-physical-security-measures" target="_blank">physical security</a> plays in keeping digital data safe</li>
+<li>Physical security is important because no matter how many security measures you put in place on a device itself, physical security is the only thing that will stop a criminal from walking away with the entire device.</li>
+<li>
+<h3 id="access-control-vestibule-card">Access Control Vestibule #card</h3>
+collapsed:: true
+<ul>
+<li>An access control vestibule, commonly known as a <strong>mantrap</strong>, is exactly what it sounds like</li>
+<li>It’s a trap used to prevent infiltration methods such as <strong>tailgating</strong> and <strong>piggybacking</strong></li>
+<li>The access control vestibule is a small area with a set of two locked doors, and it separates the outside world from a secured area</li>
+<li>When entering, an individual will enter through the first door, but that door must then be closed behind them before the second door may be opened.</li>
+</ul>
+</li>
+<li>
+<h3 id="badge-reader-card">Badge Reader #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T13:32:18.368Z
+card-last-reviewed:: 2024-03-27T13:32:18.368Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Identification badges can be used as proof of access authorization</li>
+<li>Badge readers can be implemented to help prevent unauthorized access</li>
+<li>In this type of environment, employees are given badges, such as <strong>proximity cards</strong> or <strong>smart cards</strong></li>
+<li>When the employee scans the badge, he or she is allowed entry to the area.</li>
+</ul>
+</li>
+<li>
+<h3 id="video-surveillance-card">Video Surveillance #card</h3>
+collapsed:: true
+<ul>
+<li>Video surveillance is one of the most important aspects of physical security as it allows for the investigator to physically see what has occurred in the physical area</li>
+<li>The two primary types of camera employed for video surveillance are the fixed and pan-tilt-zoom (PTZ) variety</li>
+<li>A <strong>fixed camera</strong> is limited to the scope of the stationary camera and may create blind spots</li>
+<li>The <strong>PTZ camera</strong>, however, has the capability of covering 360 degrees as well as zooming capabilities</li>
+<li>The drawback of the PTZ camera, though, is that one camera is commonly employed to cover a large area, reducing the likelihood of the camera being pointed at the direction of the occurrence at the time.</li>
+</ul>
+</li>
+<li>
+<h3 id="alarm-systems-card">Alarm Systems #card</h3>
+collapsed:: true
+<ul>
+<li>An alarm system can be installed to alert for potential unauthorized access</li>
+<li>Alarm systems can be used to notify if an access control system has logged unauthorized access or for break-in response and detection</li>
+<li><strong>Common sensors</strong> found in an alarm system include video surveillance, motion detection devices, and magnetic contact sensors.</li>
+</ul>
+</li>
+<li>
+<h3 id="motion-sensors-card">Motion Sensors #card</h3>
+collapsed:: true
+<ul>
+<li>A motion sensor is a device that is programmed to detect motion in a space</li>
+<li>The sensitivity of these sensors can be adjusted to fit the needs of the enterprise to avoid false alarms.</li>
+</ul>
+</li>
+<li>
+<h3 id="door-locks-card">Door Locks #card</h3>
+collapsed:: true
+<ul>
+<li>Door locks should be utilized whenever possible</li>
+<li>Aside from locks preventing unauthorized entrance to the building, locks should also be utilized to protect rooms containing sensitive equipment (such as the server room or network closet).</li>
+</ul>
+</li>
+<li>
+<h3 id="equipment-locks-card">Equipment Locks #card</h3>
+collapsed:: true
+<ul>
+<li>Equipment locks are locks designed to secure a specific type or piece of equipment</li>
+<li>For example, a cable lock can be used to help prevent a thief from walking off with laptops</li>
+<li>A <strong>cable lock</strong> is used by looping the cable around a heavy (ideally immovable) object and then securing the lock to a small security hole on the side of the laptop</li>
+<li><strong>Server locks</strong> are used to secure servers, but are becoming obsolete since a rack-mounted enclosure provides more security for servers</li>
+<li><strong>USB locks</strong> are plastic pieces that can be inserted into a USB port to close the port</li>
+<li>A specialty tool is needed to remove the lock.</li>
+</ul>
+</li>
+<li>
+<h3 id="guards-card">Guards #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T10:01:27.604Z
+card-last-reviewed:: 2024-05-22T19:01:27.605Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Security guards are one of the few security controls that are considered not only <strong>preventative</strong> controls, but also <strong>deterrent</strong> and <strong>detective</strong> controls</li>
+<li>This is because organizations with onsite security staff are less likely to be targeted for attacks than those with no security guards</li>
+<li>Security guards have the ability to physically limit access to the premises or specific places within the premises to those without proper identification and authorization</li>
+<li>They can also investigate if something seems amiss.</li>
+</ul>
+</li>
+<li>
+<h3 id="bollards-card">Bollards #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T15:20:15.712Z
+card-last-reviewed:: 2024-03-27T15:20:15.712Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A bollard is a physical security measure that is placed around the perimeter of an area and is used to prevent catastrophic entrance or access to the area</li>
+<li>Bollards are very sturdy, usually made of concrete or steel, and are designed to keep vehicles such as cars or trucks from driving into a secured area.</li>
+</ul>
+</li>
+<li>
+<h3 id="fences-card">Fences #card</h3>
+collapsed:: true
+<ul>
+<li>Fences are physical barriers designed to keep unauthorized persons out of an area or space</li>
+<li>Fences are commonly the <strong>first line of physical defense</strong> against unauthorized access and work best when paired with other physical security measures, such as badge readers and security guards.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="physical-security-for-staff-card">Physical Security for Staff #card</h2>
+collapsed:: true
+<ul>
+<li>Physical security for staff include methods of access control for sensitive areas or equipment that provide authentication for the user.</li>
+<li>
+<h3 id="key-fobs-card">Key Fobs #card</h3>
+collapsed:: true
+<ul>
+<li>Key fobs are small security devices that store authentication information</li>
+<li>They can easily be attached to a keyring or lanyard to provide both security and instant availability.</li>
+</ul>
+</li>
+<li>
+<h3 id="smart-cards-card">Smart Cards #card</h3>
+collapsed:: true
+<ul>
+<li>Smart cards are typically the size of your driver’s license or credit card</li>
+<li>The embedded memory and chipset in these cards can store identification and authentication information.</li>
+</ul>
+</li>
+<li>
+<h3 id="keys-card">Keys #card</h3>
+collapsed:: true
+<ul>
+<li>A key is a physical key used to open a specific lock or set of locks</li>
+<li>Keys are easily duplicated or stolen, and their usage is hard to control.</li>
+</ul>
+</li>
+<li>
+<h3 id="biometrics-card">Biometrics #card</h3>
+collapsed:: true
+<ul>
+<li>Biometric locks can add an additional layer of protection to an organization’s physical security</li>
+<li>Smart cards and proximity badges can be lost and possibly wind up in the wrong hands</li>
+<li>Biometric locks <strong>use an individual’s features</strong>, such as their retina or fingerprints, to authenticate them.</li>
+<li>
+<h3 id="retina-scanner-card">Retina Scanner #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T10:44:42.313Z
+card-last-reviewed:: 2024-04-02T19:44:42.314Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A retina scanner compares the retinal scan of a person’s eye against the markers on file to verify identity</li>
+<li>Retinal scanners are considered to be <strong>more intrusive</strong> than other types of biometric authentication and the accuracy of the scan <strong>can be limited</strong> by diseases of the eye, such as cataracts, glaucoma, or severe astigmatism.</li>
+</ul>
+</li>
+<li>
+<h3 id="fingerprint-scanner-card">Fingerprint Scanner #card</h3>
+collapsed:: true
+<ul>
+<li>A fingerprint scanner matches fingerprints to verified users</li>
+<li>Fingerprint scanners are a common method of biometric authentication but <strong>may cause bottlenecking</strong> at high traffic locations or <strong>lack accuracy</strong> in high dirt environments.</li>
+</ul>
+</li>
+<li>
+<h3 id="palmprint-scanner-card">Palmprint Scanner #card</h3>
+collapsed:: true
+<ul>
+<li>A palmprint scanner compares the scanned palmprint against the verified users and looks for such markers as lines, scars, and fingerprints</li>
+<li>Palmprint scans tend to be <strong>more accurate</strong> than fingerprint scans due to the large surface area of the scan location allowing for more points of comparison.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="lighting-card">Lighting #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-29T15:49:17.287Z
+card-last-reviewed:: 2024-03-25T15:49:17.288Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Lighting can impact the picture quality of video surveillance</li>
+<li>To ensure high-quality video, the area should be properly lighted</li>
+<li>Most video surveillance used today, however, includes <strong>infrared (IR) capabilities</strong> that allow for surveillance in low light or dark areas.</li>
+</ul>
+</li>
+<li>
+<h3 id="magnetometers-card">Magnetometers #card</h3>
+collapsed:: true
+<ul>
+<li>A magnetometer, commonly known as a <strong>metal detector</strong>, can be used to detect metal objects</li>
+<li>The metal detector can also be used as a security choke point</li>
+<li>Metal detectors can also be used upon exiting if the enterprise is concerned about insider threats, but this is controversial as it can be considered to be infringing upon employee rights to privacy.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="logical-security-card">Logical Security #card</h2>
+collapsed:: true
+<ul>
+<li>Unlike physical security controls that you can see and touch, logical security controls are concepts like security policies and software safeguards that are used to protect systems</li>
+<li>You should be able to explain these.</li>
+<li>
+<h3 id="principle-of-least-privilege-card">Principle of Least Privilege #card</h3>
+collapsed:: true
+<ul>
+<li>Permissions should only be given to a user if they absolutely need them to complete their job</li>
+<li>This idea is known as the principle of least privilege</li>
+<li>The fewer users who have access to sensitive files, the less likelihood that something bad will happen to those files.</li>
+</ul>
+</li>
+<li>
+<h3 id="access-control-lists-acls-card">Access-Control Lists (ACLs) #card</h3>
+collapsed:: true
+<ul>
+<li>ACLs are used to specify <strong>which traffic should be allowed</strong> through a firewall and which traffic should be blocked</li>
+<li>Using an ACL, traffic can be blocked or allowed based upon a number of items including source or destination port as well as source or destination IP address.</li>
+</ul>
+</li>
+<li>
+<h3 id="multi-factor-authentication-mfa-card">Multi-Factor Authentication (MFA) #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:15:35.908Z
+card-last-reviewed:: 2024-04-02T17:15:35.908Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Even the strongest passwords can be compromised</li>
+<li>This is where MFA comes in</li>
+<li>MFA requires two or more <em>different</em> authentication types</li>
+<li>Authentication types are typically broken down into categories, such as <strong>something you know</strong> (password, PIN, security question), <strong>something you have</strong> (authenticator, token), and <strong>something you are</strong> (biometrics)</li>
+<li>Because MFA requires two or more <em>different types</em> of authentication, a user would not be able to use just a personal identification number (PIN) and a password, since they both fall into the category of something you know</li>
+<li>Rather, the user would need a combination of the authentication types, such as a password and a token.</li>
+</ul>
+</li>
+<li>
+<h3 id="email-card">Email #card</h3>
+collapsed:: true
+<ul>
+<li>Email can be used as a method of MFA, but it is the <strong>least secure method</strong> of MFA</li>
+<li>Email can be helpful as a notification tool for unauthorized access by notifying the individual if suspicious activity has been detected.</li>
+</ul>
+</li>
+<li>
+<h3 id="hard-token-card">Hard Token #card</h3>
+collapsed:: true
+<ul>
+<li>A hard token, or hardware token, is a physical device that the user must have on them to gain access to a network’s resources</li>
+<li>The drawback of a hard token is the <strong>chance of losing</strong> the token, which could then be used by an unauthorized user to authenticate to a system.</li>
+</ul>
+</li>
+<li>
+<h3 id="soft-token-card">Soft Token #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2023-12-30T16:02:16.997Z
+card-last-reviewed:: 2023-12-26T16:02:16.998Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A soft token or software token is similar to a hardware token, except they come in the form of either a piece of software on your laptop or an app on your mobile device</li>
+<li>A software token is more commonly used for MFA with applications such as Google Authenticator, where it acts as a hard token but is software based.</li>
+</ul>
+</li>
+<li>
+<h3 id="short-message-service-sms-verification-card">Short Message Service (SMS) Verification #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T17:06:50.801Z
+card-last-reviewed:: 2024-03-27T17:06:50.801Z
+card-last-score:: 5
+collapsed:: true
+:LOGBOOK:
+CLOCK: [2023-12-21 Thu 10:30:41]&ndash;[2023-12-21 Thu 10:30:42] =&gt;  00:00:01
+CLOCK: [2023-12-21 Thu 10:30:46]&ndash;[2023-12-21 Thu 10:30:46] =&gt;  00:00:00
+CLOCK: [2023-12-21 Thu 10:30:54]&ndash;[2023-12-21 Thu 10:30:55] =&gt;  00:00:01
+:END:
+<ul>
+<li>An SMS can be used as a method of MFA by sending a <strong>time sensitive code</strong>, typically a five- to eight-digit code to the authorized users connected SMS number.</li>
+</ul>
+</li>
+<li>
+<h3 id="voice-call-card">Voice Call #card</h3>
+collapsed:: true
+<ul>
+<li>A voice call, like an SMS, can be used to verify the user by placing an automated call to the contact number on file for the user</li>
+<li>A verification code is thereby provided to the user for authentication purposes.</li>
+</ul>
+</li>
+<li>
+<h3 id="authenticator-application-card">Authenticator Application #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:36:56.322Z
+card-last-reviewed:: 2024-04-02T17:36:56.322Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Authenticator applications are technically soft tokens that act like hard tokens</li>
+<li>An application is loaded onto a device and used for authentication, such as Google Authenticator.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="mobile-device-management-mdm-card">Mobile Device Management (MDM) #card</h2>
+collapsed:: true
+<ul>
+<li>MDM policies are used to enforce security measures on mobile devices, such as cell phones and tablets</li>
+<li>Many organizations require that their users access email or other business-related apps on their phone, but this can present security risks to the organization</li>
+<li>MDM policies can help offset some of the risk</li>
+<li>An example of an MDM policy would be an organization requiring anyone accessing business email or business apps to have a lock screen on their phone with a PIN.</li>
+</ul>
+</li>
+<li>
+<h2 id="active-directory-ad-card">Active Directory (AD) #card</h2>
+collapsed:: true
+<ul>
+<li>AD is the Microsoft® directory used to manage users, applications, computers, and much more</li>
+<li>AD can be used to help implement security measures across an organization</li>
+<li>AD is not an authentication protocol but acts as <strong>storage for the authentication data</strong> and works closely with <strong>Kerberos</strong>, which is the actual authentication protocol.</li>
+<li>
+<h3 id="login-script-card">Login Script #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T10:28:40.878Z
+card-last-reviewed:: 2024-04-02T19:28:40.879Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A login script can be thought of as a series of instructions given for a device to perform upon login</li>
+<li>Login scripts can be set on the profile tab of a user in AD</li>
+<li>Login scripts can be used to map network drives, log computer access, gather information from a computer, and much more.</li>
+</ul>
+</li>
+<li>
+<h3 id="domain-card">Domain #card</h3>
+collapsed:: true
+<ul>
+<li>Ensuring that all computers in an environment are in your domain helps ensure they will be given the proper security policies</li>
+<li>When a computer is in your domain, you’ll be able to see it and manage it within AD.</li>
+</ul>
+</li>
+<li>
+<h3 id="group-policyupdates-card">Group Policy/Updates #card</h3>
+collapsed:: true
+<ul>
+<li>Group policies can be extremely <strong>useful in securing an organization</strong></li>
+<li>Group policies can be used to set password policies, block unwanted applications, and even block access to the internet entirely in some cases</li>
+<li>They can also be used to push out security updates, which are important to keep an organization safe.</li>
+</ul>
+</li>
+<li>
+<h3 id="organizational-units-ou-card">Organizational Units (OU) #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T10:24:49.169Z
+card-last-reviewed:: 2024-04-02T19:24:49.169Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>OUs are subdivisions of your domain within Active Directory</li>
+<li>For example, if an organization has three separate locations, they may choose to have three organizational units within their domain.</li>
+</ul>
+</li>
+<li>
+<h3 id="home-folder-card">Home Folder #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-29T15:49:42.692Z
+card-last-reviewed:: 2024-03-25T15:49:42.692Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>A home folder can be set for each user in AD</li>
+<li>If the home folder doesn’t exist when it’s added in AD, then AD will create the folder and set the permissions for you</li>
+<li>By default, this folder can be accessed only by the user and the domain administrators</li>
+<li>Home folders should be used by personnel to store their files on the server</li>
+<li>Because computers can be lost or stolen, it’s best for users to store their documents on the server in this way rather than store them locally on their own machines.</li>
+</ul>
+</li>
+<li>
+<h3 id="folder-redirection-card">Folder Redirection #card</h3>
+collapsed:: true
+<ul>
+<li>Folder redirection allows administrators (and, in some cases, users) to redirect the path of a specific folder to a new location</li>
+<li>One popular implementation of this is to redirect a user’s Documents folder (that is stored locally on their machine) to a network location, such as the home folder.</li>
+</ul>
+</li>
+<li>
+<h3 id="security-groups-card">Security Groups #card</h3>
+collapsed:: true
+<ul>
+<li>A security group can be created to make assigning privileges and permissions to groups of users more efficient</li>
+<li>Security groups are also helpful when auditing permissions</li>
+<li>The security groups can be examined rather than the individual user.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="wireless-security-protocols-and-authentication-methods">[[Wireless Security Protocols and Authentication Methods]]</h1>
+<ul>
+<li>Wireless networks are inherently less secure than wired networks</li>
+<li>However, there are several methods that can be used to secure wireless networks</li>
+<li>You must be able to compare and contrast these protocols and authentication methods.</li>
+<li>
+<h2 id="protocols-and-encryption-card">Protocols and Encryption #card</h2>
+collapsed:: true
+<ul>
+<li>You should be able to differentiate between different protocols and encryption methods used with wireless networks.</li>
+<li>
+<h3 id="wi-fi-protected-access-2-wpa2-card">Wi-Fi Protected Access 2 (WPA2) #card</h3>
+collapsed:: true
+<ul>
+<li>WPA2 improved upon WPA by using the Advanced Encryption Standard (AES)</li>
+<li>WPA2 is exploitable if the WPS service is enabled on the device.</li>
+</ul>
+</li>
+<li>
+<h3 id="wpa3-card">WPA3 #card</h3>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-05T07:56:20.236Z
+card-last-reviewed:: 2024-04-02T19:56:20.236Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>WPA3 is the successor to WPA2</li>
+<li>It introduced 192-bit cryptographic strength in Enterprise mode and requires CCMP 128 as a minimum in personal mode</li>
+<li>WPA3-Personal also uses Simultaneous Authentication of Equals (SAE) instead of the preshared key (PSK) exchange used in previous versions of WPA.</li>
+</ul>
+</li>
+<li>
+<h3 id="temporal-key-integrity-protocol-tkip-card">Temporal Key Integrity Protocol (TKIP) #card</h3>
+collapsed:: true
+<ul>
+<li>The TKIP provides a new encryption key for every sent packet</li>
+<li>TKIP uses the RC4 encryption algorithm protocol for its cipher</li>
+<li>An RC4 encryption algorithm encrypts plain text by bytes to produce a cipher stream</li>
+<li>The key for the RC4 algorithm is based on the MAC address and initialization vector of the sending device and is used to check message integrity.</li>
+</ul>
+</li>
+<li>
+<h3 id="advanced-encryption-standard-aes-card">Advanced Encryption Standard (AES) #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2023-12-30T16:34:29.901Z
+card-last-reviewed:: 2023-12-26T16:34:29.901Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>The AES is a secure encryption method that is still used today</li>
+<li>WPA2 uses AES in order to secure wireless networks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="authentication-card">Authentication #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-31T17:11:20.761Z
+card-last-reviewed:: 2024-03-27T17:11:20.761Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>Wireless networks should never be left open, and they should always require some form of authentication</li>
+<li>Let’s look at a few wireless authentication methods.</li>
+<li>
+<h3 id="remote-authentication-dial-in-user-service-radius-card">Remote Authentication Dial-In User Service (RADIUS) #card</h3>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-05-25T06:48:10.066Z
+card-last-reviewed:: 2024-05-22T18:48:10.066Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>RADIUS is an authentication method used to allow for centralized authentication and accounting</li>
+<li>Although it gets its name from the days of dial-up internet, RADIUS is now the common method used to authenticate over virtual private networks (VPNs) and wireless networks.</li>
+</ul>
+</li>
+<li>
+<h3 id="terminal-access-controller-access-control-system-tacacs-card">Terminal Access Controller Access-Control System (TACACS) #card</h3>
+collapsed:: true
+<ul>
+<li>TACACS (now TACACS+) was originally developed by Cisco®, but was released as an open standard</li>
+<li>These protocols are used for the authentication of users on network devices, such as routers and switches.</li>
+</ul>
+</li>
+<li>
+<h3 id="kerberos-card">Kerberos #card</h3>
+collapsed:: true
+<ul>
+<li>Kerberos is an open standard for authentication that is used in conjunction with AD for authentication</li>
+<li>Kerberos can also be used with the 802.1X protocol for direct authentication.</li>
+</ul>
+</li>
+<li>
+<h3 id="multi-factor-card">Multi-Factor #card</h3>
+collapsed:: true
+<ul>
+<li>Multi-factor authentication requires a user to provide more than one authentication type, as discussed earlier in this study guide</li>
+<li>A common implementation of multi-factor relating to wireless authentication is the Extensible Authentication Protocol-Transport Layer Security (EAP-TLS), which requires the user to not only have a password but also a certificate installed on the computer.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="detecting-removing-and-preventing-malware">[[Detecting, Removing, and Preventing Malware]]</h1>
+<ul>
+<li>To succeed on questions about malware, you should be able to evaluate a given scenario, find malware, and remove it with effective tools and procedures</li>
+<li>You should also know how to prevent malware in the future</li>
+<li>Questions of this type will be scenario based.</li>
+<li>
+<h2 id="malware-card">Malware #card</h2>
+collapsed:: true
+<ul>
+<li>The term malware is used to describe <strong>any malicious software</strong> that includes (but is not limited to) trojans, spyware, viruses, and worms</li>
+<li>Let’s take a deeper look at some of the different types of malware that exist today.</li>
+<li>
+<h3 id="trojan-card">Trojan #card</h3>
+collapsed:: true
+<ul>
+<li>Trojans are malicious programs that <strong>disguise themselves as valuable programs</strong></li>
+<li>Imagine a scenario where a user downloads a program that they believe will allow them to listen to music or watch a movie for free</li>
+<li>They downloaded the program because they believed it to be a valuable and legitimate program; however, when they run the program, they have actually installed malware on their device</li>
+<li>This is an example of a trojan.</li>
+</ul>
+</li>
+<li>
+<h3 id="rootkit-card">Rootkit #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T09:48:42.175Z
+card-last-reviewed:: 2024-05-22T18:48:42.175Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Rootkits are malicious programs with the <strong>goal of gaining privileged access</strong> to a computer</li>
+<li>Rootkits hide themselves by taking advantage of operating system (OS) functions, and they can attack operating systems, hypervisors, and firmware.</li>
+</ul>
+</li>
+<li>
+<h3 id="virus-card">Virus #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-30T17:44:49.676Z
+card-last-reviewed:: 2024-03-26T17:44:49.676Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>A virus is defined as any malicious program that <strong>replicates itself</strong> and attempts to infect other computers</li>
+<li>Viruses, unlike worms, <strong>need human interaction</strong> to spread</li>
+<li>They are only able to replicate to other drives on the same computer and not across the network</li>
+<li>Viruses are designed for many different goals, from corrupting data to stealing information.</li>
+</ul>
+</li>
+<li>
+<h3 id="spyware-card">Spyware #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:11:09.426Z
+card-last-reviewed:: 2024-04-02T17:11:09.428Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Spyware is a type of malware that <strong>covertly collects data</strong> on a user after it is installed on their computer</li>
+<li>Spyware is typically a virus that <strong>requires user interaction</strong> to infect</li>
+<li>For example, a user would have to click on a link in an email for the spyware to download</li>
+<li>Spyware can be used for malicious purposes, such as stealing confidential data or credentials, or as a data collection device for advertising purposes.</li>
+</ul>
+</li>
+<li>
+<h3 id="ransomware-card">Ransomware #card</h3>
+collapsed:: true
+<ul>
+<li>Ransomware is so named because it essentially <strong>holds your files and data ransom</strong> until you pay the attacker</li>
+<li>As the popularity of cryptocurrency (e.g., Bitcoin) has grown, so has ransomware</li>
+<li>Attackers can request Bitcoin as their method of payment to release the data after a ransomware attack, making the attackers more difficult to track down after the transaction.</li>
+</ul>
+</li>
+<li>
+<h3 id="keylogger-card">Keylogger #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:35:40.324Z
+card-last-reviewed:: 2024-04-02T17:35:40.325Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Some attacks will try to install keyloggers onto a user’s computer in order to steal private data, passwords, or credit card numbers</li>
+<li>Keyloggers come in both hardware and software forms</li>
+<li>A keylogger will <strong>track all the keystrokes</strong> made on the computer running the keylogger</li>
+<li>This information can then be transmitted over to the attack entity for them to parse for useful stolen information.</li>
+</ul>
+</li>
+<li>
+<h3 id="boot-sector-virus-card">Boot Sector Virus #card</h3>
+collapsed:: true
+<ul>
+<li>A boot sector virus infects the master boot record (MBR) of a hard disk and is designed to load when a device is booted up, reinfecting the OS each time it is booted up</li>
+<li><strong>Secure boot</strong> can be used to identify a boot sector virus.</li>
+</ul>
+</li>
+<li>
+<h3 id="cryptominers-card">Cryptominers #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:11:54.042Z
+card-last-reviewed:: 2024-04-02T17:11:54.043Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Cryptominers are users who <strong>perform cryptographic computations to create cryptocoins</strong></li>
+<li>A cryptominer can infect others computers and use the other computer’s processing power to perform the computations for the cryptominer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="tools-and-methods-card">Tools and Methods #card</h2>
+collapsed:: true
+<ul>
+<li>There are various tools and methods that can be used to detect and prevent malware</li>
+<li>Tools and methods for the prevention of malware are not one-off procedures</li>
+<li>Multiple layers of <strong>prevention, detection, and eradication</strong> should be used to fully protect a system.</li>
+<li>
+<h3 id="recovery-mode-card">Recovery Mode #card</h3>
+collapsed:: true
+<ul>
+<li>Microsoft Windows® offers a suite of built-in recovery tools known as the <strong>Windows Recovery Environment (WinRE)</strong></li>
+<li>This console can be especially helpful if a computer has been infected by malware</li>
+<li>Some of the tools in the recovery console will allow you to reset the operating system back to default or simply restore the computer to an earlier time, such as before the computer became infected.</li>
+</ul>
+</li>
+<li>
+<h3 id="antivirus-card">Antivirus #card</h3>
+card-last-interval:: -1
+card-repeats:: 1
+card-ease-factor:: 2.5
+card-next-schedule:: 2024-03-28T04:00:00.000Z
+card-last-reviewed:: 2024-03-27T13:38:52.151Z
+card-last-score:: 1
+collapsed:: true
+<ul>
+<li>Many threats described above can be mitigated simply by having an antivirus program installed</li>
+<li>Antivirus software is made up of two main components, the antivirus engine and the antivirus database</li>
+<li>The <strong>antivirus engine</strong> is responsible for real-time scanning</li>
+<li>The <strong>antivirus definitions database</strong> is a repository of signatures that is used to detect known malware.</li>
+</ul>
+</li>
+<li>
+<h3 id="anti-malware-card">Anti-Malware #card</h3>
+collapsed:: true
+<ul>
+<li>Anti-malware software is extremely similar to antivirus software, but it takes the detection a step farther</li>
+<li>Anti-malware software can usually <strong>check files outside of the Windows file systems</strong>, such as those on malicious websites and those coming in via email.</li>
+</ul>
+</li>
+<li>
+<h3 id="software-firewalls-card">Software Firewalls #card</h3>
+collapsed:: true
+<ul>
+<li>When referring to software firewalls in this section, we are referring to firewalls that come as part of the operating system</li>
+<li>Windows computers come with a built-in software firewall called <strong>Windows Defender Firewall</strong></li>
+<li>This firewall can help prevent worms and malicious inbound connections.</li>
+</ul>
+</li>
+<li>
+<h3 id="anti-phishing-training-card">Anti-Phishing Training #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:16:36.545Z
+card-last-reviewed:: 2024-04-02T17:16:36.545Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Anti-phishing training is training of end users targeted specifically at understanding phishing techniques and tactics</li>
+<li>This training may involve sending spoof phishing emails to end users to identify potential weak spots in users and training.</li>
+</ul>
+</li>
+<li>
+<h3 id="user-education-card">User Education #card</h3>
+collapsed:: true
+<ul>
+<li>While there are plenty of wonderful tools out there to help protect against attacks, end user education is <strong>one of the most important</strong></li>
+<li>This is because antivirus software and spam filters are not perfect</li>
+<li>It is important for users to understand what types of items they should download and not download, what types of websites they should <em>not</em> visit, and how to identify a phishing scam.</li>
+</ul>
+</li>
+<li>
+<h3 id="os-reinstallation-card">OS Reinstallation #card</h3>
+collapsed:: true
+<ul>
+<li>For a highly corrupted OS, the OS may need to be reinstalled with a clean installation</li>
+<li>This will remove all data previously attached to the old installation of the OS, including viruses and malware it may have been infected with.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="social-engineering-attacks-threats-and-vulnerabilities">[[Social Engineering Attacks, Threats, and Vulnerabilities]]</h1>
+<ul>
+<li>For this test you should be able to compare and contrast different types of threats, social engineering, and vulnerabilities</li>
+<li>In the following section, we will cover the important details about these issues.</li>
+<li>
+<h2 id="social-engineering-card">Social Engineering #card</h2>
+<ul>
+<li>Social engineering is the act of <strong>manipulating individuals</strong> into giving you unauthorized access to a building or room, or giving you private information.</li>
+<li>
+<h3 id="phishing-card">Phishing #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:11:58.956Z
+card-last-reviewed:: 2024-04-02T17:11:58.956Z
+card-last-score:: 5
+<ul>
+<li>Phishing is the most common type of social engineering</li>
+<li>In a phishing attack, the attacker sends a <strong>fraudulent email</strong> pretending to be from a legitimate source, such as a colleague, vendor, or even a user’s bank</li>
+<li>The goal of a phishing attempt is to get the unsuspecting user to give up their private information.</li>
+</ul>
+</li>
+<li>
+<h3 id="vishing-card">Vishing #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-30T18:52:19.480Z
+card-last-reviewed:: 2024-03-26T18:52:19.480Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>Vishing is <strong>phishing through Voice over Internet Protocol (VoIP) calls</strong></li>
+<li>Vishing calls may attempt to elicit information from the recipient using social engineering techniques</li>
+<li>For example, a caller may state that they are from the IRS and the recipient needs to provide back tax payment or risk further financial or legal penalties.</li>
+</ul>
+</li>
+<li>
+<h3 id="shoulder-surfing-card">Shoulder Surfing #card</h3>
+collapsed:: true
+<ul>
+<li>Shoulder surfing is the act of stealing a person’s data by looking over their shoulder as they type private information on a computer or a code into a door or ATM.</li>
+</ul>
+</li>
+<li>
+<h3 id="whaling-card">Whaling #card</h3>
+collapsed:: true
+<ul>
+<li>Whaling is phishing that specifically targets individuals high up in a company’s hierarchy, such as CEOs and CFOs or other <strong>high-value targets</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="tailgating-card">Tailgating #card</h3>
+collapsed:: true
+<ul>
+<li>Social engineers will sometimes tailgate or <strong>follow another person</strong> into a building</li>
+<li>This means sneaking into a locked door right behind a person who has permission to enter</li>
+<li>Sometimes, the social engineer may carry boxes so that an individual, who is just trying to be polite, will unlock and hold the door open for them.</li>
+</ul>
+</li>
+<li>
+<h3 id="impersonation-card">Impersonation #card</h3>
+collapsed:: true
+<ul>
+<li>One common social engineering tactic is impersonation</li>
+<li>Social engineers will often pretend to be someone else to gain access to what they are looking for</li>
+<li>One example of this would be an attacker pretending to be from your internet provider asking for access to your network closet.</li>
+</ul>
+</li>
+<li>
+<h3 id="dumpster-diving-card">Dumpster Diving #card</h3>
+collapsed:: true
+<ul>
+<li>Businesses and individuals throw away a lot of valuable information that can be used by an attacker</li>
+<li>When an attacker digs through the trash hoping to find private information that wasn’t shredded, this is known as dumpster diving.</li>
+</ul>
+</li>
+<li>
+<h3 id="evil-twin-card">Evil Twin #card</h3>
+collapsed:: true
+<ul>
+<li>An evil twin is an <strong>imposter access point</strong> that impersonates a legitimate access point in order to intercept data</li>
+<li>For example, a user could connect to an access point at their local cafe that provides free Wi-Fi access under the name “Cafe Guest.” The evil twin will create an imposter access point also named “Cafe Guest” and intercept data when the user connects to the evil twin.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="threats-card">Threats #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:13:11.832Z
+card-last-reviewed:: 2024-04-02T17:13:11.833Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Threats are potential hazards to a network that can be either <strong>physically or logically based</strong></li>
+<li>A threat is an attack designed to interrupt, intercept, or damage data from a target</li>
+<li>Threats can come from a single threat actor, such as a <strong>script kiddie</strong>, or numerous threat actors acting in coordination with one another, such as a <strong>nation state</strong>.</li>
+<li>
+<h3 id="denial-of-service-dos-card">Denial of Service (DoS) #card</h3>
+collapsed:: true
+<ul>
+<li>A denial-of-service (DoS) attack is one in which a <strong>large amount of meaningless traffic</strong> is directed toward a device or network in an attempt to overburden and bring it down.</li>
+</ul>
+</li>
+<li>
+<h3 id="distributed-denial-of-service-ddos-card">Distributed Denial of Service (DDoS) #card</h3>
+collapsed:: true
+<ul>
+<li>A distributed denial of service (DDOS) is a denial-of-service attack in which multiple computers (often a <strong>botnet</strong>) are used to send an abundance of traffic in an attempt to bring down a network’s resources.</li>
+</ul>
+</li>
+<li>
+<h3 id="zero-day-attack-card">Zero-Day Attack #card</h3>
+collapsed:: true
+<ul>
+<li>A zero-day attack is one that <strong>targets a vulnerability</strong> that developers have not identified yet or for which they have not had time to release a patch or fix.</li>
+</ul>
+</li>
+<li>
+<h3 id="spoofing-card">Spoofing #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-30T19:44:32.004Z
+card-last-reviewed:: 2024-03-26T19:44:32.005Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Spoofing is a form of an <strong>impersonation attack</strong></li>
+<li>Some commonly spoofed items include a source IP address, source MAC address, source email address, and usernames.</li>
+</ul>
+</li>
+<li>
+<h3 id="on-path-attack-card">On-Path Attack #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-01T17:14:42.009Z
+card-last-reviewed:: 2024-03-28T17:14:42.010Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>An on-path attack, previously known as a <strong>man-in-the-middle (MITM)</strong> attack, is an <strong>eavesdropping</strong> attack</li>
+<li>The attacker will try to plant themself between two systems and intercept the traffic.</li>
+</ul>
+</li>
+<li>
+<h3 id="brute-force-attack-card">Brute-Force Attack #card</h3>
+collapsed:: true
+<ul>
+<li>In a brute-force attack, the attacker attempts to guess as many of the possible values as they can</li>
+<li>Brute force is generally used as a method of <strong>password cracking</strong>, but can be used in some other scenarios as well.</li>
+</ul>
+</li>
+<li>
+<h3 id="dictionary-attack-card">Dictionary Attack #card</h3>
+collapsed:: true
+<ul>
+<li>One form of brute-force attack is known as a dictionary attack</li>
+<li>Rather than the attacker trying to come up with passwords to guess themselves, they can use a <strong>list of all leaked passwords</strong> online (known as a dictionary).</li>
+</ul>
+</li>
+<li>
+<h3 id="insider-threat-card">Insider Threat #card</h3>
+collapsed:: true
+<ul>
+<li>An insider threat is a <strong>threat from within the organization itself</strong> and may be perpetrated by disgruntled employees or for personal gain</li>
+<li>Insider threats are <strong>more common than external threats</strong> and can expose the organization to significant levels of damage as the threat has access to the network</li>
+<li>An internal threat may be <strong>more difficult to detect</strong> since the threat is expected to be on the network.</li>
+</ul>
+</li>
+<li>
+<h3 id="structured-query-language-sql-injection-card">Structured Query Language (SQL) Injection #card</h3>
+collapsed:: true
+<ul>
+<li>An SQL injection is an attack in which the threat enters a series of malicious code with a Structured Query Language (SQL) query to gain access to SQL databases.</li>
+</ul>
+</li>
+<li>
+<h3 id="cross-site-scripting-xss-card">Cross-Site Scripting (XSS) #card</h3>
+collapsed:: true
+<ul>
+<li>Cross-site scripting (XSS) is used to <strong>embed malicious scripts</strong> into a legitimate web page and is commonly used to hijack web pages to coax the end user to install malware.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="vulnerabilities-card">Vulnerabilities #card</h2>
+collapsed:: true
+<ul>
+<li>Vulnerabilities in cyber security are weaknesses in the OS or network that can be exploited for access</li>
+<li>Threat actors leverage vulnerabilities to gain access to a network</li>
+<li>While zero-day threats do occur, the majority of vulnerabilities have been previously identified with released patches</li>
+<li>It is easier for a threat actor to try known vulnerabilities against a target to gain access to the network than to attempt to discover a new vulnerability.</li>
+<li>
+<h3 id="non-compliant-systems-card">Non-Compliant Systems #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:36:48.017Z
+card-last-reviewed:: 2024-04-02T17:36:48.018Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A non-compliant system is a system or device that does not follow the standard security precautions as dictated by the system administrator</li>
+<li>Non-compliant software or systems can pose a threat to an organization’s network</li>
+<li>It’s important to fix non-compliant devices as soon as you notice them.</li>
+</ul>
+</li>
+<li>
+<h3 id="unpatched-systems-card">Unpatched Systems #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:12:43.558Z
+card-last-reviewed:: 2024-04-02T17:12:43.559Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Patches protect systems, software, or networks from known vulnerabilities</li>
+<li>Unpatched systems leave the network or device open to exploitation through these known vulnerabilities.</li>
+</ul>
+</li>
+<li>
+<h3 id="unprotected-systems-card">Unprotected Systems #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-30T19:45:01.808Z
+card-last-reviewed:: 2024-03-26T19:45:01.808Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>An unprotected system is a system that does not have the appropriate security measures in place, such as a device without an antivirus or anti-malware program installed or a system without a properly configured firewall.</li>
+</ul>
+</li>
+<li>
+<h3 id="end-of-life-eol-operating-systems-oss-card">End-of-Life (EOL) Operating Systems (OSs) #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T17:29:57.059Z
+card-last-reviewed:: 2024-03-27T17:29:57.059Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>An EOL OS is an OS that is no longer supported by the vendor</li>
+<li>This means that no new patches or updates will be released for vulnerabilities, leaving the OS open to exploitation.</li>
+</ul>
+</li>
+<li>
+<h3 id="bring-your-own-device-byod-card">Bring Your Own Device (BYOD) #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:35:55.013Z
+card-last-reviewed:: 2024-04-02T17:35:55.014Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>The prevalence of BYOD policies in networks <strong>complicates network security</strong></li>
+<li>BYOD policies allow users to use their own devices on a network and are therefore difficult to police and pose both a data leakage and data portability vulnerability</li>
+<li>These devices may not be properly secured, both physically and logically, making them targets for threat actors.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="basic-security-settings-in-microsoft-windows-os">[[Basic Security Settings in Microsoft Windows® OS]]</h1>
+<ul>
+<li>Microsoft Windows provides useful settings that can be used to enhance security</li>
+<li>It is important that you know their names and how they are used</li>
+<li>Questions on this subject will be scenario based.</li>
+<li>
+<h2 id="defender-antivirus-card">Defender Antivirus #card</h2>
+collapsed:: true
+<ul>
+<li>Windows Defender or Windows Defender Antivirus is the Windows OS’s pre-installed antivirus software included in all recent versions of the OS.</li>
+<li>
+<h3 id="activatedeactivate-card">Activate/Deactivate #card</h3>
+collapsed:: true
+<ul>
+<li>Windows Defender can be activated and deactivated via the Virus and Threat Protection settings by clicking on Manage Settings</li>
+<li>Specific aspects of the Defender can also be activated and deactivated as needed, such as real-time protection and cloud-delivered protection.</li>
+</ul>
+</li>
+<li>
+<h3 id="updated-definitions-card">Updated Definitions #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:12:49.543Z
+card-last-reviewed:: 2024-04-02T17:12:49.544Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>To maintain the most current malware definitions and signatures, Defender needs to be updated regularly</li>
+<li>Windows Defender as well as its definitions are updated through the Windows Update process.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="firewall-card">Firewall #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:12:37.950Z
+card-last-reviewed:: 2024-04-02T17:12:37.950Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Windows Defender Firewall is a host-based firewall designed to block access from the network</li>
+<li>Defender Firewall can be specified to protect the domain network, private network, and public network separately.</li>
+<li>
+<h3 id="activatedeactivate-card-1">Activate/Deactivate #card</h3>
+collapsed:: true
+<ul>
+<li>Windows Defender Firewall can be activated or deactivated easily through Firewall and Network Protection</li>
+<li>Windows Firewall blocks incoming connections by default.</li>
+</ul>
+</li>
+<li>
+<h3 id="port-security-card">Port Security #card</h3>
+collapsed:: true
+<ul>
+<li>Windows Defender Firewall allows for the creation of specific rules for specific ports as needed, providing advanced port security.</li>
+</ul>
+</li>
+<li>
+<h3 id="application-security-card">Application Security #card</h3>
+collapsed:: true
+<ul>
+<li>By default, the Windows Defender Firewall creates a pop-up when applications attempt to listen in on a port for incoming connections</li>
+<li>If allowed, Firewall will create a new rule for the application, allowing it through</li>
+<li>Allowed applications can be managed through Firewall and Network Protection.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="users-and-groups-card">Users and Groups #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-31T13:39:35.973Z
+card-last-reviewed:: 2024-03-27T13:39:35.973Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>As mentioned previously, users will not all require the same level of access control</li>
+<li><strong>Windows permissions</strong> is a critical part of access control.</li>
+<li>
+<h3 id="local-vs-microsoft-account-card">Local vs. Microsoft Account #card</h3>
+collapsed:: true
+<ul>
+<li>Using a Microsoft account on a device allows for <strong>synchronization</strong> between the device and all data stored in the Microsoft Cloud</li>
+<li>A local account does not provide this synchronization and requires manual setup for synchronization.</li>
+</ul>
+</li>
+<li>
+<h3 id="standard-account-card">Standard Account #card</h3>
+collapsed:: true
+<ul>
+<li>Most users will fall into the standard account category</li>
+<li>A standard account will have varying permissions based upon roles and groups set by the administrator.</li>
+</ul>
+</li>
+<li>
+<h3 id="administrator-card">Administrator #card</h3>
+collapsed:: true
+<ul>
+<li>Administrator accounts have <strong>complete power</strong> over the OS</li>
+<li>Administrator accounts should be reserved for those who absolutely require them</li>
+<li>The more administrators that exist on a network, the more room for error</li>
+<li>An administrator will have <strong>access to everything</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="guest-user-card">Guest User #card</h3>
+collapsed:: true
+<ul>
+<li>The guest account on Windows is an account that exists on every Windows machine</li>
+<li>It’s a <strong>very low-privilege account</strong> that can be used for individuals who only need occasional access to the device.</li>
+</ul>
+</li>
+<li>
+<h3 id="power-user-card">Power User #card</h3>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-05T07:52:35.674Z
+card-last-reviewed:: 2024-04-02T19:52:35.674Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>A power user account is <strong>one step down from an administrator account</strong></li>
+<li>It is the second most powerful account type within the Windows OS</li>
+<li>A power user can be given read and write permissions but will not be able to change OS system files.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="login-os-options-card">Login OS Options #card</h2>
+collapsed:: true
+<ul>
+<li>The Window OS provides multiple methods of login options requiring various levels of authentication.</li>
+<li>
+<h3 id="username-and-password-card">Username and Password #card</h3>
+collapsed:: true
+<ul>
+<li>One highly common method of authentication is the use of a username and password combination to identify the user and the permissions associated with the user.</li>
+</ul>
+</li>
+<li>
+<h3 id="personal-identification-number-pin-card">Personal Identification Number (PIN) #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T10:00:48.241Z
+card-last-reviewed:: 2024-05-22T19:00:48.242Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A PIN is a password designed for simplifying the login process while still retaining security</li>
+<li>A PIN is also often used in two-factor authentication (2FA) and multi-factor authentication (MFA).</li>
+</ul>
+</li>
+<li>
+<h3 id="fingerprint-card">Fingerprint #card</h3>
+collapsed:: true
+<ul>
+<li>A fingerprint scanner is a biometric method of authentication that can be used as a stand-alone authentication method or in 2FA/MFA.</li>
+</ul>
+</li>
+<li>
+<h3 id="facial-recognition-card">Facial Recognition #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-29T15:08:36.097Z
+card-last-reviewed:: 2024-03-25T15:08:36.098Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Facial recognition uses facial-scanning technology to identify a user and can be used as a standalone authentication method or in 2FA/MFA.</li>
+</ul>
+</li>
+<li>
+<h3 id="single-sign-on-sso-card">Single Sign-On (SSO) #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T13:42:38.305Z
+card-last-reviewed:: 2024-03-27T13:42:38.306Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>SSO is an authentication technique that uses a <strong>single authentication method</strong> to provide access to all applications and systems that the user may need, reducing the need for the user to remember multiple login and password credentials for various applications.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="new-technology-file-system-ntfs-vs-share-permissions-card">New Technology File System (NTFS) vs. Share Permissions #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-01T18:04:53.413Z
+card-last-reviewed:: 2024-03-28T18:04:53.413Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>The NTFS should be used whenever possible as it will provide the most control over data resources</li>
+<li>The advantage of using NTFS permissions over share permissions is that they are applied to both local users and network users and they are based on the permissions granted to an individual user at the Windows logon</li>
+<li><strong>Share permissions</strong> are not applied to users who log in locally to the machine.</li>
+<li>
+<h3 id="file-and-folder-attributes-card">File and Folder Attributes #card</h3>
+collapsed:: true
+<ul>
+<li>It’s possible to encrypt individual files and folders on a computer using the <strong>Encrypted File System (EFS)</strong> that is built into professional versions of Windows</li>
+<li>This can be done from the <strong>Advanced Attributes</strong> dialog box for the files and folders.</li>
+</ul>
+</li>
+<li>
+<h3 id="inheritance-card">Inheritance #card</h3>
+collapsed:: true
+<ul>
+<li>Rather than needing to specify permissions on each and every file and folder, administrators can configure inheritance</li>
+<li>Inheritance allows files and folders within another folder to inherit the permissions of the top-level folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="run-as-administrator-vs-standard-user-card">Run as Administrator vs. Standard User #card</h2>
+collapsed:: true
+<ul>
+<li>Running the system as <strong>administrator</strong> allows for complete access and control while a <strong>standard user</strong> has more limited access and permissions</li>
+<li>The administrator mode should only be used if absolutely necessary since running as administrator provides complete access to the system</li>
+<li>The standard user should be used for daily activities.</li>
+<li>
+<h3 id="user-account-control-uac-card">User Account Control (UAC) #card</h3>
+collapsed:: true
+<ul>
+<li>When a user wants to run a program that requires an administrator to run, they’ll receive a UAC pop-up</li>
+<li>This <strong>pop-up</strong> will request an administrator password before the program will run</li>
+<li>UAC can be beneficial as it forces an administrator to approve a program before it is run or installed</li>
+<li>This can come in handy when users who are not particularly tech savvy try to download or run programs that might end up being malicious.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="encrypting-file-system-efs-card">Encrypting File System (EFS) #card</h2>
+collapsed:: true
+<ul>
+<li>The EFS is a feature that is available in professional versions of Windows</li>
+<li>EFS makes it possible to encrypt individual files and folders with just the click of a button</li>
+<li>EFS can be configured in the Advanced Attributes dialog box of a file or folder.</li>
+</ul>
+</li>
+<li>
+<h2 id="bitlocker-card">BitLocker® #card</h2>
+collapsed:: true
+<ul>
+<li>BitLocker is a program that offers <strong>full drive encryption</strong></li>
+<li>Unlike EFS, which encrypts individual files, BitLocker encrypts the entire drive</li>
+<li>BitLocker relies on the computer having a <strong>Trusted Platform Module (TPM)</strong> chip to function.</li>
+</ul>
+</li>
+<li>
+<h2 id="bitlocker-to-go-card">BitLocker To Go® #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T10:24:59.522Z
+card-last-reviewed:: 2024-04-02T19:24:59.522Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>BitLocker To Go is an encryption method like BitLocker that allows you to encrypt removable/portable drives, such as external hard drives and USB drives</li>
+<li>Unlike the full version BitLocker , BitLocker To Go does not require a TPM chip.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="workstation-security">[[Workstation Security]]</h1>
+<ul>
+<li>During the test, you will need to be able to take a given scenario about a workstation and develop appropriate security measures on a “best practice” level to optimally secure that workstation</li>
+<li>Here is some relevant information.</li>
+<li>
+<h2 id="data-at-rest-encryption-card">Data-At-Rest Encryption #card</h2>
+collapsed:: true
+<ul>
+<li>For comprehensive security, it is recommended to <strong>encrypt data at all times</strong>, even when data is at rest</li>
+<li>This protects data within the network in case of breach.</li>
+</ul>
+</li>
+<li>
+<h2 id="password-best-practices-card">Password Best Practices #card</h2>
+collapsed:: true
+<ul>
+<li>Passwords are one of the first lines of defense against an attacker</li>
+<li>It’s important to set strong and memorable passwords.</li>
+<li>
+<h3 id="complexity-requirements-card">Complexity Requirements #card</h3>
+collapsed:: true
+<ul>
+<li>Password best practices should include complexity requirements that deter users from creating short, simple, and easily cracked passwords.</li>
+<li>
+<h3 id="length-card">Length #card</h3>
+collapsed:: true
+<ul>
+<li>Setting longer password-length requirements increases the security of the passwords</li>
+<li>Most security experts feel that a <strong>12 character minimum</strong> should be set, although many organizations use an eight-character length requirement.</li>
+</ul>
+</li>
+<li>
+<h3 id="character-types-card">Character Types #card</h3>
+collapsed:: true
+<ul>
+<li>Requiring multiple character types in a password increases its security</li>
+<li>These character types may include <strong>digits, upper and lowercase letters, or special characters</strong>, such as % or @.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="expiration-requirements-card">Expiration Requirements #card</h3>
+collapsed:: true
+<ul>
+<li>Users should be required to change their password at <strong>regular intervals</strong></li>
+<li>This is enforced using a password-expiration policy</li>
+<li>Common intervals are every 30, 60, or 90 days.</li>
+</ul>
+</li>
+<li>
+<h3 id="basic-inputoutput-system-biosunified-extensible-firmware-interface-uefi-passwords-card">Basic Input/Output System (BIOS)/Unified Extensible Firmware Interface (UEFI) Passwords #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:36:36.673Z
+card-last-reviewed:: 2024-04-02T17:36:36.673Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>BIOS and UEFI passwords can be set to prevent individuals from gaining unauthorized access to the BIOS configuration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="end-user-best-practices-card">End-User Best Practices #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:13:20.443Z
+card-last-reviewed:: 2024-04-02T17:13:20.444Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Educating the end-user about cybersecurity best practices is critical to network security</li>
+<li>It is important that <em>all</em> users receive this education.</li>
+<li>
+<h3 id="use-screensaver-locks-card">Use Screensaver Locks #card</h3>
+collapsed:: true
+<ul>
+<li>For individuals who use screensavers, it’s a good idea to set a screensaver password</li>
+<li>This will require a password to reenter the computer after the screensaver has come up</li>
+<li>The screensaver then works similarly to locking the computer.</li>
+</ul>
+</li>
+<li>
+<h3 id="log-off-when-not-in-use-card">Log Off When Not in Use #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-29T15:10:02.617Z
+card-last-reviewed:: 2024-03-25T15:10:02.617Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Cybersecurity best practices include training end-users to log off of network-connected devices when not in use.</li>
+</ul>
+</li>
+<li>
+<h3 id="secureprotect-critical-hardware-card">Secure/Protect Critical Hardware #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T13:44:28.175Z
+card-last-reviewed:: 2024-03-27T13:44:28.175Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Critical hardware (e.g., laptops) should be equipped with multiple security measures, such as logon time restrictions, time-out policies, and failed-login lockouts.</li>
+</ul>
+</li>
+<li>
+<h3 id="secure-personally-identifiable-information-pii-and-passwords-card">Secure Personally Identifiable Information (PII) and Passwords #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-01T18:14:18.871Z
+card-last-reviewed:: 2024-03-28T18:14:18.872Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Passwords and PII can be easily extracted through end-user negligence, such as writing a password on a sticky note or leaving printouts with PII on printers in an easily accessible area</li>
+<li>Users should be instructed <em>not</em> to do these things.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="account-management-card">Account Management #card</h2>
+collapsed:: true
+<ul>
+<li>Administrators are in charge of ensuring the security of workstations using various policies</li>
+<li>They define these policies and monitor and enforce them</li>
+<li>The following are important considerations regarding account management.</li>
+<li>
+<h3 id="restrict-user-permissions-card">Restrict User Permissions #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T09:40:44.914Z
+card-last-reviewed:: 2024-05-22T18:40:44.914Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Organizations should always use the <strong>principle of least privilege</strong></li>
+<li>This means that users should only be given access to the resources that they need in order to complete their jobs and nothing more</li>
+<li>Having strong permissions helps to prevent unauthorized access whether intentional or accidental.</li>
+</ul>
+</li>
+<li>
+<h3 id="restrict-login-times-card">Restrict Login Times #card</h3>
+collapsed:: true
+<ul>
+<li>If your organization only has users working between certain hours of the day (for example, between 9 a.m</li>
+<li>and 5 p.m.), one good security restriction to put in place is logon time restrictions</li>
+<li>It’s possible to put policies in place that restrict users from logging into a computer outside their <strong>normal working hours</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="disable-guest-account-card">Disable Guest Account #card</h3>
+collapsed:: true
+<ul>
+<li>The Guest account on Windows machines is a low-privilege account for guest users</li>
+<li>If this account will not be used, it’s best to immediately disable it</li>
+<li>Even though it is a low-privilege account, attackers have ways to escalate privilege if they are given access to a machine.</li>
+</ul>
+</li>
+<li>
+<h3 id="use-failed-attempts-lockout-card">Use Failed Attempts Lockout #card</h3>
+collapsed:: true
+<ul>
+<li>A common way to combat brute-force password attacks is to implement a lock-out policy</li>
+<li>After a specified number of failed attempts at logging in, the account will lock and an administrator will have to unlock it.</li>
+</ul>
+</li>
+<li>
+<h3 id="use-screen-locktimeout-card">Use Screen Lock/Timeout #card</h3>
+collapsed:: true
+<ul>
+<li>Leaving a computer unlocked while you are away is dangerous</li>
+<li>Any person can come up and begin working on your computer without your knowledge</li>
+<li>For this reason, organizations should implement a screen lock or screen timeout policy</li>
+<li>This policy would force the computer to lock after a few minutes of inactivity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="change-default-administrators-user-accountpassword-card">Change Default Administrator’s User Account/Password #card</h2>
+collapsed:: true
+<ul>
+<li>Default passwords should never be used in any circumstances</li>
+<li>It’s best to immediately change default passwords or disable default accounts altogether and create new accounts.</li>
+</ul>
+</li>
+<li>
+<h2 id="disable-autorun-card">Disable AutoRun #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T13:44:44.305Z
+card-last-reviewed:: 2024-03-27T13:44:44.305Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Certain programs or discs will run immediately when put into the computer</li>
+<li>It is best practice to disable the AutoRun and AutoPlay features on the operating system</li>
+<li>This is because it gives you time to evaluate the item before allowing it to run on the PC.</li>
+</ul>
+</li>
+<li>
+<h2 id="disable-autoplay-card">Disable AutoPlay #card</h2>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-05T07:52:24.696Z
+card-last-reviewed:: 2024-04-02T19:52:24.697Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>AutoPlay is disabled by default in the Windows OS</li>
+<li>AutoPlay does not look in the autorun.inf file for permissions and will prompt the user to choose to execute or not.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="securing-mobile-and-embedded-devices">[[Securing Mobile and Embedded Devices]]</h1>
+<ul>
+<li>Mobile and embedded devices have become an important part of business as we know it</li>
+<li>Employees are expected to be available at all times via their phone</li>
+<li>But with the new wave of mobile devices in business, organizations must consider the risks</li>
+<li>You must be able to identify common methods for securing mobile and embedded devices.</li>
+<li>
+<h2 id="screen-locks-card">Screen Locks #card</h2>
+collapsed:: true
+<ul>
+<li>When a user has access to business resources via a mobile device, it’s necessary to ensure that the mobile device is just as secure as a workstation would be</li>
+<li>This means having a lock on the screen so that if the phone is lost or stolen, attackers don’t have access to the business resources.</li>
+<li>
+<h3 id="facial-recognition-card-1">Facial Recognition #card</h3>
+collapsed:: true
+<ul>
+<li>Screen locks can be enabled with facial recognition that uses biometric facial features to unlock a screen</li>
+<li>Facial recognition is common on mobile devices but is prone to false negatives and, less commonly, false positives.</li>
+</ul>
+</li>
+<li>
+<h3 id="pin-codes-card">PIN Codes #card</h3>
+collapsed:: true
+<ul>
+<li>A PIN can be set that must be entered correctly to gain access to the mobile device</li>
+<li>A PIN code is often used in conjunction with a biometric authentication method for MFA to provide added security to a device.</li>
+</ul>
+</li>
+<li>
+<h3 id="fingerprint-card-1">Fingerprint #card</h3>
+collapsed:: true
+<ul>
+<li>Some devices may use a fingerprint scan as authentication for mobile device access</li>
+<li>Fingerprint scans are trending down in mobile devices with the advancements in facial recognition and the front-facing camera.</li>
+</ul>
+</li>
+<li>
+<h3 id="pattern-card">Pattern #card</h3>
+collapsed:: true
+<ul>
+<li>A pattern lock is a method of authentication that requires the user to draw a specified pattern in a 3X3 matrix of dots for access to the mobile device</li>
+<li>A pattern lock, like a PIN, can be used in conjunction with biometric authentication for MFA</li>
+<li>Some users, however, may choose a very simple pattern to make accessing the device easier, which can be easily discovered, similar to using the word “password” as your password.</li>
+</ul>
+</li>
+<li>
+<h3 id="swipe-card">Swipe #card</h3>
+collapsed:: true
+<ul>
+<li>A swipe lock is not an actual locking method</li>
+<li>The swipe merely requires the user to swipe the screen to gain access and should not be used for securing mobile devices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="remote-wipes-card">Remote Wipes #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-30T19:55:07.113Z
+card-last-reviewed:: 2024-03-26T19:55:07.114Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Organizations are able to remotely wipe devices after they are given remote administration control</li>
+<li>This is useful if a user reports that their phone has been lost or stolen.</li>
+</ul>
+</li>
+<li>
+<h2 id="locator-applications-card">Locator Applications #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-01T19:24:48.723Z
+card-last-reviewed:: 2024-03-28T19:24:48.724Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Locator applications can help individuals find their devices if they have been lost or stolen</li>
+<li>These applications use GPS technology</li>
+<li>The location services on the device must be turned on for these applications to work.</li>
+</ul>
+</li>
+<li>
+<h2 id="os-updates-card">OS Updates #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T10:01:30.509Z
+card-last-reviewed:: 2024-05-22T19:01:30.509Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Whenever an update is available for a mobile device, it <strong>should be installed</strong></li>
+<li>Applications on the phone should also be kept up to date</li>
+<li>When vulnerabilities are found, developers will put out updates to <strong>fix the vulnerabilities</strong></li>
+<li>This is why devices must be kept up to date.</li>
+</ul>
+</li>
+<li>
+<h2 id="device-encryption-card">Device Encryption #card</h2>
+collapsed:: true
+<ul>
+<li>Mobile devices can also be encrypted to protect the data that is stored on the device</li>
+<li>This adds another layer of protection in the case the device is lost or stolen.</li>
+</ul>
+</li>
+<li>
+<h2 id="remote-backup-applications-card">Remote Backup Applications #card</h2>
+collapsed:: true
+<ul>
+<li>Some organizations may choose to remotely back up the mobile devices that store data</li>
+<li>Because mobile devices are typically used during travel, they are more likely to be lost or stolen.</li>
+</ul>
+</li>
+<li>
+<h2 id="failed-login-attempts-restrictions-card">Failed Login Attempts Restrictions #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T09:56:32.588Z
+card-last-reviewed:: 2024-05-22T18:56:32.589Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>In the same way that you can lock a user’s account on a computer, you can lock an account on a mobile device</li>
+<li>Mobile devices should lock the ability to log in after a specified number of failed attempts.</li>
+</ul>
+</li>
+<li>
+<h2 id="antivirusanti-malware-card">Antivirus/Anti-Malware #card</h2>
+collapsed:: true
+<ul>
+<li>In the same way that you should protect your computer from viruses and malware using antivirus and anti-malware software, you can download mobile antivirus and anti-malware applications</li>
+<li>There are not as many providers for mobile antivirus and anti-malware as there are for computers, but the market is growing.</li>
+</ul>
+</li>
+<li>
+<h2 id="firewalls-card">Firewalls #card</h2>
+collapsed:: true
+<ul>
+<li>A mobile firewall acts as a screen between mobile devices and an organization’s network</li>
+<li>It will monitor all inbound network traffic before it is allowed to access the network system.</li>
+</ul>
+</li>
+<li>
+<h2 id="policies-and-procedures-card">Policies and Procedures #card</h2>
+collapsed:: true
+<ul>
+<li>Policies should be put in place by an organization so that users understand exactly how to use mobile devices on the organization’s network.</li>
+<li>
+<h3 id="bring-your-own-device-byod-vs-corporate-owned-card">Bring Your Own Device (BYOD) vs. Corporate-Owned #card</h3>
+collapsed:: true
+<ul>
+<li><strong>Corporate-owned devices</strong> are completely under the control of an organization</li>
+<li>In this scenario, the organization can specify policies about which applications can be installed as well as what the device can be used for</li>
+<li>However, many organizations are moving to a BYOD environment</li>
+<li><strong>BYOD environments</strong> are more complicated to manage because, while policies can be put in place for accessing <em>corporate resources</em>, ultimately, the <em>device</em> is owned by the end user.</li>
+</ul>
+</li>
+<li>
+<h3 id="profile-security-requirements-card">Profile Security Requirements #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-31T18:24:02.124Z
+card-last-reviewed:: 2024-03-27T18:24:02.124Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>When accessing an organization’s resources, users must meet all profile security requirements set forth by the organization.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="internet-of-things-iot-card">Internet of Things (IoT) #card</h2>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-05-25T06:38:32.934Z
+card-last-reviewed:: 2024-05-22T18:38:32.935Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>IoT devices are notoriously difficult to secure</li>
+<li>Personal IoT devices should not be kept on a separate network from the business network if possible.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="data-destruction-and-disposal">[[Data Destruction and Disposal]]</h1>
+<ul>
+<li>As discussed earlier in this guide, dumpster diving is a method of obtaining private information or data from the trash</li>
+<li>Let’s look at how to properly dispose of computer equipment</li>
+<li>Questions of this type will be scenario based.</li>
+<li>
+<h2 id="physical-destruction-card">Physical Destruction #card</h2>
+<ul>
+<li>One of the only ways to ensure that data is no longer accessible is to completely destroy the device the data is stored on</li>
+<li>Physical destruction is used when the data on the device needs to be completely removed or destroyed.</li>
+<li>
+<h3 id="drilling-card">Drilling #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:12:04.603Z
+card-last-reviewed:: 2024-04-02T17:12:04.605Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Drilling is a destruction method where a drill is used to physically put a hole into the device, destroying the internal components of the device.</li>
+</ul>
+</li>
+<li>
+<h3 id="shredding-card">Shredding #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T10:00:44.721Z
+card-last-reviewed:: 2024-05-22T19:00:44.722Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>To prevent dumpster divers from stealing private information, organizations should have a shredding policy in place to shred all documents before throwing them in the trash.</li>
+</ul>
+</li>
+<li>
+<h3 id="degaussing-card">Degaussing #card</h3>
+collapsed:: true
+<ul>
+<li>Using an electromagnet is one way to wipe a hard drive</li>
+<li>However, it’s often still possible for individuals to pull data off of a hard drive even though it’s been wiped</li>
+<li>One wipe using a magnet is not enough</li>
+<li>This process, known as degaussing, <strong>must be done over and over</strong> again.</li>
+</ul>
+</li>
+<li>
+<h3 id="incinerating-card">Incinerating #card</h3>
+collapsed:: true
+<ul>
+<li>Some organizations may choose to completely incinerate their devices to ensure that data can not be pulled off the devices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="recycling-or-repurposing-card">Recycling or Repurposing #card</h2>
+collapsed:: true
+<ul>
+<li>Rather than destroy the devices, many organizations will take the route of recycling or repurposing the devices</li>
+<li>Best practices should be followed to ensure the safety of the data on the repurposed or recycled device.</li>
+<li>
+<h3 id="erasingwiping-card">Erasing/Wiping #card</h3>
+collapsed:: true
+<ul>
+<li>Before recycling or reuse, all data should be completely wiped or erased to prevent data breach.</li>
+<li><em>Note:</em> Standard wiping or erasing of a drive does not actually remove the data from the drive or device, it merely marks the space being wiped or erased as available for overwriting</li>
+<li>Data may still be recovered before it is actually overwritten</li>
+<li>To fully wipe or erase a drive, the data needs to be <strong>overwritten with zeros or nonsense</strong> before being marked as available.</li>
+</ul>
+</li>
+<li>
+<h3 id="low-level-formatting-card">Low-Level Formatting #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T14:05:26.106Z
+card-last-reviewed:: 2024-03-27T14:05:26.107Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Low-level formatting can be used to completely wipe a disk</li>
+<li>This formatting method takes the drive back to the very beginning of drive controller chip and drive interaction and occurs prior to partitioning.</li>
+</ul>
+</li>
+<li>
+<h3 id="standard-formatting-card">Standard Formatting #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T10:44:21.309Z
+card-last-reviewed:: 2024-04-02T19:44:21.309Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Standard formatting does not erase the data on the disk but marks the space the data occupies as available for use</li>
+<li>Standard formatting is not a secure way of wiping a drive.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="outsourcing-concepts-card">Outsourcing Concepts #card</h2>
+collapsed:: true
+<ul>
+<li>Outsourcing data and device destruction is a valid method of data destruction but comes with considerations of its own.</li>
+<li>
+<h3 id="third-party-vendor-card">Third-Party Vendor #card</h3>
+collapsed:: true
+<ul>
+<li>A third-party vendor can be contracted to destroy or recycle a device or drive</li>
+<li>When using third-party vendors, be aware that there is a potential for data leakage either through a mismanaged wipe or insider threats in the vendor.</li>
+</ul>
+</li>
+<li>
+<h3 id="certification-of-destructionrecycling-card">Certification of Destruction/Recycling #card</h3>
+collapsed:: true
+<ul>
+<li>When an organization uses a third-party vendor to dispose and destroy their devices, they may receive a certificate of destruction stating that the items have been recycled and all data storage components have been wiped or destroyed pursuant to all applicable laws, including environmental and waste-management regulations.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="security-for-small-officehome-office-soho-wireless-and-wired-networks">[[Security for Small Office/Home Office (SOHO) Wireless and Wired Networks]]</h1>
+<ul>
+<li>It will also be important for you to manage a scenario related to a SOHO situation and devise best practice security measures for that environment, whether it is wired or wireless</li>
+<li>Questions of this type will be scenario based.</li>
+<li>
+<h2 id="home-router-settings-card">Home Router Settings #card</h2>
+<ul>
+<li>Routers used in the home can be <strong>configured for security</strong> and best practices should be followed</li>
+<li>While most home routers are considered to be plug and play, you should always access the router to change the default password and manage updates and other security settings prior to use.</li>
+<li>
+<h3 id="change-default-passwords-card">Change Default Passwords #card</h3>
+collapsed:: true
+<ul>
+<li>It is easy to do an online search and find the default usernames and passwords of wireless devices</li>
+<li>When setting up a wireless network, ensure that the default passwords are not being used.</li>
+</ul>
+</li>
+<li>
+<h3 id="ip-filtering-card">IP Filtering #card</h3>
+collapsed:: true
+<ul>
+<li>IP filtering, also referred to as <strong>firewall rules</strong>, should be used on a home router to secure the internal network from an external network, such as the internet.</li>
+</ul>
+</li>
+<li>
+<h3 id="firmware-updates-card">Firmware Updates #card</h3>
+collapsed:: true
+<ul>
+<li>Just like any other device we’ve talked about, the firmware on a wireless device should be kept up to date</li>
+<li>Whenever the latest updates are not installed on a device, that device is susceptible to attacks.</li>
+</ul>
+</li>
+<li>
+<h3 id="content-filtering-card">Content Filtering #card</h3>
+collapsed:: true
+<ul>
+<li>Some wireless routers will come with built-in content filtering and <strong>parental controls</strong></li>
+<li>These can be used to block users from navigating to sites that could contain malware.</li>
+</ul>
+</li>
+<li>
+<h3 id="wireless-placementsecure-locations-card">Wireless Placement/Secure Locations #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-03-29T15:19:07.347Z
+card-last-reviewed:: 2024-03-25T15:19:07.348Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>Ideally, when setting up a wireless network, you want the network to span your entire building or workspace, without leaking outside of your organization</li>
+<li>It’s a difficult task to do perfectly, but it can be achieved by doing wireless network surveys and ensuring that your antennas and access points are placed in the right locations.</li>
+</ul>
+</li>
+<li>
+<h3 id="dynamic-host-configuration-protocol-dhcp-reservations-card">Dynamic Host Configuration Protocol (DHCP) Reservations #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T18:25:12.971Z
+card-last-reviewed:: 2024-03-27T18:25:12.972Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>DHCP reservations can be used to create a dynamically static-assigned IP address and is commonly used with network printers.</li>
+</ul>
+</li>
+<li>
+<h3 id="static-wide-area-network-wan-ip-card">Static Wide-Area Network (WAN) IP #card</h3>
+collapsed:: true
+<ul>
+<li>It is generally a good idea to set a static IP address on your wireless router so that, in the event of an internet outage or power outage, the IP address will not change when the device is back online.</li>
+</ul>
+</li>
+<li>
+<h3 id="universal-plug-and-play-upnp-card">Universal Plug and Play (UPnP) #card</h3>
+card-last-interval:: 2.52
+card-repeats:: 1
+card-ease-factor:: 2.36
+card-next-schedule:: 2024-04-05T07:52:13.472Z
+card-last-reviewed:: 2024-04-02T19:52:13.473Z
+card-last-score:: 3
+collapsed:: true
+<ul>
+<li>UPnP is designed to make connecting devices to a network simpler</li>
+<li>To protect a SOHO, UPnP should be required to ask permission prior to connection to the SOHO network or network-connected device.</li>
+</ul>
+</li>
+<li>
+<h3 id="screened-subnet-card">Screened Subnet #card</h3>
+collapsed:: true
+<ul>
+<li>A screened subnet, also referred to as a <strong>demilitarized zone (DMZ)</strong>, creates a separation between the exterior and interior of a network where a communication can take place without placing the interior of the network at risk.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="wireless-specific-card">Wireless-Specific #card</h2>
+collapsed:: true
+<ul>
+<li>There are some security measures specific to wireless networks</li>
+<li>Let’s take a look at some of them.</li>
+<li>
+<h3 id="changing-the-service-set-identifier-ssid-card">Changing the Service Set Identifier (SSID) #card</h3>
+collapsed:: true
+<ul>
+<li>Keeping the default SSID can provide a potential attacker with information they need to target you</li>
+<li>For example, the default SSID may show exactly what type of wireless device you are using</li>
+<li>It’s best to change the SSID before you begin using the wireless network.</li>
+</ul>
+</li>
+<li>
+<h3 id="disabling-ssid-broadcast-card">Disabling SSID Broadcast #card</h3>
+collapsed:: true
+<ul>
+<li>Disabling the SSID is one way to prevent attackers from finding your wireless network</li>
+<li>It requires a few extra steps for getting yourself and other users connected to the network, but it does add that additional layer of protection</li>
+<li>Experienced hackers will still be able to locate hidden networks, but generally attackers go after the low-hanging fruit.</li>
+</ul>
+</li>
+<li>
+<h3 id="encryption-settings-card">Encryption Settings #card</h3>
+collapsed:: true
+<ul>
+<li>Setting wireless encryption secures your wireless network with an authentication protocol</li>
+<li>Wireless encryption requires both a password and an encrypted key when you connect</li>
+<li>The encryption key can generally be located in the setup page of a wireless router.</li>
+</ul>
+</li>
+<li>
+<h3 id="disabling-guest-access-card">Disabling Guest Access #card</h3>
+collapsed:: true
+<ul>
+<li>Guest access should be disabled on the wireless network</li>
+<li>While guest access is designed to allow minimal permissions, it can easily be exploited for privilege escalation.</li>
+</ul>
+</li>
+<li>
+<h3 id="changing-channels-card">Changing Channels #card</h3>
+collapsed:: true
+<ul>
+<li>Wireless local area networks (WLANs) operate on two primary frequency channels, 2.4 GHz and 5 GHz</li>
+<li>For security, the channel can be changed to reduce the possibility of overlap in the network.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="firewall-settings-card">Firewall Settings #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-30T19:56:17.744Z
+card-last-reviewed:: 2024-03-26T19:56:17.745Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>As with other network-connected devices, firewalls should be configured to provide the <strong>highest security possible</strong> for wireless networks.</li>
+<li>
+<h3 id="disabling-unused-ports-card">Disabling Unused Ports #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-31T18:28:21.930Z
+card-last-reviewed:: 2024-03-27T18:28:21.930Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Disabling ports that are not in use on the wireless router can prevent unauthorized parties from plugging in and gaining access to the entire network.</li>
+</ul>
+</li>
+<li>
+<h3 id="port-forwardingmapping-card">Port Forwarding/Mapping #card</h3>
+collapsed:: true
+<ul>
+<li>Port forwarding, also referred to as port mapping, is the configuration of ports on a device to allow or block port access</li>
+<li>Port forwarding/mapping can be configured on a wireless device in the same way that it is on a wired network.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="browser-security">[[Browser Security]]</h1>
+<ul>
+<li>Web browsers are one of the most used tools on the internet and require security considerations and best practices in and of themselves</li>
+<li>Questions in this section will be scenario based.</li>
+<li>
+<h2 id="browser-downloadinstallation-card">Browser Download/Installation #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:33:40.747Z
+card-last-reviewed:: 2024-04-02T17:33:40.748Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Browsers can be downloaded either online or offline</li>
+<li>An <strong>online browser download</strong> is an online link that installs a smaller installation application on a device</li>
+<li>The installation application then pulls the needed data for the rest of the browser from the internet via a live internet connection</li>
+<li>An <strong>offline browser download</strong> is a download of the complete installation package in a single file</li>
+<li>The initial offline installation download does require an active internet connection</li>
+<li>However, once the download is complete, it can be used to install the browser on additional devices without the need of an internet connection</li>
+<li>With either method, care must be taken to install a clean version of the browser.</li>
+<li>
+<h3 id="trusted-sources-card">Trusted Sources #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T10:00:38.033Z
+card-last-reviewed:: 2024-05-22T19:00:38.033Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Browsers should be downloaded and installed only from trusted sources, preferably through the official distributor.</li>
+<li>
+<h3 id="hashing-card">Hashing #card</h3>
+collapsed:: true
+<ul>
+<li>Hashing is one method of verifying the integrity of a downloaded browser installation</li>
+<li>This method creates a secure hash algorithm of the executable that is stored in a separate location and can be compared to the executable if the browser needs to be reinstalled.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="untrusted-sources-card">Untrusted Sources #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:16:23.992Z
+card-last-reviewed:: 2024-04-02T17:16:23.993Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Untrusted or unverified sources should not be used for browser installation or download</li>
+<li>To ensure a verified installation, go directly to the vendor page for the browser you wish to install</li>
+<li>Do not follow links within a non-vendor page for installation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="extensions-and-plug-ins-card">Extensions and Plug-ins #card</h2>
+collapsed:: true
+<ul>
+<li>Extensions and plug-ins are designed to make a browser more functional to the end user</li>
+<li>However, care must be taken when installing extensions and plug-ins.</li>
+<li>
+<h3 id="trusted-sources-card-1">Trusted Sources #card</h3>
+collapsed:: true
+<ul>
+<li>As with browser installation, trusted sources should be used when downloading and installing extensions and plug-ins.</li>
+</ul>
+</li>
+<li>
+<h3 id="untrusted-sources-card-1">Untrusted Sources #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-30T19:56:30.628Z
+card-last-reviewed:: 2024-03-26T19:56:30.629Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Untrusted sources, such as third-party links, should not be used for extension and plug-in installation</li>
+<li>Verify the source prior to installation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="password-managers-card">Password Managers #card</h2>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-01T19:32:22.736Z
+card-last-reviewed:: 2024-03-28T19:32:22.736Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A password or credential manager is offered by many browsers as a way to store credentials and passwords</li>
+<li>Only use a password manager on a private and secure device.</li>
+</ul>
+</li>
+<li>
+<h2 id="secure-connectionssitesvalid-certificates-card">Secure Connections/Sites—Valid Certificates #card</h2>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-05-28T09:39:35.146Z
+card-last-reviewed:: 2024-05-22T18:39:35.146Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Web browsers identify secure connections through certificate validation</li>
+<li>Try to avoid connections or sites with invalid certificates.</li>
+</ul>
+</li>
+<li>
+<h2 id="settings-card">Settings #card</h2>
+collapsed:: true
+<ul>
+<li>Like firewall settings, a web browser has browser-specific security settings that can be configured to provide the highest level of security.</li>
+<li>
+<h3 id="pop-up-blocker-card">Pop-Up Blocker #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:35:47.886Z
+card-last-reviewed:: 2024-04-02T17:35:47.886Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>A pop-up blocker is designed to prevent pop-ups and pop-unders from appearing</li>
+<li>Pop-ups are blocked by default on most browsers but may need to be allowed for specific websites that require pop-ups for functionality.</li>
+</ul>
+</li>
+<li>
+<h3 id="clearing-browsing-data-card">Clearing Browsing Data #card</h3>
+card-last-interval:: 5.64
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-04-08T08:11:26.481Z
+card-last-reviewed:: 2024-04-02T17:11:26.481Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Clearing browser data removes the data that was stored during browsing and should be used to maintain data privacy</li>
+<li>The frequency of clearing browser data is dependent upon the usage of the device</li>
+<li>For example, if the browser is on your home computer that only you have access to, it is not as vital to clear browser data after browsing</li>
+<li>However, if you are using a public browser, such as at the library, the browser history should be cleared upon each usage.</li>
+</ul>
+</li>
+<li>
+<h3 id="clearing-cache-card">Clearing Cache #card</h3>
+collapsed:: true
+<ul>
+<li>The browser cache is where data is placed when rendering a website for quick retrieval</li>
+<li>The cache should be cleared frequently to maintain browser security.</li>
+</ul>
+</li>
+<li>
+<h3 id="private-browsing-mode-card">Private-Browsing Mode #card</h3>
+collapsed:: true
+<ul>
+<li>Private-browsing mode does not store any web browsing data and can be used for security as well as privacy</li>
+<li>However, private-browsing mode is <strong>not completely private</strong></li>
+<li>Private-browsing mode merely keeps the browsing data on a device secret for that particular device</li>
+<li>All visited websites will still receive any information that was collected by the website.</li>
+</ul>
+</li>
+<li>
+<h3 id="sign-inbrowser-data-synchronization-card">Sign-In/Browser Data Synchronization #card</h3>
+collapsed:: true
+<ul>
+<li>Browser synchronization allows for the synchronization of a user’s browser across multiple devices</li>
+<li>Caution should be used when synchronizing browsers</li>
+<li>Do not synchronize on public devices or, if synchronization is required, remember to log off and delete the history and cache before leaving the browser.</li>
+</ul>
+</li>
+<li>
+<h3 id="ad-blockers-card">Ad Blockers #card</h3>
+card-last-interval:: 4
+card-repeats:: 1
+card-ease-factor:: 2.6
+card-next-schedule:: 2024-03-29T15:35:51.578Z
+card-last-reviewed:: 2024-03-25T15:35:51.578Z
+card-last-score:: 5
+collapsed:: true
+<ul>
+<li>Ad blockers are designed to prevent spam advertisements in browsers</li>
+<li>Ad blockers work by comparing a URL to a set list of blacklisted or whitelisted URLs</li>
+<li>If the URL is <strong>blacklisted</strong>, it is denied download on the browser</li>
+<li>URLs can be <strong>whitelisted</strong> by users to allow them through the ad blocker</li>
+<li>For example, an ad blocker may ask the browser if they want to see advertisements from ABC Company</li>
+<li>If the user agrees, the URL for ABC Company is whitelisted and allowed access.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="//localhost:1313/aplusnotes/a&#43;-220-1102-security.sync-conflict-20240603-100036-ozmjbcx/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Hardware &amp; Network</a>
+        
+	    
+            <div class="next-post">
+                <a href="//localhost:1313/aplusnotes/a&#43;-220-1102-operational-procedures/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Hardware &amp; Network</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#physical-security-card">Physical Security #card</a>
+      <ul>
+        <li><a href="#access-control-vestibule-card">Access Control Vestibule #card</a></li>
+        <li><a href="#badge-reader-card">Badge Reader #card</a></li>
+        <li><a href="#video-surveillance-card">Video Surveillance #card</a></li>
+        <li><a href="#alarm-systems-card">Alarm Systems #card</a></li>
+        <li><a href="#motion-sensors-card">Motion Sensors #card</a></li>
+        <li><a href="#door-locks-card">Door Locks #card</a></li>
+        <li><a href="#equipment-locks-card">Equipment Locks #card</a></li>
+        <li><a href="#guards-card">Guards #card</a></li>
+        <li><a href="#bollards-card">Bollards #card</a></li>
+        <li><a href="#fences-card">Fences #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#physical-security-for-staff-card">Physical Security for Staff #card</a>
+      <ul>
+        <li><a href="#key-fobs-card">Key Fobs #card</a></li>
+        <li><a href="#smart-cards-card">Smart Cards #card</a></li>
+        <li><a href="#keys-card">Keys #card</a></li>
+        <li><a href="#biometrics-card">Biometrics #card</a></li>
+        <li><a href="#retina-scanner-card">Retina Scanner #card</a></li>
+        <li><a href="#fingerprint-scanner-card">Fingerprint Scanner #card</a></li>
+        <li><a href="#palmprint-scanner-card">Palmprint Scanner #card</a></li>
+        <li><a href="#lighting-card">Lighting #card</a></li>
+        <li><a href="#magnetometers-card">Magnetometers #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#logical-security-card">Logical Security #card</a>
+      <ul>
+        <li><a href="#principle-of-least-privilege-card">Principle of Least Privilege #card</a></li>
+        <li><a href="#access-control-lists-acls-card">Access-Control Lists (ACLs) #card</a></li>
+        <li><a href="#multi-factor-authentication-mfa-card">Multi-Factor Authentication (MFA) #card</a></li>
+        <li><a href="#email-card">Email #card</a></li>
+        <li><a href="#hard-token-card">Hard Token #card</a></li>
+        <li><a href="#soft-token-card">Soft Token #card</a></li>
+        <li><a href="#short-message-service-sms-verification-card">Short Message Service (SMS) Verification #card</a></li>
+        <li><a href="#voice-call-card">Voice Call #card</a></li>
+        <li><a href="#authenticator-application-card">Authenticator Application #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#mobile-device-management-mdm-card">Mobile Device Management (MDM) #card</a></li>
+    <li><a href="#active-directory-ad-card">Active Directory (AD) #card</a>
+      <ul>
+        <li><a href="#login-script-card">Login Script #card</a></li>
+        <li><a href="#domain-card">Domain #card</a></li>
+        <li><a href="#group-policyupdates-card">Group Policy/Updates #card</a></li>
+        <li><a href="#organizational-units-ou-card">Organizational Units (OU) #card</a></li>
+        <li><a href="#home-folder-card">Home Folder #card</a></li>
+        <li><a href="#folder-redirection-card">Folder Redirection #card</a></li>
+        <li><a href="#security-groups-card">Security Groups #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#protocols-and-encryption-card">Protocols and Encryption #card</a>
+      <ul>
+        <li><a href="#wi-fi-protected-access-2-wpa2-card">Wi-Fi Protected Access 2 (WPA2) #card</a></li>
+        <li><a href="#wpa3-card">WPA3 #card</a></li>
+        <li><a href="#temporal-key-integrity-protocol-tkip-card">Temporal Key Integrity Protocol (TKIP) #card</a></li>
+        <li><a href="#advanced-encryption-standard-aes-card">Advanced Encryption Standard (AES) #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#authentication-card">Authentication #card</a>
+      <ul>
+        <li><a href="#remote-authentication-dial-in-user-service-radius-card">Remote Authentication Dial-In User Service (RADIUS) #card</a></li>
+        <li><a href="#terminal-access-controller-access-control-system-tacacs-card">Terminal Access Controller Access-Control System (TACACS) #card</a></li>
+        <li><a href="#kerberos-card">Kerberos #card</a></li>
+        <li><a href="#multi-factor-card">Multi-Factor #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#malware-card">Malware #card</a>
+      <ul>
+        <li><a href="#trojan-card">Trojan #card</a></li>
+        <li><a href="#rootkit-card">Rootkit #card</a></li>
+        <li><a href="#virus-card">Virus #card</a></li>
+        <li><a href="#spyware-card">Spyware #card</a></li>
+        <li><a href="#ransomware-card">Ransomware #card</a></li>
+        <li><a href="#keylogger-card">Keylogger #card</a></li>
+        <li><a href="#boot-sector-virus-card">Boot Sector Virus #card</a></li>
+        <li><a href="#cryptominers-card">Cryptominers #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-and-methods-card">Tools and Methods #card</a>
+      <ul>
+        <li><a href="#recovery-mode-card">Recovery Mode #card</a></li>
+        <li><a href="#antivirus-card">Antivirus #card</a></li>
+        <li><a href="#anti-malware-card">Anti-Malware #card</a></li>
+        <li><a href="#software-firewalls-card">Software Firewalls #card</a></li>
+        <li><a href="#anti-phishing-training-card">Anti-Phishing Training #card</a></li>
+        <li><a href="#user-education-card">User Education #card</a></li>
+        <li><a href="#os-reinstallation-card">OS Reinstallation #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#social-engineering-card">Social Engineering #card</a>
+      <ul>
+        <li><a href="#phishing-card">Phishing #card</a></li>
+        <li><a href="#vishing-card">Vishing #card</a></li>
+        <li><a href="#shoulder-surfing-card">Shoulder Surfing #card</a></li>
+        <li><a href="#whaling-card">Whaling #card</a></li>
+        <li><a href="#tailgating-card">Tailgating #card</a></li>
+        <li><a href="#impersonation-card">Impersonation #card</a></li>
+        <li><a href="#dumpster-diving-card">Dumpster Diving #card</a></li>
+        <li><a href="#evil-twin-card">Evil Twin #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#threats-card">Threats #card</a>
+      <ul>
+        <li><a href="#denial-of-service-dos-card">Denial of Service (DoS) #card</a></li>
+        <li><a href="#distributed-denial-of-service-ddos-card">Distributed Denial of Service (DDoS) #card</a></li>
+        <li><a href="#zero-day-attack-card">Zero-Day Attack #card</a></li>
+        <li><a href="#spoofing-card">Spoofing #card</a></li>
+        <li><a href="#on-path-attack-card">On-Path Attack #card</a></li>
+        <li><a href="#brute-force-attack-card">Brute-Force Attack #card</a></li>
+        <li><a href="#dictionary-attack-card">Dictionary Attack #card</a></li>
+        <li><a href="#insider-threat-card">Insider Threat #card</a></li>
+        <li><a href="#structured-query-language-sql-injection-card">Structured Query Language (SQL) Injection #card</a></li>
+        <li><a href="#cross-site-scripting-xss-card">Cross-Site Scripting (XSS) #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#vulnerabilities-card">Vulnerabilities #card</a>
+      <ul>
+        <li><a href="#non-compliant-systems-card">Non-Compliant Systems #card</a></li>
+        <li><a href="#unpatched-systems-card">Unpatched Systems #card</a></li>
+        <li><a href="#unprotected-systems-card">Unprotected Systems #card</a></li>
+        <li><a href="#end-of-life-eol-operating-systems-oss-card">End-of-Life (EOL) Operating Systems (OSs) #card</a></li>
+        <li><a href="#bring-your-own-device-byod-card">Bring Your Own Device (BYOD) #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#defender-antivirus-card">Defender Antivirus #card</a>
+      <ul>
+        <li><a href="#activatedeactivate-card">Activate/Deactivate #card</a></li>
+        <li><a href="#updated-definitions-card">Updated Definitions #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#firewall-card">Firewall #card</a>
+      <ul>
+        <li><a href="#activatedeactivate-card-1">Activate/Deactivate #card</a></li>
+        <li><a href="#port-security-card">Port Security #card</a></li>
+        <li><a href="#application-security-card">Application Security #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#users-and-groups-card">Users and Groups #card</a>
+      <ul>
+        <li><a href="#local-vs-microsoft-account-card">Local vs. Microsoft Account #card</a></li>
+        <li><a href="#standard-account-card">Standard Account #card</a></li>
+        <li><a href="#administrator-card">Administrator #card</a></li>
+        <li><a href="#guest-user-card">Guest User #card</a></li>
+        <li><a href="#power-user-card">Power User #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#login-os-options-card">Login OS Options #card</a>
+      <ul>
+        <li><a href="#username-and-password-card">Username and Password #card</a></li>
+        <li><a href="#personal-identification-number-pin-card">Personal Identification Number (PIN) #card</a></li>
+        <li><a href="#fingerprint-card">Fingerprint #card</a></li>
+        <li><a href="#facial-recognition-card">Facial Recognition #card</a></li>
+        <li><a href="#single-sign-on-sso-card">Single Sign-On (SSO) #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#new-technology-file-system-ntfs-vs-share-permissions-card">New Technology File System (NTFS) vs. Share Permissions #card</a>
+      <ul>
+        <li><a href="#file-and-folder-attributes-card">File and Folder Attributes #card</a></li>
+        <li><a href="#inheritance-card">Inheritance #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#run-as-administrator-vs-standard-user-card">Run as Administrator vs. Standard User #card</a>
+      <ul>
+        <li><a href="#user-account-control-uac-card">User Account Control (UAC) #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#encrypting-file-system-efs-card">Encrypting File System (EFS) #card</a></li>
+    <li><a href="#bitlocker-card">BitLocker® #card</a></li>
+    <li><a href="#bitlocker-to-go-card">BitLocker To Go® #card</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#data-at-rest-encryption-card">Data-At-Rest Encryption #card</a></li>
+    <li><a href="#password-best-practices-card">Password Best Practices #card</a>
+      <ul>
+        <li><a href="#complexity-requirements-card">Complexity Requirements #card</a></li>
+        <li><a href="#length-card">Length #card</a></li>
+        <li><a href="#character-types-card">Character Types #card</a></li>
+        <li><a href="#expiration-requirements-card">Expiration Requirements #card</a></li>
+        <li><a href="#basic-inputoutput-system-biosunified-extensible-firmware-interface-uefi-passwords-card">Basic Input/Output System (BIOS)/Unified Extensible Firmware Interface (UEFI) Passwords #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#end-user-best-practices-card">End-User Best Practices #card</a>
+      <ul>
+        <li><a href="#use-screensaver-locks-card">Use Screensaver Locks #card</a></li>
+        <li><a href="#log-off-when-not-in-use-card">Log Off When Not in Use #card</a></li>
+        <li><a href="#secureprotect-critical-hardware-card">Secure/Protect Critical Hardware #card</a></li>
+        <li><a href="#secure-personally-identifiable-information-pii-and-passwords-card">Secure Personally Identifiable Information (PII) and Passwords #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#account-management-card">Account Management #card</a>
+      <ul>
+        <li><a href="#restrict-user-permissions-card">Restrict User Permissions #card</a></li>
+        <li><a href="#restrict-login-times-card">Restrict Login Times #card</a></li>
+        <li><a href="#disable-guest-account-card">Disable Guest Account #card</a></li>
+        <li><a href="#use-failed-attempts-lockout-card">Use Failed Attempts Lockout #card</a></li>
+        <li><a href="#use-screen-locktimeout-card">Use Screen Lock/Timeout #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#change-default-administrators-user-accountpassword-card">Change Default Administrator’s User Account/Password #card</a></li>
+    <li><a href="#disable-autorun-card">Disable AutoRun #card</a></li>
+    <li><a href="#disable-autoplay-card">Disable AutoPlay #card</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#screen-locks-card">Screen Locks #card</a>
+      <ul>
+        <li><a href="#facial-recognition-card-1">Facial Recognition #card</a></li>
+        <li><a href="#pin-codes-card">PIN Codes #card</a></li>
+        <li><a href="#fingerprint-card-1">Fingerprint #card</a></li>
+        <li><a href="#pattern-card">Pattern #card</a></li>
+        <li><a href="#swipe-card">Swipe #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#remote-wipes-card">Remote Wipes #card</a></li>
+    <li><a href="#locator-applications-card">Locator Applications #card</a></li>
+    <li><a href="#os-updates-card">OS Updates #card</a></li>
+    <li><a href="#device-encryption-card">Device Encryption #card</a></li>
+    <li><a href="#remote-backup-applications-card">Remote Backup Applications #card</a></li>
+    <li><a href="#failed-login-attempts-restrictions-card">Failed Login Attempts Restrictions #card</a></li>
+    <li><a href="#antivirusanti-malware-card">Antivirus/Anti-Malware #card</a></li>
+    <li><a href="#firewalls-card">Firewalls #card</a></li>
+    <li><a href="#policies-and-procedures-card">Policies and Procedures #card</a>
+      <ul>
+        <li><a href="#bring-your-own-device-byod-vs-corporate-owned-card">Bring Your Own Device (BYOD) vs. Corporate-Owned #card</a></li>
+        <li><a href="#profile-security-requirements-card">Profile Security Requirements #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#internet-of-things-iot-card">Internet of Things (IoT) #card</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#physical-destruction-card">Physical Destruction #card</a>
+      <ul>
+        <li><a href="#drilling-card">Drilling #card</a></li>
+        <li><a href="#shredding-card">Shredding #card</a></li>
+        <li><a href="#degaussing-card">Degaussing #card</a></li>
+        <li><a href="#incinerating-card">Incinerating #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#recycling-or-repurposing-card">Recycling or Repurposing #card</a>
+      <ul>
+        <li><a href="#erasingwiping-card">Erasing/Wiping #card</a></li>
+        <li><a href="#low-level-formatting-card">Low-Level Formatting #card</a></li>
+        <li><a href="#standard-formatting-card">Standard Formatting #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#outsourcing-concepts-card">Outsourcing Concepts #card</a>
+      <ul>
+        <li><a href="#third-party-vendor-card">Third-Party Vendor #card</a></li>
+        <li><a href="#certification-of-destructionrecycling-card">Certification of Destruction/Recycling #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#home-router-settings-card">Home Router Settings #card</a>
+      <ul>
+        <li><a href="#change-default-passwords-card">Change Default Passwords #card</a></li>
+        <li><a href="#ip-filtering-card">IP Filtering #card</a></li>
+        <li><a href="#firmware-updates-card">Firmware Updates #card</a></li>
+        <li><a href="#content-filtering-card">Content Filtering #card</a></li>
+        <li><a href="#wireless-placementsecure-locations-card">Wireless Placement/Secure Locations #card</a></li>
+        <li><a href="#dynamic-host-configuration-protocol-dhcp-reservations-card">Dynamic Host Configuration Protocol (DHCP) Reservations #card</a></li>
+        <li><a href="#static-wide-area-network-wan-ip-card">Static Wide-Area Network (WAN) IP #card</a></li>
+        <li><a href="#universal-plug-and-play-upnp-card">Universal Plug and Play (UPnP) #card</a></li>
+        <li><a href="#screened-subnet-card">Screened Subnet #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#wireless-specific-card">Wireless-Specific #card</a>
+      <ul>
+        <li><a href="#changing-the-service-set-identifier-ssid-card">Changing the Service Set Identifier (SSID) #card</a></li>
+        <li><a href="#disabling-ssid-broadcast-card">Disabling SSID Broadcast #card</a></li>
+        <li><a href="#encryption-settings-card">Encryption Settings #card</a></li>
+        <li><a href="#disabling-guest-access-card">Disabling Guest Access #card</a></li>
+        <li><a href="#changing-channels-card">Changing Channels #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#firewall-settings-card">Firewall Settings #card</a>
+      <ul>
+        <li><a href="#disabling-unused-ports-card">Disabling Unused Ports #card</a></li>
+        <li><a href="#port-forwardingmapping-card">Port Forwarding/Mapping #card</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#browser-downloadinstallation-card">Browser Download/Installation #card</a>
+      <ul>
+        <li><a href="#trusted-sources-card">Trusted Sources #card</a></li>
+        <li><a href="#hashing-card">Hashing #card</a></li>
+        <li><a href="#untrusted-sources-card">Untrusted Sources #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#extensions-and-plug-ins-card">Extensions and Plug-ins #card</a>
+      <ul>
+        <li><a href="#trusted-sources-card-1">Trusted Sources #card</a></li>
+        <li><a href="#untrusted-sources-card-1">Untrusted Sources #card</a></li>
+      </ul>
+    </li>
+    <li><a href="#password-managers-card">Password Managers #card</a></li>
+    <li><a href="#secure-connectionssitesvalid-certificates-card">Secure Connections/Sites—Valid Certificates #card</a></li>
+    <li><a href="#settings-card">Settings #card</a>
+      <ul>
+        <li><a href="#pop-up-blocker-card">Pop-Up Blocker #card</a></li>
+        <li><a href="#clearing-browsing-data-card">Clearing Browsing Data #card</a></li>
+        <li><a href="#clearing-cache-card">Clearing Cache #card</a></li>
+        <li><a href="#private-browsing-mode-card">Private-Browsing Mode #card</a></li>
+        <li><a href="#sign-inbrowser-data-synchronization-card">Sign-In/Browser Data Synchronization #card</a></li>
+        <li><a href="#ad-blockers-card">Ad Blockers #card</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>

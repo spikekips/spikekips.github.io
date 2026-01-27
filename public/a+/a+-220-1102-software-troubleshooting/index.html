@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.7750550c0319f5de56d916b91e642bf72a5bd09ee50b201dc2ed9db69d6177a8.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+<!-- Open Graph image and Twitter Card metadata -->
+
+<title itemprop="name">Spike - Software Troubleshooting</title>
+<meta property="og:title" content=Spike&#32;-&#32;Software&#32;Troubleshooting />
+<meta name="twitter:title" content=Spike&#32;-&#32;Software&#32;Troubleshooting />
+<meta itemprop="name" content=Spike&#32;-&#32;Software&#32;Troubleshooting />
+<meta name="application-name" content=Spike&#32;-&#32;Software&#32;Troubleshooting />
+<meta property="og:site_name" content="" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/" />
+<link rel="canonical" href="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/" itemprop="url" />
+<meta name="url" content="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/" />
+<meta name="twitter:url" content="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/" />
+<meta property="og:url" content="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/" />
+
+
+<meta property="og:updated_time" content="2026-01-19T12:00:00-06:00" />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.148.2">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.a2a7b8bcb6a4cf0411256d3307ba7b11fb85ad9a54a6495efbba1b109d479b1c.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5A5A5A;
+        --link-color: #268BD2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #000;
+        --code-background-color: #E5E5E5;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #EEE;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9D9D9D;
+        --link-color: #268BD2;
+        --date-color: #9A9A9A;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #FFF;
+        --code-background-color: #515151;
+        --code-block-color: #FFF;
+        --code-block-background-color: #272822;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+        
+            <a href="//localhost:1313/">
+                <h1>Spike</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    Welcome to my site! Reach out if you have any tech issues.
+    </p>
+</div>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/electronics/">Electronics</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
+                            </li>
+                        
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+                    <li class="heading">
+                        <a href="/a&#43;/">Comptia A&#43; Notes</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
+                            </li>
+                        
+                            <li class="bullet">
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
+                            </li>
+                        
+                    
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+            
+                
+                
+                        
+                
+                        
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+
+    </ul>
+</nav>
+
+        
+    <a target="_blank" class="social" title="GitHub" href="https://github.com/spikekips">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Instagram" href="https://www.instagram.com/thefrspike/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Facebook" href="https://www.facebook.com/sam.pike.132240/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="Email" href="mailto://samuele.j.pike@gmail.com">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+
+
+        <p class="footnote">
+powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+    <br>
+    &copy; 2026 . All rights reserved.
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/">Software Troubleshooting</a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <time datetime=" 2026-01-19T12:00:00-0600" class="post-date">
+        January 19, 2026
+      </time>
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>21 mins read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <h1 id="general-information">General Information</h1>
+<pre><code>- When software is deficient, so is the system that uses it, and processes are slowed down, stopped, or threatened
+- To be skilled in software troubleshooting, you must be knowledgeable in all types of PC and mobile device software issues
+- These include things like operating system issues, malware use, and security threats
+- Of the questions on the CompTIA A+ 1102 test, 22% of them concern these types of concepts
+- Obviously, software troubleshooting requires a lot of thinking on your feet, so *all* the questions about this topic will begin with a scenario.
+</code></pre>
+<ul>
+<li>
+<h1 id="windows-os-problems">Windows OS Problems</h1>
+<ul>
+<li>Many organizations utilize Microsoft Windows™ as their operating system of choice</li>
+<li>This means that, as a tech, you should be able to troubleshoot issues with the Windows OS and quickly identify common problems</li>
+<li>Questions in this area will be scenario based.</li>
+<li>
+<h2 id="common-symptoms">Common Symptoms</h2>
+<ul>
+<li>It’s important to be able to recognize common symptoms in the Windows OS and quickly determine how to best resolve the issue</li>
+<li>Let’s look at several common symptoms that we see when there is an issue with the Windows OS.</li>
+<li>
+<h3 id="blue-screen-of-death-bsod">Blue Screen of Death (BSOD)</h3>
+<ul>
+<li>A blue screen, more commonly known as BSOD, is a proprietary crash screen on Windows OS</li>
+<li>A BSOD that occurs during the initial boot sequence could be caused by bad hardware, drivers, and/or bad applications</li>
+<li>Since a BSOD can be caused by many different things, technicians need to research the specific error message provided by the BSOD.</li>
+</ul>
+</li>
+<li>
+<h3 id="sluggish-performance">Sluggish Performance</h3>
+<ul>
+<li>Sluggish or slow performance is one of the most commonly reported problems with the Windows OS and may be caused by a wide variety of issues</li>
+<li>Troubleshooting should start by narrowing down the component that is most affected by the slowdown, such as the CPU, RAM, hard drive, network, or graphics</li>
+<li>You should begin by launching the <strong>Task Manager</strong>, which will provide insight into the performance of the various components.</li>
+</ul>
+</li>
+<li>
+<h3 id="boot-problems">Boot Problems</h3>
+<ul>
+<li>The boot-up process of a computer occurs when the hardware transfers control of the computer to the OS</li>
+<li>A failure to boot occurs when the computer is unable to load the operating system</li>
+<li>Troubleshooting begins by collecting as much information as possible</li>
+<li>The <strong>Windows Recovery Environment</strong> provides this information as well as options to allow Windows to repair itself via the Startup Repair option.</li>
+</ul>
+</li>
+<li>
+<h3 id="frequent-shutdowns">Frequent Shutdowns</h3>
+<ul>
+<li>Frequent shutdowns are most often caused by faulty hardware or faulty drivers, but they may also be caused by power settings</li>
+<li>To begin troubleshooting, check the <strong>Event Viewer</strong> first to view the Kernel-Boot or Kernel-General logs</li>
+<li>These logs will let you know if the OS is shutting down properly or due to a lack of power</li>
+<li>If you suspect a hardware problem, the first step is to reinstall the drivers before swapping for known working components.</li>
+</ul>
+</li>
+<li>
+<h3 id="services-not-starting">Services Not Starting</h3>
+<ul>
+<li>Services are the backbones of our computers</li>
+<li>Sometimes, necessary services do not start when the computer loads</li>
+<li>Services can be stopped, started, and restarted in the <strong>Services menu</strong> and can also be viewed from <strong>Task Manager</strong></li>
+<li>When a service associated with a specific application won’t start, it might be time to consider <strong>reinstalling</strong> it.</li>
+</ul>
+</li>
+<li>
+<h3 id="applications-crashing">Applications Crashing</h3>
+<ul>
+<li>It is not uncommon for applications to crash on a computer, and there are many different causes for these crashes</li>
+<li>When an application crashes, the user may see the application close unexpectedly or simply <strong>freeze</strong></li>
+<li>If the application freezes rather than closes when it crashes, it may be necessary to <strong>end the task</strong> in Task Manager.</li>
+</ul>
+</li>
+<li>
+<h3 id="low-memory-warnings">Low Memory Warnings</h3>
+<ul>
+<li>RAM is where the OS stores the data it is currently using</li>
+<li>If the RAM on a computer fills up, it will move some of the working data into the page or paging file</li>
+<li>A low memory warning occurs when there is not enough room in the page file for RAM to move data to it</li>
+<li>The available space in the page file can be configured to auto-allocate space by the Windows OS via the <strong>Control Panel</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="usb-controller-resource-warnings">USB Controller Resource Warnings</h3>
+<ul>
+<li>The USB controller provides power and a data path to connected devices</li>
+<li>Most 2.0 ports can accommodate five concurrent loads of 100 mA, while 3.0 ports can accommodate six concurrent loads of 150 mA</li>
+<li>If the connected device draws more power than the USB controller can handle, the USB controller resource warning will appear</li>
+<li>The simplest way to address this problem is to <strong>relocate some USB-connected devices</strong> to other USB ports.</li>
+</ul>
+</li>
+<li>
+<h3 id="system-instability">System Instability</h3>
+<ul>
+<li>System instability can cause application crashes</li>
+<li>The first step to take is to look for <strong>uninstalled updates</strong> or <strong>patches</strong> for the application or the OS</li>
+<li>The <strong>Reliability Monitor</strong> is also a helpful tool that provides information on application crashes as well as the dates when updates and patches were installed</li>
+<li>The <strong>Events Viewer</strong> in the Reliability Monitor provides information and insight into Microsoft-based applications.</li>
+</ul>
+</li>
+<li>
+<h3 id="no-os-found">No OS Found</h3>
+<ul>
+<li>The message “No OS found” is a specific type of failure to boot</li>
+<li><em>No OS found</em> occurs when the computer is unable to locate OS files</li>
+<li>This can be either because the storage devices do not contain any OS files, or the <strong>boot configuration loader</strong> is pointing to the wrong partition.</li>
+</ul>
+</li>
+<li>
+<h3 id="slow-profile-load">Slow Profile Load</h3>
+<ul>
+<li>A profile that takes a long time to load can be a result of having too many applications load at startup</li>
+<li>It could also be a result of insufficient hard drive space or memory.</li>
+</ul>
+</li>
+<li>
+<h3 id="time-drift">Time Drift</h3>
+<ul>
+<li>Time drift occurs when the <strong>real-time clock (RTC)</strong> on the motherboard begins to shift, causing the computer to run either faster or slower</li>
+<li>Time drift on an OS running on hypervisor experiences this issue more drastically due to the fact that the hypervisor has to emulate the RTC rather than be in direct communication with the motherboard</li>
+<li>Time drift can cause authentication problems as well as invalidated certificates.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="common-troubleshooting-steps">Common Troubleshooting Steps</h2>
+<ul>
+<li>In the above section, we discussed some of the common symptoms of computer issues</li>
+<li>Below, let’s look at some common solutions to these problems.</li>
+<li>
+<h3 id="reboot">Reboot</h3>
+<ul>
+<li>The phrase “Have you tried rebooting it?” is a common joke among IT folks because this is typically the first question that is asked when a problem arises</li>
+<li>However, it isn’t just a joke; many issues really can be solved with a simple reboot</li>
+<li>Before diving into any more complicated troubleshooting, a reboot should <strong>always be one of the first steps</strong> in troubleshooting.</li>
+</ul>
+</li>
+<li>
+<h3 id="restart-services">Restart Services</h3>
+<ul>
+<li>Services are related to both system functions and specific applications</li>
+<li>If an application or program isn’t running as it should, the service should be restarted to see if that helps</li>
+<li>Services can be restarted in the <strong>Computer Management MMC</strong> by selecting Services.</li>
+</ul>
+</li>
+<li>
+<h3 id="uninstallreinstallupdate-applications">Uninstall/Reinstall/Update Applications</h3>
+<ul>
+<li>Crashing applications may occur when critical files of the application are overwritten or corrupted</li>
+<li>The application can be accessed via the <strong>Start Menu</strong> by selecting Settings, then Apps, and then Apps and Features</li>
+<li>Once the application is located, you can choose to <strong>repair</strong> or <strong>update</strong> the application and see if the problem is resolved</li>
+<li>If the problem persists, the next step is to <strong>uninstall and reinstall</strong> a clean installation of the application.</li>
+</ul>
+</li>
+<li>
+<h3 id="add-resources">Add Resources</h3>
+<ul>
+<li>Computers are built with a finite amount of resources</li>
+<li>Adding additional resources, such as RAM, CPUs, GPUs, or SSDs, is <strong>scaling up hardware</strong> and may be required for efficient performance.</li>
+</ul>
+</li>
+<li>
+<h3 id="verify-requirements">Verify Requirements</h3>
+<ul>
+<li>Applications and software specify minimum requirements for installation</li>
+<li>While this is valuable information, always keep in mind that the resources needed to run the application are being used by more than one program.</li>
+</ul>
+</li>
+<li>
+<h3 id="system-file-check">System File Check</h3>
+<ul>
+<li>The System File Checker tool is used to scan files for integrity and replace critical files when an OS stops functioning properly</li>
+<li>The System File Checker can be accessed through <strong>Command Prompt</strong> using <code>sfc.exe</code> and can be tasked to evaluate all files or a specific file.</li>
+</ul>
+</li>
+<li>
+<h3 id="repair-windows">Repair Windows</h3>
+<ul>
+<li>While the System File Checker only replaces files if they fail an integrity check, Repair Windows reinstalls all files from the source media regardless of integrity while maintaining applications and user files</li>
+<li>A clean copy of Windows is needed for this process, typically contained on a flash drive or a mounted ISO file.</li>
+</ul>
+</li>
+<li>
+<h3 id="restore">Restore</h3>
+<ul>
+<li>
+<h3 id="system-restore">System Restore</h3>
+<pre><code>  - allows for the creation of a restore point
+</code></pre>
+<ul>
+<li>The restore point is a copy of the OS configuration at a specific point in time</li>
+<li>Using a restore point allows the user to return the OS to a known working point in time</li>
+<li>Windows 10 and 11 have the automatic system restore function disabled by default, so it must be turned on to use.</li>
+</ul>
+</li>
+<li>
+<h3 id="reimage">Reimage</h3>
+<ul>
+<li>In some extreme cases, it may be easier to simply uninstall and reload the operating system</li>
+<li>Windows has options so that files can be saved even when a refresh of the OS is needed.</li>
+</ul>
+</li>
+<li>
+<h3 id="roll-back-updates">Roll Back Updates</h3>
+<ul>
+<li>Although updates are meant to improve computers, sometimes they can corrupt files and cause issues</li>
+<li>In these cases, it’s necessary to roll back the updates and take your computer to a previous state before the updates were installed.</li>
+</ul>
+</li>
+<li>
+<h3 id="rebuild-windows-profiles">Rebuild Windows Profiles</h3>
+<ul>
+<li>If there is only an issue with a specific Windows profile, it may not be necessary to rebuild the entire computer operating system; instead, rebuilding that user’s profile could do the trick</li>
+<li>This is because profiles can become corrupted.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>rd</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="personal-computer-pc-security-issues">Personal Computer (PC) Security Issues</h1>
+<ul>
+<li>Some computer issues have to do with security</li>
+<li>To address them, you should be able to spot the signs of particular problems and know the tools available to render a solution</li>
+<li>Questions in this area will be scenario based.</li>
+<li>
+<h2 id="common-symptoms-1">Common Symptoms</h2>
+<ul>
+<li>While symptoms of PC security issues can be highly intricate and complicated, you will need to be familiar with some of the more common symptoms that may indicate a security-related problem.</li>
+<li>
+<h3 id="unable-to-access-the-network">Unable to Access the Network</h3>
+<ul>
+<li>The inability to access the network can be caused by various conditions, both security-related and not, such as a <strong>faulty NIC</strong> or improperly installed network software</li>
+<li>Security-related inability to access the network can be caused by malware, which can redirect network settings or force the connection to go through a proxy that may attempt to steal data.</li>
+</ul>
+</li>
+<li>
+<h3 id="desktop-alerts">Desktop Alerts</h3>
+<ul>
+<li>An OS infected with <strong>malware</strong> may produce a desktop alert that is designed to look like a legitimate OS alert</li>
+<li>These alerts are typically designed to <strong>scare the user</strong> into taking action, such as calling a specified number</li>
+<li>When the number is dialed, the threat actor may attempt to sell a product or garner information from the user.</li>
+</ul>
+</li>
+<li>
+<h3 id="false-antivirus-protection-alerts">False Antivirus Protection Alerts</h3>
+<ul>
+<li>One of the most common false alerts is designed to imitate antivirus protection</li>
+<li>These alerts tell the end user that their system is at risk and immediate action should be taken</li>
+<li>The main goal of such alerts is to <strong>sell a product or collect information</strong> from the user.</li>
+</ul>
+</li>
+<li>
+<h3 id="altered-system-or-personal-files">Altered System or Personal Files</h3>
+<ul>
+<li>Indicators of a security issue can also be evident in the files stored on the computer</li>
+<li>Malware may rename or delete files as well as alter the permissions on a file, locking the user out</li>
+<li>Common malware that can affect files includes the <strong>rootkit</strong>, which gains embedded privileged access to the OS, and ransomware, which holds files or the entire system hostage until a set amount is paid.</li>
+</ul>
+</li>
+<li>
+<h3 id="missingrenamed-files">Missing/Renamed Files</h3>
+<ul>
+<li>If an OS is infected with malware, the threat actor may move or rename files or replace the files with malicious files</li>
+<li>Also, renaming a file or moving a file changes the <strong>path</strong> of the file</li>
+<li>If the file is needed in the running of an application or program, changing the path of the file can render the program useless.</li>
+</ul>
+</li>
+<li>
+<h3 id="unwanted-os-notifications">Unwanted OS Notifications</h3>
+<ul>
+<li>Unwanted notifications within the OS may also be a sign of malware infection</li>
+<li>These OS notifications may attempt to coax the user into installing additional malicious programs, possibly in the form of a <strong>Trojan horse</strong> or a program hidden behind a legitimate program.</li>
+</ul>
+</li>
+<li>
+<h3 id="os-update-failures">OS Update Failures</h3>
+<ul>
+<li>If an operating system won’t install updates, this could be a symptom of a <strong>virus</strong></li>
+<li>Malware can interfere with normal operating system updates.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="browser-related-symptoms">Browser-Related Symptoms</h2>
+<ul>
+<li>Security issues can also be evident in a web browser</li>
+<li>Since they are so frequently used, the web browser is the easiest avenue for a threat actor to infect a system.</li>
+<li>
+<h3 id="randomfrequent-pop-ups">Random/Frequent Pop-Ups</h3>
+<ul>
+<li>While pop-ups occur for a variety of reasons, including some legitimate reasons, if you click on the wrong pop-up, it may expose you to malware</li>
+<li>Pop-ups that occur randomly should be addressed with a <strong>malware cleaner</strong>.</li>
+</ul>
+</li>
+<li>
+<h3 id="certificate-warnings">Certificate Warnings</h3>
+<ul>
+<li>If you are browsing the internet and receive a security alert that a site has an invalid certificate, that could indicate the site is malicious and should be avoided</li>
+<li>However, it may simply be that the site has an incorrect PC clock setting, causing its site certificate date to differ from your PC’s date</li>
+<li>If you do receive a certificate warning, it is best to take caution unless you know for certain the site is safe.</li>
+</ul>
+</li>
+<li>
+<h3 id="redirection-attack">Redirection Attack</h3>
+<ul>
+<li>If you find your browser has been changed or the results of a search come from a third-party site, it is likely that your browser has been redirected by <strong>malware</strong></li>
+<li>An anti-malware cleaner may or may not address the issue</li>
+<li>You may want to restore your system from a known good backup.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="malware-removal-steps-card">Malware Removal Steps card</h1>
+<ul>
+<li>Malware can spread rapidly and cause severe damage to a PC</li>
+<li>Discovering malware is just the first step</li>
+<li>It’s vital that you can remove the malware quickly without causing further damage</li>
+<li>Be sure to follow these steps <em>in order</em></li>
+<li>Questions in this area will be scenario based.</li>
+<li>
+<h2 id="investigate-and-verify-malware-symptoms">Investigate and Verify Malware Symptoms</h2>
+logseq.order-list-type:: number
+<ul>
+<li>Malware is not often as obvious as strange error messages and odd security warnings</li>
+<li>It may be as subtle as a slight slowdown of the system or unexplained files appearing</li>
+<li>If malware is suspected, the first step is to <strong>identify the type of malware</strong> being used</li>
+<li>Antivirus and anti-malware software can be used to identify known threats</li>
+<li>Also, various online resources are dedicated to identifying malware and its signatures.</li>
+</ul>
+</li>
+<li>
+<h2 id="quarantine-infected-systems">Quarantine Infected Systems</h2>
+logseq.order-list-type:: number
+<ul>
+<li>Any system suspected of being infected by malware should immediately be quarantined</li>
+<li>This is so that the malware doesn’t spread across the network to other devices</li>
+<li>The easiest way to quarantine a device is to simply pull out the network cord or disconnect it from Wi-Fi</li>
+<li>Maintain all the files on the machine, and <strong>don’t attempt to move them</strong> to another system.</li>
+</ul>
+</li>
+<li>
+<h2 id="disable-system-restore-in-windows">Disable System Restore in Windows</h2>
+logseq.order-list-type:: number
+<ul>
+<li>The next step after quarantine is disabling System Restore in Windows</li>
+<li>You do not want the virus to infect your restore points.</li>
+</ul>
+</li>
+<li>
+<h2 id="remediate-infected-systems">Remediate Infected Systems</h2>
+logseq.order-list-type:: number
+<ul>
+<li>When you have identified the type of malware and ensured that it can’t spread to other devices, remediation can begin.</li>
+<li>
+<h3 id="update-anti-malware-software">Update Anti-Malware Software</h3>
+logseq.order-list-type:: number
+<ul>
+<li>The first step is to ensure you have an updated antivirus/anti-malware application with a new engine and signature files.</li>
+</ul>
+</li>
+<li>
+<h3 id="scanning-and-removal-techniques">Scanning and Removal Techniques</h3>
+logseq.order-list-type:: number
+<ul>
+<li>Once the anti-malware software is updated, restart the system in Safe Mode, the pre-installation environment, and run a <strong>virus scan</strong></li>
+<li>While some viruses are more complicated and may require further remediation techniques, this will be able to remove most basic malware infections.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="schedule-scans-and-run-updates">Schedule Scans and Run Updates</h2>
+logseq.order-list-type:: number
+<ul>
+<li>When a virus is removed, set the antivirus software to automatically update the signature files and schedule scans to prevent future infections.</li>
+</ul>
+</li>
+<li>
+<h2 id="enable-system-restore-and-create-a-restore-point-in-windows">Enable System Restore and Create a Restore Point in Windows</h2>
+logseq.order-list-type:: number
+<ul>
+<li>The next step is to re-enable System Restore and create Windows restore points.</li>
+</ul>
+</li>
+<li>
+<h2 id="educate-the-end-user">Educate the End User</h2>
+logseq.order-list-type:: number
+<ul>
+<li>Users are the <strong>last line of defense</strong> when it comes to computer security</li>
+<li>There is no antivirus or spam filter program that is 100% accurate, so even with these items in place, the user should be educated on proper email and internet usage to avoid getting a malware infection on their device.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="mobile-os-and-application-issues">Mobile OS and Application Issues</h1>
+<ul>
+<li>Portable devices are common in the workplace, so you will need to become familiar with the following items related to the support of these devices</li>
+<li>Questions in this area will be scenario based.</li>
+<li>
+<h2 id="common-symptoms-2">Common Symptoms</h2>
+<ul>
+<li>Like operating systems, mobile operating systems and applications may suffer from common symptoms</li>
+<li>While the following is not an exhaustive list, these are some of the issues you may encounter on the CompTIA A+ exam.</li>
+<li>
+<h3 id="application-fails-to-launch">Application Fails to Launch</h3>
+<ul>
+<li>When an application fails to launch, it may be because the application was not shut down completely and is still running in the background</li>
+<li>Another potential cause of a failure to load is a <strong>corrupted application cache</strong></li>
+<li>When troubleshooting application failures to launch, first try to force quit the application, then clear the application cache if allowed, and, finally, delete and reinstall the application if the first two options do not remedy the issue.</li>
+</ul>
+</li>
+<li>
+<h3 id="application-fails-to-closecrashes">Application Fails to Close/Crashes</h3>
+<ul>
+<li>An application may intermittently fail to close or it may crash</li>
+<li>If this occurs, attempt to <strong>recreate the scenario</strong> that caused the issue, which may help narrow down what is causing the failure</li>
+<li>Remediation is the same as for a failure to launch</li>
+<li>Force quit the application, clear the cache if possible, then uninstall and reinstall the application.</li>
+</ul>
+</li>
+<li>
+<h3 id="application-fails-to-update">Application Fails to Update</h3>
+<ul>
+<li>Most application updates are controlled by the Google Play Store or the Apple App Store, which automatically update applications</li>
+<li>If an application fails to update, the first step is to try to manually update the application</li>
+<li>Make sure that the phone is compatible with the current version of the application as well</li>
+<li>If this does not work, force quit the application and reboot the device</li>
+<li>You may also need to temporarily disable antivirus or anti-malware on the device</li>
+<li>Finally, uninstall and reinstall the application.</li>
+</ul>
+</li>
+<li>
+<h3 id="slow-to-respond">Slow to Respond</h3>
+<ul>
+<li>Slow performance or response time is typically related to <strong>RAM</strong></li>
+<li>RAM usage on a mobile device works like it does on a standard computer</li>
+<li>If the device is slow, free up RAM space by closing applications and currently running processes.</li>
+</ul>
+</li>
+<li>
+<h3 id="os-fails-to-update">OS Fails to Update</h3>
+<ul>
+<li>When the OS fails to update on a mobile device, it may be caused by multiple conditions that require similar troubleshooting steps as a desktop OS</li>
+<li>First, reboot the system to clear up RAM space, then check the specifications for the updated OS to ensure device compatibility, check storage space, and check network connectivity.</li>
+</ul>
+</li>
+<li>
+<h3 id="battery-life-issues">Battery Life Issues</h3>
+<ul>
+<li>A mobile device battery, like all batteries, has a life span</li>
+<li>To increase the life of the battery or to reduce how quickly the battery drains, make sure applications are closed when not in use, limit background applications, allow the device to dim automatically, turn off location services, and disconnect peripherals and Wi-Fi when not in use.</li>
+</ul>
+</li>
+<li>
+<h3 id="random-reboots">Random Reboots</h3>
+<ul>
+<li>Random reboots of a mobile device may be indicative of a hardware problem within the device that may be difficult to diagnose</li>
+<li>To troubleshoot, check the most common culprits, including battery health, storage capacity, needed updates, overload of running applications, or auto-restart options.</li>
+</ul>
+</li>
+<li>
+<h3 id="connectivity-issues">Connectivity Issues</h3>
+<ul>
+<li>Connectivity issues for mobile devices may include local connectivity issues or broader provider connectivity issues</li>
+<li>If, after rebooting the device, the connectivity issue is determined to be a provider issue, contact the provider for support</li>
+<li>However, local connectivity issues may be troubleshot.</li>
+<li>
+<h3 id="bluetooth">Bluetooth</h3>
+<ul>
+<li>To troubleshoot Bluetooth connectivity issues, first check to make sure Bluetooth is enabled and the device is not set to airplane mode</li>
+<li>If Bluetooth is enabled, check to ensure the desired device is paired</li>
+<li>If not currently paired, pair the device by allowing the mobile device to scan for peripherals within range.</li>
+</ul>
+</li>
+<li>
+<h3 id="wi-fi">Wi-Fi</h3>
+<ul>
+<li>Wi-Fi connectivity issues can be troubleshot the same way as Bluetooth issues</li>
+<li>Make sure Wi-Fi is enabled, make sure the device is not in airplane mode, check to see if a <strong>wireless access point (WAP)</strong> is within range, and connect to it.</li>
+</ul>
+</li>
+<li>
+<h3 id="near-field-communication-nfc">Near-Field Communication (NFC)</h3>
+<ul>
+<li>Connectivity issues with NFC, most commonly used for hands-free/tap payment, may be caused by the distance from the reader, having airplane mode enabled, a phone case, or a faulty reader</li>
+<li>You can also try to log out of the payment system and log back in, which will verify the device’s credentials.</li>
+</ul>
+</li>
+<li>
+<h3 id="airdrop">AirDrop</h3>
+<pre><code>  					- AirDrop is Apple™ proprietary software and allows for the transfer of data, such as files and pictures, to other Apple users within a certain proximity of the sender
+</code></pre>
+<ul>
+<li>AirDrop uses both Bluetooth and Wi-Fi to transfer data between devices</li>
+<li>Make sure the devices are not in airplane mode and have Bluetooth and Wi-Fi enabled and working properly</li>
+<li>Also, check the AirDrop settings on the device to ensure it allows for discoverability as well as transfer.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="screen-does-not-auto-rotate">Screen Does Not Auto-Rotate</h3>
+<ul>
+<li>Auto-rotate is the process of switching automatically between landscape and portrait mode on a screen</li>
+<li>If the screen does not auto-rotate, the auto-rotate function is most likely disabled</li>
+<li>If auto-rotate is enabled, but the screen still does not rotate, the application may be frozen</li>
+<li>Force quit the application or reboot the device</li>
+<li>If none of these work, it may be a hardware sensor issue.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="mobile-os-and-application-security-issues">Mobile OS and Application Security Issues</h1>
+<ul>
+<li>The following are concerns and symptoms you need to be familiar with when dealing with mobile devices</li>
+<li>Many of the security concerns of mobile OSs and applications are similar to desktop OSs and applications</li>
+<li>Questions in this area will be scenario based.</li>
+<li>
+<h2 id="security-concerns">Security Concerns</h2>
+<ul>
+<li>While many security concerns of mobile OSs and applications are similar to desktop devices, there are some security issues that are unique to mobile devices.</li>
+<li>
+<h3 id="android-package-apk-source">Android Package (APK) Source</h3>
+<ul>
+<li>Unlike an Apple device, Android devices are not proprietary and are <strong>open-source</strong></li>
+<li>Most applications that a user may download are obtained through the <strong>Google Play Store</strong>, which verifies and monitors the APK of the application for malicious or inappropriate content</li>
+<li>However, if an application is installed via an untrusted source, it poses the risk of being malicious.</li>
+</ul>
+</li>
+<li>
+<h3 id="developer-mode">Developer Mode</h3>
+<ul>
+<li>Developer mode is a function that allows a user to connect to a device via USB</li>
+<li>Developer mode allows increased access to the functionality of the device</li>
+<li>The Android OS still offers developer mode, while the latest Apple iOS offers the <strong>Xcode</strong> application, which limits the range of access for a developer while still allowing for the development of iOS applications.</li>
+</ul>
+</li>
+<li>
+<h3 id="root-accessjailbreak">Root Access/Jailbreak</h3>
+<ul>
+<li>
+<h3 id="root-access">Root access</h3>
+<ul>
+<li>on an Android device allows the user to function as a superuser on the device, with access to the entire OS and device</li>
+<li>With root access, the user can <strong>flash</strong> the device and install different OSs</li>
+<li>Once a device is flashed, it will no longer be connected to the manufacturer, meaning it will no longer auto-update or patch the device and OS</li>
+</ul>
+</li>
+<li>
+<h3 id="jailbreaking">Jailbreaking</h3>
+<ul>
+<li>is most commonly associated with Apple devices and is similar to rooting an Android device, allowing access to the device’s OS.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="bootlegmalicious-application">Bootleg/Malicious Application</h3>
+<ul>
+<li>A bootleg application, typically in the form of an APK, is a premium application that has had the digital rights management removed</li>
+<li>Bootleg applications often contain malicious software</li>
+<li>Only download applications from a trusted source and check the permissions that the application has on the device.</li>
+<li>
+<h3 id="application-spoofing">Application Spoofing</h3>
+<ul>
+<li>Application spoofing is a security concern for both Apple and Android devices and occurs when an application imitates a legitimate application</li>
+<li>Application spoofing acts similarly to a Trojan horse, where malicious software is installed when the user intends to install a legitimate application.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="common-symptoms-3">Common Symptoms</h2>
+<ul>
+<li>Security problems with a mobile OS or application may be evident in common symptoms that the security-related issue may cause, including high resource utilization, connectivity issues, pop-ups or ads, and missing or altered files or data.</li>
+<li>
+<h3 id="high-network-traffic">High Network Traffic</h3>
+<ul>
+<li>High network traffic can indicate that data is being removed from the device or being sent through the device</li>
+<li>To troubleshoot high network traffic, begin opening and closing applications one at a time and look for a usage spike beyond the norm for the application.</li>
+</ul>
+</li>
+<li>
+<h3 id="sluggish-response-time">Sluggish Response Time</h3>
+<ul>
+<li>Sluggish response time may be indicative of a security problem</li>
+<li>First, check to ensure the slow performance is not due to too many applications running at once, and then check individual applications for excessive CPU and RAM usage, which may indicate the application is infected with malware.</li>
+</ul>
+</li>
+<li>
+<h3 id="data-usage-limit-notification">Data-Usage Limit Notification</h3>
+<ul>
+<li>A data-usage limit notification occurs when a device has reached its data limit for a set period</li>
+<li>When a data-usage limit notification is sent, the first step is to view typical <strong>usage patterns</strong> for the device to see if usage is out of the ordinary</li>
+<li>If the data usage is atypical, malicious software may be exfiltrating data from the device or using the device as a bot to send information through.</li>
+</ul>
+</li>
+<li>
+<h3 id="limited-internet-connectivity">Limited Internet Connectivity</h3>
+<ul>
+<li>Limited internet connectivity is not necessarily a sign of a security issue, as it can be caused by proximity to WAPs or problems with the transceivers or firmware</li>
+<li>However, if these potential causes have been ruled out, the limited connectivity may be caused by malicious software using the majority of the bandwidth on the connection.</li>
+</ul>
+</li>
+<li>
+<h3 id="no-internet-connectivity">No Internet Connectivity</h3>
+<ul>
+<li>No internet connectivity, like limited internet connectivity, is not necessarily a security-related problem</li>
+<li>However, if all other likely scenarios have been exhausted, there are some malicious programs that will stop connectivity completely</li>
+<li>To prevent connectivity issues, it is best to use a firewall or anti-malware software.</li>
+</ul>
+</li>
+<li>
+<h3 id="high-number-of-ads">High Number of Ads</h3>
+<ul>
+<li>Like a desktop OS, a mobile device can become infected with <strong>adware</strong>, which spams the device with unwanted or unsolicited ads</li>
+<li>Adware is typically installed when it is attached to an application</li>
+<li>One way to isolate the malicious application is to uninstall and reinstall suspected applications until the ads stop</li>
+<li>If this does not work, you may have to perform a factory reset on the device.</li>
+</ul>
+</li>
+<li>
+<h3 id="fake-security-warnings">Fake Security Warnings</h3>
+<ul>
+<li>Fake security warnings on a mobile device are another symptom of malware infection</li>
+<li>If this occurs, factory reset the device and install anti-malware before reinstalling applications.</li>
+</ul>
+</li>
+<li>
+<h3 id="unexpected-application-behavior">Unexpected Application Behavior</h3>
+<ul>
+<li>Unexpected application behavior is not always a sign of malware</li>
+<li>Sometimes applications just glitch</li>
+<li>However, if a freshly installed application behaves in an unexpected manner, this is a likely sign of a security breach</li>
+<li>Run a malware scan on the device and factory reset the device if an application is flagged.</li>
+</ul>
+</li>
+<li>
+<h3 id="leaked-personal-filesdata">Leaked Personal Files/Data</h3>
+<ul>
+<li>If a device is infected with malware, there is the potential for leaked files and data</li>
+<li>To prevent and limit the impact of a data breach, layer security techniques</li>
+<li>Install antivirus or anti-malware software, use a mobile firewall, and employ MFA, data encryption, and remote wipe.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="//localhost:1313/a&#43;/a&#43;-220-1101-virtualization-and-cloud-computing/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Virtualization and Cloud Computing</a>
+        
+	    
+            <div class="next-post">
+                <a href="//localhost:1313/a&#43;/a&#43;-220-1102-security/?ref=footer"><span style="font-weight:bold;">Next »</span><br>Security</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#common-symptoms">Common Symptoms</a>
+      <ul>
+        <li><a href="#blue-screen-of-death-bsod">Blue Screen of Death (BSOD)</a></li>
+        <li><a href="#sluggish-performance">Sluggish Performance</a></li>
+        <li><a href="#boot-problems">Boot Problems</a></li>
+        <li><a href="#frequent-shutdowns">Frequent Shutdowns</a></li>
+        <li><a href="#services-not-starting">Services Not Starting</a></li>
+        <li><a href="#applications-crashing">Applications Crashing</a></li>
+        <li><a href="#low-memory-warnings">Low Memory Warnings</a></li>
+        <li><a href="#usb-controller-resource-warnings">USB Controller Resource Warnings</a></li>
+        <li><a href="#system-instability">System Instability</a></li>
+        <li><a href="#no-os-found">No OS Found</a></li>
+        <li><a href="#slow-profile-load">Slow Profile Load</a></li>
+        <li><a href="#time-drift">Time Drift</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-troubleshooting-steps">Common Troubleshooting Steps</a>
+      <ul>
+        <li><a href="#reboot">Reboot</a></li>
+        <li><a href="#restart-services">Restart Services</a></li>
+        <li><a href="#uninstallreinstallupdate-applications">Uninstall/Reinstall/Update Applications</a></li>
+        <li><a href="#add-resources">Add Resources</a></li>
+        <li><a href="#verify-requirements">Verify Requirements</a></li>
+        <li><a href="#system-file-check">System File Check</a></li>
+        <li><a href="#repair-windows">Repair Windows</a></li>
+        <li><a href="#restore">Restore</a></li>
+        <li><a href="#system-restore">System Restore</a></li>
+        <li><a href="#reimage">Reimage</a></li>
+        <li><a href="#roll-back-updates">Roll Back Updates</a></li>
+        <li><a href="#rebuild-windows-profiles">Rebuild Windows Profiles</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#common-symptoms-1">Common Symptoms</a>
+      <ul>
+        <li><a href="#unable-to-access-the-network">Unable to Access the Network</a></li>
+        <li><a href="#desktop-alerts">Desktop Alerts</a></li>
+        <li><a href="#false-antivirus-protection-alerts">False Antivirus Protection Alerts</a></li>
+        <li><a href="#altered-system-or-personal-files">Altered System or Personal Files</a></li>
+        <li><a href="#missingrenamed-files">Missing/Renamed Files</a></li>
+        <li><a href="#unwanted-os-notifications">Unwanted OS Notifications</a></li>
+        <li><a href="#os-update-failures">OS Update Failures</a></li>
+      </ul>
+    </li>
+    <li><a href="#browser-related-symptoms">Browser-Related Symptoms</a>
+      <ul>
+        <li><a href="#randomfrequent-pop-ups">Random/Frequent Pop-Ups</a></li>
+        <li><a href="#certificate-warnings">Certificate Warnings</a></li>
+        <li><a href="#redirection-attack">Redirection Attack</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#investigate-and-verify-malware-symptoms">Investigate and Verify Malware Symptoms</a></li>
+    <li><a href="#quarantine-infected-systems">Quarantine Infected Systems</a></li>
+    <li><a href="#disable-system-restore-in-windows">Disable System Restore in Windows</a></li>
+    <li><a href="#remediate-infected-systems">Remediate Infected Systems</a>
+      <ul>
+        <li><a href="#update-anti-malware-software">Update Anti-Malware Software</a></li>
+        <li><a href="#scanning-and-removal-techniques">Scanning and Removal Techniques</a></li>
+      </ul>
+    </li>
+    <li><a href="#schedule-scans-and-run-updates">Schedule Scans and Run Updates</a></li>
+    <li><a href="#enable-system-restore-and-create-a-restore-point-in-windows">Enable System Restore and Create a Restore Point in Windows</a></li>
+    <li><a href="#educate-the-end-user">Educate the End User</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#common-symptoms-2">Common Symptoms</a>
+      <ul>
+        <li><a href="#application-fails-to-launch">Application Fails to Launch</a></li>
+        <li><a href="#application-fails-to-closecrashes">Application Fails to Close/Crashes</a></li>
+        <li><a href="#application-fails-to-update">Application Fails to Update</a></li>
+        <li><a href="#slow-to-respond">Slow to Respond</a></li>
+        <li><a href="#os-fails-to-update">OS Fails to Update</a></li>
+        <li><a href="#battery-life-issues">Battery Life Issues</a></li>
+        <li><a href="#random-reboots">Random Reboots</a></li>
+        <li><a href="#connectivity-issues">Connectivity Issues</a></li>
+        <li><a href="#bluetooth">Bluetooth</a></li>
+        <li><a href="#wi-fi">Wi-Fi</a></li>
+        <li><a href="#near-field-communication-nfc">Near-Field Communication (NFC)</a></li>
+        <li><a href="#airdrop">AirDrop</a></li>
+        <li><a href="#screen-does-not-auto-rotate">Screen Does Not Auto-Rotate</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#security-concerns">Security Concerns</a>
+      <ul>
+        <li><a href="#android-package-apk-source">Android Package (APK) Source</a></li>
+        <li><a href="#developer-mode">Developer Mode</a></li>
+        <li><a href="#root-accessjailbreak">Root Access/Jailbreak</a></li>
+        <li><a href="#root-access">Root access</a></li>
+        <li><a href="#jailbreaking">Jailbreaking</a></li>
+        <li><a href="#bootlegmalicious-application">Bootleg/Malicious Application</a></li>
+        <li><a href="#application-spoofing">Application Spoofing</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-symptoms-3">Common Symptoms</a>
+      <ul>
+        <li><a href="#high-network-traffic">High Network Traffic</a></li>
+        <li><a href="#sluggish-response-time">Sluggish Response Time</a></li>
+        <li><a href="#data-usage-limit-notification">Data-Usage Limit Notification</a></li>
+        <li><a href="#limited-internet-connectivity">Limited Internet Connectivity</a></li>
+        <li><a href="#no-internet-connectivity">No Internet Connectivity</a></li>
+        <li><a href="#high-number-of-ads">High Number of Ads</a></li>
+        <li><a href="#fake-security-warnings">Fake Security Warnings</a></li>
+        <li><a href="#unexpected-application-behavior">Unexpected Application Behavior</a></li>
+        <li><a href="#leaked-personal-filesdata">Leaked Personal Files/Data</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>

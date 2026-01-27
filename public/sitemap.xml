@@ -5,10 +5,40 @@
     <loc>//localhost:1313/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/a&#43;/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/electronics/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-hardware/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/electronics/lpb-1/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-networking/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-operating-systems/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-operational-procedures/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-security/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/</loc>
+    <lastmod>2026-01-19T12:00:00-06:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-virtualization-and-cloud-computing/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
     <loc>//localhost:1313/services/</loc>
