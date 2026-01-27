@@ -7,13 +7,13 @@ description: "Expert computer repair services in Augusta, Maine by Samuele Pike.
 #tags: ["hugo","introduction"]
 #series: "How to use poison"
 ---
-Hey there! I’m **Samuele Pike**, a tech enthusiast with a passion for all things related to microelectronics, software, computers, and networks. I’ve spent **many years** diving deep into the tech world, gaining hands-on experience with a variety of systems.
+Hey thanks for stoping by! I'm **Sam** and this is my site. It's mostly notes and things I find interesting, along with any info I might want others to be able to access.
 
 ### My Background
-I graduated from college with a solid foundation in technology, but my learning didn’t stop there. I’m always exploring new trends and innovations, eager to expand my knowledge and skills. Whether it’s tinkering with microcontrolles, building scripts, or troubleshooting network issues, I thrive on the challenges that come with the ever-evolving tech landscape.
+I graduated from college with an associates in Comp Sci, I've been working with computers long before that. Most of my experience is with Circuitry, Coding, and Computer hardware. If I find anything interesting and I think it will be useful to anyone else I'll be putting that stuff up here.
 
-### What I Do
-When I’m not immersed in tech projects, you can find me sharing insights, tips, and tutorials to help others navigate the fascinating world of technology. I believe that technology should be accessible to everyone, and I’m here to make that happen!
+### What I get up to
+If i'm not working on a computer i'm probably out skating or gaming. I prefer to be away from the computer when I don't need to be though.
 
 ### Let’s Connect
-Thanks for stopping by my corner of the internet. I’m excited to connect and explore the tech together!
+Thanks for stopping by! Feel free to reach out with any questions or critiques you may have. I'm still learning so if you see anything I might be missing in any articles please let me know.
