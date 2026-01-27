@@ -5,7 +5,7 @@ draft: false
 unsafe: true
 #layout: single
 ---
-  ASD
+
 # General Information
   - Cloud computing has only increased in use during the years since the last edition of the CompTIA A+ Core Series test
   - Even though only about 11% of the questions pertain to this field, it will be important to know the answers
