@@ -1,3 +1,23 @@
 .lead {
   font-size: .9em;
 }
+
+.content {
+    margin-right: 0rem;
+    max-width: 48rem;
+}
+
+.article-toc .toc-wrapper {
+  position:relative;
+}
+
+.article-toc{
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  font-size: .9em;
+  width: 20em;
+  overflow-y: auto;
+  line-height: 1.4em;
+  max-height: 100%;
+}

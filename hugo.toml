@@ -35,7 +35,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
-    front_page_content = ["services", "about"] # Equivalent to the default value, add page bundle names to include them on the front page.
+    front_page_content = ["services", "about", "thoughts", "electronics"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -51,6 +51,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         #{Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 3},
         {Name = "Electronics", URL = "/electronics/", Pre = "Recent", HasChildren = true, Limit = 3},
         {Name = "Comptia A+ Notes", URL = "/a+/", Pre = "Recent", HasChildren = true, Limit = 3},
+        {Name = "Thoughts", URL = "/thoughts/", Pre = "Recent", HasChildren = true, Limit = 3},
 
     ]
 
