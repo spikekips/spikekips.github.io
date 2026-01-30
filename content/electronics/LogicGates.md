@@ -9,9 +9,11 @@ unsafe: true
 ## Transistor AND Gates
 And Gates are a way to determine if two inputs are both on. If both inputs are on then the output is on.
 
-![AND Gate](/on_AND_Gate.png 'pic')
-![On AND Characteristics](/on_AND_Characteristics.png 'pic')
+![AND Gate](/on_AND_Gate.png 'elecPic')
+![On AND Characteristics](/on_AND_Characteristics.png 'elecPic')
 If one input is off then the output will turn off.
 
-![Off AND Gate](/off_AND_Gate.png 'pic')
-![Off AND Characteristics](/off_AND_Characteristics.png 'pic')
+![Off AND Gate](/off_AND_Gate.png 'elecPic')
+![Off AND Characteristics](/off_AND_Characteristics.png 'elecPic')
+
+## Transistor NAND Gate
