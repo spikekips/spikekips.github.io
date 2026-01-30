@@ -239,6 +239,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -249,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Custom Amp.kicad_pro",
+    "filename": "LogicGates.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -401,9 +402,9 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "Custom Amp.wbk"
+      "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "LogicGates",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -417,7 +418,7 @@
   },
   "sheets": [
     [
-      "9b1fc764-a6b7-4d8a-bddb-3ad0208adb67",
+      "71ee6894-f02d-4114-a8a7-c8f9968ec381",
       "Root"
     ]
   ],

@@ -816,7 +816,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:VSIN"
+		(symbol "Simulation_SPICE:VPWL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -835,7 +835,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "VSIN"
+			(property "Value" "VPWL"
 				(at 2.54 0 0)
 				(effects
 					(font
@@ -862,7 +862,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Voltage source, sinusoidal"
+			(property "Description" "Voltage source, piece-wise linear"
 				(at 0 0 0)
 				(effects
 					(font
@@ -872,24 +872,6 @@
 				)
 			)
 			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Params" "dc=0 ampl=1 f=1k ac=1"
-				(at 2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Sim.Type" "SIN"
 				(at 0 0 0)
 				(effects
 					(font
@@ -908,7 +890,16 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "simulation ac vac"
+			(property "Sim.Params" "pwl=\"0 -1 50n -1 51n 0 97n 1 171n -1 200n -1\""
+				(at 2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Sim.Type" "PWL"
 				(at 0 0 0)
 				(effects
 					(font
@@ -917,23 +908,20 @@
 					(hide yes)
 				)
 			)
-			(symbol "VSIN_0_0"
-				(arc
-					(start -1.27 0)
-					(mid -0.635 0.6323)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
+			(property "ki_keywords" "simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
-				(arc
-					(start 1.27 0)
-					(mid 0.635 -0.6323)
-					(end 0 0)
+			)
+			(symbol "VPWL_0_0"
+				(polyline
+					(pts
+						(xy -1.778 -1.016) (xy -0.762 1.016) (xy -0.254 0) (xy 0.762 0) (xy 1.27 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -951,7 +939,7 @@
 					)
 				)
 			)
-			(symbol "VSIN_0_1"
+			(symbol "VPWL_0_1"
 				(circle
 					(center 0 0)
 					(radius 2.54)
@@ -964,7 +952,7 @@
 					)
 				)
 			)
-			(symbol "VSIN_1_1"
+			(symbol "VPWL_1_1"
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -1250,6 +1238,113 @@
 			(type default)
 		)
 		(uuid "ff830d36-9741-449d-837f-d82d0be170a1")
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:VPWL")
+		(at 82.55 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0219c18f-582a-4b5b-a646-7ae1d1c9d5b4")
+		(property "Reference" "V2"
+			(at 86.36 77.3401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VPWL"
+			(at 86.36 79.8801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Voltage source, piece-wise linear"
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "pwl=\"0 -1 50n -1 51n 0 97n 1 171n -1 200n -1\""
+			(at 86.36 82.4201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Type" "PWL"
+			(at 82.55 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04a94dc2-441a-4c95-ae60-f9e7b112d6e1")
+		)
+		(pin "2"
+			(uuid "e380d1c8-0f4c-444c-b036-2dc659ea9e40")
+		)
+		(instances
+			(project ""
+				(path "/9b1fc764-a6b7-4d8a-bddb-3ad0208adb67"
+					(reference "V2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2010,112 +2105,6 @@
 			(project "Custom Amp"
 				(path "/9b1fc764-a6b7-4d8a-bddb-3ad0208adb67"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VSIN")
-		(at 82.55 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f76787a8-989b-4b07-b6b8-0de8940ddae0")
-		(property "Reference" "V2"
-			(at 86.36 77.3401 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VSIN"
-			(at 86.36 79.8801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Voltage source, sinusoidal"
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "dc=0 ampl=.24 f=400 td=0 theta=0 phase=0 ac=1"
-			(at 60.96 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Type" "SIN"
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 82.55 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e86046c4-2375-4f7d-84c8-b9bfe725ae31")
-		)
-		(pin "1"
-			(uuid "8505e5b3-90c9-47b8-bdc5-822339209e03")
-		)
-		(instances
-			(project ""
-				(path "/9b1fc764-a6b7-4d8a-bddb-3ad0208adb67"
-					(reference "V2")
 					(unit 1)
 				)
 			)
