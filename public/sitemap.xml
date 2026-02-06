@@ -2,97 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2026-01-30T00:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/electronics/</loc>
+    <loc>/electronics/</loc>
     <lastmod>2026-01-30T00:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/electronics/logicgates/</loc>
+    <loc>/electronics/logicgates/</loc>
     <lastmod>2026-01-30T00:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/</loc>
+    <loc>/a&#43;/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-hardware/</loc>
+    <loc>/a&#43;/a&#43;-220-1101-hardware/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/</loc>
+    <loc>/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/electronics/lpb-1/</loc>
+    <loc>/electronics/lpb-1/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/</loc>
+    <loc>/a&#43;/a&#43;-220-1101-mobile-devices/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-networking/</loc>
+    <loc>/a&#43;/a&#43;-220-1101-networking/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-operating-systems/</loc>
+    <loc>/a&#43;/a&#43;-220-1102-operating-systems/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-operational-procedures/</loc>
+    <loc>/a&#43;/a&#43;-220-1102-operational-procedures/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-security/</loc>
+    <loc>/a&#43;/a&#43;-220-1102-security/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1102-software-troubleshooting/</loc>
+    <loc>/a&#43;/a&#43;-220-1102-software-troubleshooting/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/thoughts/</loc>
+    <loc>/thoughts/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/thoughts/thoughts/</loc>
+    <loc>/thoughts/thoughts/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/a&#43;/a&#43;-220-1101-virtualization-and-cloud-computing/</loc>
+    <loc>/a&#43;/a&#43;-220-1101-virtualization-and-cloud-computing/</loc>
     <lastmod>2026-01-19T12:00:00-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/services/</loc>
+    <loc>/services/</loc>
     <lastmod>2025-09-22T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/pics/4thofjuly/</loc>
+    <loc>/pics/4thofjuly/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/fireworks/</loc>
+    <loc>/tags/fireworks/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/pics/</loc>
+    <loc>/pics/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/pics/</loc>
+    <loc>/series/pics/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/pics/</loc>
+    <loc>/tags/pics/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-09-15T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2024-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/about/</loc>
+    <loc>/about/about/</loc>
     <lastmod>2024-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/series/how-to-use-poison/</loc>
+    <loc>/series/how-to-use-poison/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/intro/</loc>
+    <loc>/posts/intro/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/introduction/</loc>
+    <loc>/tags/introduction/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-11-23T13:43:53-06:00</lastmod>
   </url>
 </urlset>

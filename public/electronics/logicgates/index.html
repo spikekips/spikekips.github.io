@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     
 
 
@@ -70,17 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="//localhost:1313/electronics/logicgates/" />
-<link rel="canonical" href="//localhost:1313/electronics/logicgates/" itemprop="url" />
-<meta name="url" content="//localhost:1313/electronics/logicgates/" />
-<meta name="twitter:url" content="//localhost:1313/electronics/logicgates/" />
-<meta property="og:url" content="//localhost:1313/electronics/logicgates/" />
+<base href="/electronics/logicgates/" />
+<link rel="canonical" href="/electronics/logicgates/" itemprop="url" />
+<meta name="url" content="/electronics/logicgates/" />
+<meta name="twitter:url" content="/electronics/logicgates/" />
+<meta property="og:url" content="/electronics/logicgates/" />
 
 
 <meta property="og:updated_time" content="2026-01-30T00:00:00-06:00" />
 
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
+<link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -172,7 +172,7 @@
     <h1 class="brand">
         
         
-            <a href="//localhost:1313/">
+            <a href="/">
                 <h1>Spike</h1>
             </a>
         
@@ -259,11 +259,11 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/electronics/logicgates/">Logic Gates</a>
+                                <a href="/electronics/logicgates/">Logic Gates</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
+                                <a href="/electronics/lpb-1/">LPB-1</a>
                             </li>
                         
                     
@@ -316,15 +316,15 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
+                                <a href="/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
+                                <a href="/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
+                                <a href="/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
                             </li>
                         
                     
@@ -401,7 +401,7 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="//localhost:1313/thoughts/thoughts/">Thoughts &amp; Notes</a>
+                                <a href="/thoughts/thoughts/">Thoughts &amp; Notes</a>
                             </li>
                         
                     
@@ -489,7 +489,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="//localhost:1313/electronics/logicgates/">Logic Gates</a>
+    <a href="/electronics/logicgates/">Logic Gates</a>
   </h1>
 
   <div class="headline">
@@ -527,20 +527,25 @@ If one input is off then the output will turn off.</p>
 <p><img src="/off_AND_Gate.png" alt="Off AND Gate" title="elecPic">
 <img src="/off_AND_Characteristics.png" alt="Off AND Characteristics" title="elecPic"></p>
 <h2 id="transistor-nand-gate">Transistor NAND Gate</h2>
-<h2 id="xor">XOR</h2>
+<h2 id="or-gate">OR Gate</h2>
+<h2 id="nor-gate">NOR Gate</h2>
+<h2 id="not-gate">NOT Gate</h2>
+<h2 id="xor-gate">XOR Gate</h2>
+<h3 id="xor-1">XOR 1</h3>
 <p>If both are on then current flow to ground 0. This means the transitro Q13 won&rsquo;t turn on so the diode will have no current flow.</p>
 <p>If only one input is on then current flows through the diode</p>
 <p>If there is no input then no current flows but Q13 does turn on.</p>
 <h3 id="xor-2">XOR 2</h3>
 <p>Same as XOR 1 but has output that can be sent to other things</p>
 <p>Has a not gate to invert the inversion without the inversion it&rsquo;d end up being an XNOR Gate.</p>
+<h2 id="xnor-gate">XNOR Gate</h2>
 
   
   <hr>
 <div class="footer">
     
 	    
-            <a class="previous-post" href="//localhost:1313/electronics/lpb-1/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>LPB-1</a>
+            <a class="previous-post" href="/electronics/lpb-1/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>LPB-1</a>
         
 	    
     
@@ -558,11 +563,16 @@ If one input is off then the output will turn off.</p>
   <ul>
     <li><a href="#transistor-and-gates">Transistor AND Gates</a></li>
     <li><a href="#transistor-nand-gate">Transistor NAND Gate</a></li>
-    <li><a href="#xor">XOR</a>
+    <li><a href="#or-gate">OR Gate</a></li>
+    <li><a href="#nor-gate">NOR Gate</a></li>
+    <li><a href="#not-gate">NOT Gate</a></li>
+    <li><a href="#xor-gate">XOR Gate</a>
       <ul>
+        <li><a href="#xor-1">XOR 1</a></li>
         <li><a href="#xor-2">XOR 2</a></li>
       </ul>
     </li>
+    <li><a href="#xnor-gate">XNOR Gate</a></li>
   </ul>
 </nav>
     </div>

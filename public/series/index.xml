@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on </title>
-    <link>//localhost:1313/series/</link>
+    <link>/series/</link>
     <description>Recent content in Series on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Sep 2025 13:43:53 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pics</title>
-      <link>//localhost:1313/series/pics/</link>
+      <link>/series/pics/</link>
       <pubDate>Mon, 15 Sep 2025 13:43:53 -0600</pubDate>
-      <guid>//localhost:1313/series/pics/</guid>
+      <guid>/series/pics/</guid>
       <description></description>
     </item>
     <item>
       <title>How to Use Poison</title>
-      <link>//localhost:1313/series/how-to-use-poison/</link>
+      <link>/series/how-to-use-poison/</link>
       <pubDate>Wed, 23 Nov 2022 13:43:53 -0600</pubDate>
-      <guid>//localhost:1313/series/how-to-use-poison/</guid>
+      <guid>/series/how-to-use-poison/</guid>
       <description></description>
     </item>
   </channel>
