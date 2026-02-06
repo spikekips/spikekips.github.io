@@ -17,3 +17,25 @@ If one input is off then the output will turn off.
 ![Off AND Characteristics](/off_AND_Characteristics.png 'elecPic')
 
 ## Transistor NAND Gate
+
+## OR Gate
+
+## NOR Gate
+
+## NOT Gate
+
+## XOR Gate
+
+### XOR 1
+If both are on then current flow to ground 0. This means the transitro Q13 won't turn on so the diode will have no current flow.
+
+If only one input is on then current flows through the diode
+
+If there is no input then no current flows but Q13 does turn on.
+
+### XOR 2
+Same as XOR 1 but has output that can be sent to other things
+
+Has a not gate to invert the inversion without the inversion it'd end up being an XNOR Gate.
+
+## XNOR Gate
