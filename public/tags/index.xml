@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Sep 2025 13:43:53 -0600</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fireworks</title>
-      <link>/tags/fireworks/</link>
+      <link>//localhost:1313/tags/fireworks/</link>
       <pubDate>Mon, 15 Sep 2025 13:43:53 -0600</pubDate>
-      <guid>/tags/fireworks/</guid>
+      <guid>//localhost:1313/tags/fireworks/</guid>
       <description></description>
     </item>
     <item>
       <title>Pics</title>
-      <link>/tags/pics/</link>
+      <link>//localhost:1313/tags/pics/</link>
       <pubDate>Mon, 15 Sep 2025 13:43:53 -0600</pubDate>
-      <guid>/tags/pics/</guid>
+      <guid>//localhost:1313/tags/pics/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>/tags/hugo/</link>
+      <link>//localhost:1313/tags/hugo/</link>
       <pubDate>Wed, 23 Nov 2022 13:43:53 -0600</pubDate>
-      <guid>/tags/hugo/</guid>
+      <guid>//localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>/tags/introduction/</link>
+      <link>//localhost:1313/tags/introduction/</link>
       <pubDate>Wed, 23 Nov 2022 13:43:53 -0600</pubDate>
-      <guid>/tags/introduction/</guid>
+      <guid>//localhost:1313/tags/introduction/</guid>
       <description></description>
     </item>
   </channel>

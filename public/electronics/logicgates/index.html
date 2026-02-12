@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 
 
@@ -70,17 +70,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/electronics/logicgates/" />
-<link rel="canonical" href="/electronics/logicgates/" itemprop="url" />
-<meta name="url" content="/electronics/logicgates/" />
-<meta name="twitter:url" content="/electronics/logicgates/" />
-<meta property="og:url" content="/electronics/logicgates/" />
+<base href="//localhost:1313/electronics/logicgates/" />
+<link rel="canonical" href="//localhost:1313/electronics/logicgates/" itemprop="url" />
+<meta name="url" content="//localhost:1313/electronics/logicgates/" />
+<meta name="twitter:url" content="//localhost:1313/electronics/logicgates/" />
+<meta property="og:url" content="//localhost:1313/electronics/logicgates/" />
 
 
 <meta property="og:updated_time" content="2026-01-30T00:00:00-06:00" />
 
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
+<link rel="sitemap" type="application/xml" title="Sitemap" href='//localhost:1313/sitemap.xml' />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -105,7 +105,7 @@
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.cb4b7db5ea416e179bc34d01dcb329c2cce1c8a49878d6dcec2b7eb81ab9a1ce.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.9e2e8b19536d12c8fc26d1f9e0e8c76f727c4ce12df4314f00612dea299846dd.css">
 
 
     
@@ -172,7 +172,7 @@
     <h1 class="brand">
         
         
-            <a href="/">
+            <a href="//localhost:1313/">
                 <h1>Spike</h1>
             </a>
         
@@ -259,11 +259,11 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="/electronics/logicgates/">Logic Gates</a>
+                                <a href="//localhost:1313/electronics/logicgates/">Logic Gates</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="/electronics/lpb-1/">LPB-1</a>
+                                <a href="//localhost:1313/electronics/lpb-1/">LPB-1</a>
                             </li>
                         
                     
@@ -316,15 +316,15 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware/">Hardware</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-hardware--network-troubleshooting/">Hardware &amp; Network Troubleshooting</a>
                             </li>
                         
                             <li class="bullet">
-                                <a href="/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
+                                <a href="//localhost:1313/a&#43;/a&#43;-220-1101-mobile-devices/">Mobile Devices</a>
                             </li>
                         
                     
@@ -401,7 +401,7 @@
                         </li>
                         
                             <li class="bullet">
-                                <a href="/thoughts/thoughts/">Thoughts &amp; Notes</a>
+                                <a href="//localhost:1313/thoughts/thoughts/">Thoughts &amp; Notes</a>
                             </li>
                         
                     
@@ -489,7 +489,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="/electronics/logicgates/">Logic Gates</a>
+    <a href="//localhost:1313/electronics/logicgates/">Logic Gates</a>
   </h1>
 
   <div class="headline">
@@ -506,7 +506,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>1 min read</span>
+        <span>2 mins read</span>
       </span>
     </div>
 
@@ -521,31 +521,240 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 
   <h2 id="transistor-and-gates">Transistor AND Gates</h2>
 <p>And Gates are a way to determine if two inputs are both on. If both inputs are on then the output is on.</p>
-<p><img src="/on_AND_Gate.png" alt="AND Gate" title="elecPic">
-<img src="/on_AND_Characteristics.png" alt="On AND Characteristics" title="elecPic">
-If one input is off then the output will turn off.</p>
-<p><img src="/off_AND_Gate.png" alt="Off AND Gate" title="elecPic">
-<img src="/off_AND_Characteristics.png" alt="Off AND Characteristics" title="elecPic"></p>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/ANDGate.png" alt="AND Gate" title="elecPic"></p>
+<p>When both transistors are turned on then current flow from the collector to emitter on both transistors allowing the diode to turn on.</p>
 <h2 id="transistor-nand-gate">Transistor NAND Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/NANDGate.png" alt="NAND Gate" title="elecPic"></p>
+<p>In a NAND gate the logic output flows only when the AND portion of the circuit is off. If any input is off in the circuit then the logic voltage output is high (1). When both inputs are on then logic voltage is low (0).</p>
 <h2 id="or-gate">OR Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/ORGate.png" alt="OR Gate" title="elecPic"></p>
 <h2 id="nor-gate">NOR Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/NORGate.png" alt="NOR Gate" title="elecPic"></p>
 <h2 id="not-gate">NOT Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/NOTGate.png" alt="NOT Gate" title="elecPic"></p>
 <h2 id="xor-gate">XOR Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="xor-1">XOR 1</h3>
+<p><img src="/kiCad/images/XORGate1.png" alt="XOR Gate 1" title="elecPic"></p>
 <p>If both are on then current flow to ground 0. This means the transitro Q13 won&rsquo;t turn on so the diode will have no current flow.</p>
 <p>If only one input is on then current flows through the diode</p>
 <p>If there is no input then no current flows but Q13 does turn on.</p>
 <h3 id="xor-2">XOR 2</h3>
+<p><img src="/kiCad/images/XORGate2.png" alt="XOR Gate 2" title="elecPic"></p>
 <p>Same as XOR 1 but has output that can be sent to other things</p>
 <p>Has a not gate to invert the inversion without the inversion it&rsquo;d end up being an XNOR Gate.</p>
 <h2 id="xnor-gate">XNOR Gate</h2>
+<table class="logicTable">
+  <thead>
+      <tr>
+          <th>x</th>
+          <th>y</th>
+          <th>output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/kiCad/images/XNORGate.png" alt="XNOR Gate" title="elecPic"></p>
 
   
   <hr>
 <div class="footer">
     
 	    
-            <a class="previous-post" href="/electronics/lpb-1/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>LPB-1</a>
+            <a class="previous-post" href="//localhost:1313/electronics/lpb-1/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>LPB-1</a>
         
 	    
     
