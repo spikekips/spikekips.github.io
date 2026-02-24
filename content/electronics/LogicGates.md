@@ -65,6 +65,10 @@ In a NAND gate the logic output flows only when the AND portion of the circuit i
 
 ![NOT Gate](/kiCad/images/NOTGate.png 'elecPic')
 
+With the NOT Gate you basically route the power to another ground. This means when Q19 is off the power will flow through D7 to Ground 1. You do further work from there rather than just grounding the output.
+
+Any gate that is a NOT Gate like NANDs NORs etc. Can use the origianl gate plus the output method of the NOT.
+
 ## XOR Gate
 |x|y|output|
 |-|-|------|
