@@ -4,6 +4,10 @@
 
 img[title=elecPic] { max-width: 18rem; }
 
+.tabcontent {
+ margin-bottom: 1em;
+}
+
 .logicTable {
   max-width: 200px;
 }

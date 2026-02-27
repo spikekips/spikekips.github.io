@@ -1,2416 +1,2518 @@
 ---
-title: "Practice Test 1 Flash Cards"
+title: "Practice Test 2 Flash Cards"
 date: 2026-01-19T12:00:00-06:00
 draft: false
 unsafe: true
 #layout: single
 ---
 
-
-
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is a smart card?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
-    A smart card is a form of MFA that is in the shape of a credit card
+    {{< highlight text >}}
 
+    Answer
+    
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    For MFA a smart card is an example of something you have. They store authentication on a physical device.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What major cloud-related discipline includes a concept called Infrastructure as Code (IaC).
+    Question
     
     {{% /tab %}}
-    {{< tab tabName="Answer" >}}
 
-    DevOps
+    {{< tab tabName="Answer" >}}
+    {{< highlight text >}}
 
+    Answer
+    
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    DevOps is a major cloud-related discipline that emphasizes collaboration between development and operations teams to automate and streamline the software delivery process. IaC allows for the automated provisioning and management of infrastructure resources.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
+
+    {{< tab tabName="Explanation" >}}
+    {{< highlight text >}}
+
+    Explanation
+    
+    {{< /highlight >}}
+    {{< /tab >}}
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What ports need to be open to allow access for SSH and HTTPS?
+    Question
     
     {{% /tab %}}
+
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    22 for SSH (Secure Shell)
-    <br />
-    443 for HTTPS (Hypertext Transfer Protocol Secure)
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    SSH is used for secure remote access to VMs in the cloud
-    <br />
-    HTTPS is used for secure web traffic
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is the issue when a system on your VPC has an IP that starts with 169.254?
+    Question
     
     {{% /tab %}}
+
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Your DHCP service is not configured properly
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< tab tabName="Explanation" >}}
-    
 
-    Devices will self assign an IP to them selves if a DHCP server does not give them one.
-    <br />
-    They follow the pattern 169.254.x.x.
+    {{< tab tabName="Explanation" >}}
+    {{< highlight text >}}
 
+    Explanation
+    
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What type of architecture does asynchronous communication between components and real-time responsiveness to system changes represent?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Event-driven architecture
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    In event-driven architecture changes are able to be reacted to in real time.
-    <br /><br />
-    With Asynchronous communication between components you can communicate and interact without waiting for responses.
-    <br /><br />
-    Real-time responsiveness to system changes means you immediately react to events without waiting for a specific request or command.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What two deployment modes of VPN technologies are common in cloud environments?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Point-to-Site VPNs
-    <br />
-    Site-to-Site VPNs
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Point-to-Site VPNs are where devices connect securely to a cloud network.
-    <br /><br />
-    Site-toSite VPNs are a common deployment mode in modern cloud environments where a secure connection is established between two physical locations or networks.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is a P2V deployment
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Physical to virtual
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    P2V involves migrating a physical server or machine to a virtual environment. This can help consolidate hardware resources, improve scalability, and reduce costs by running virtual instances of servers on a single physical machine.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What's the most common parameter used to create a tiered storage approach in the cloud?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Frequency of access
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    The frequency of access is the most common parameter used to create a tiered storage approach in the cloud. Storage can be tiered to ensure that frequently accessed data is stored in faster storage based off of how often it is accessed.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is serverless computing?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    When resources are made available in the cloud without the need of "standing up" and mainting virtual machines.
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Serverless Computing allows developers to run code without the need to manage servers or infrastructure. Resources are on-demand.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is the primary function of service discovery in cloud-native environments?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    To automatically locate and connect services within a network.
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Services dynamically discover and communicate with each other without the need for manual configuration. This enables flexibility and scalibility in cloud-native applications.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is the term for support of sudden increase in capacity needs?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Bursting
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Bursting in cloud computing refers to the ability of the cloud to quickly and seamlessly scale up resources to meet sudden increases in capacity needs.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What type of cloud solution deployment consists of two fully functional solution environments?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Blue-Green Deployment
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Blue-Green Deployment is a deployment strategy where two fully functional solution environments are maintained simultaneously.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What approach is used in the LAN for assigning a data frame with its VLAN?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Tagging
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Assigns a data frame with its VLAN. VLAN tagging adds a VLAN identifier to the ethernet frame, allowing switches to identify and forward the frame to the correct VLAN.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What would the requirement be called to be able to restore all opperations to exactly one previous 24-hour period?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    RPO (Recovery Point Objective)
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    The RPO is the acceptable amount of data loss in case of a disaster or system failure. In this case your organization wants you to be able to restore operations to exactly 24-hours ago.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What storage technology permits the convergence of LAN and SAN traffic?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    FCoE (Fibre Channel over Ethernet)
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    FCoE is a storage technology that allows Fibre Channel traffic to be transmitted over Ethernet networks. It enables the convergence of LAN and SAN traffic by allowing Fibre Channel storage traffic to travel over Ethernet networks, simplifying network infrastructure and reducing costs.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-In the shared security model, who is responsible for securing the virtualization software in a public cloud environment?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    The CSP(Cloud Service Provider)
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    The CSP is responsible for securing the underlying virualizaiton software in a public cloud environment. This includes ensuring the hypervisor and other virtualization components are properly configured, patched, and protected from security threats.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-What is Object storage good for in the cloud?
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
-    Storing large volumes of unstructured data such as media files and backups
+    Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
-    Object storage is good for large volumes of unstructured data at low costs. It's also more easily scaled and doesn't requre a hierachical file system. Objects are stored with metadata, making it easier to manage and access large amounts of data efficiently.
+    Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
-
 
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
-    {{< /tabs >}}
 
-
+    {{< /tabs >}}
 
-1. {{< tabs tabTotal="3" >}}
+1.  {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+    Question
     
     {{% /tab %}}
+
     {{< tab tabName="Answer" >}}
-    
+    {{< highlight text >}}
 
     Answer
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< tab tabName="Explanation" >}}
-    
+    {{< highlight text >}}
 
     Explanation
     
-
+    {{< /highlight >}}
     {{< /tab >}}
+
     {{< /tabs >}}
