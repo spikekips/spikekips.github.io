@@ -86,13 +86,6 @@ Caddyfile
             }
     }
 
-    #vpn.mentalflower.com {
-    #	reverse_proxy 64.223.89.88
-    #	tls {
-    #                dns cloudflare {env.CF_API_TOKEN}
-    #                resolvers 1.1.1.1
-    #        }
-    #}
 
     pihole.mentalflower.com {
             #basicauth {
