@@ -86,7 +86,6 @@ Caddyfile
             }
     }
 
-
     pihole.mentalflower.com {
             #basicauth {
             #        admin $2a$14$ek4L2GdCQjT7BhKHzq9jvOQ7OimIIuHNTeuPxEN3tdQ1iAcZWTK9e
