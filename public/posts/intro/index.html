@@ -99,13 +99,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.154.2">
+<meta name="generator" content="Hugo 0.155.3">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.9e2e8b19536d12c8fc26d1f9e0e8c76f727c4ce12df4314f00612dea299846dd.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.6d869a4e8170205a988b0ea60e1d43cd4a899dbc1aa17025018e7c640e415bad.css">
 
 
     
@@ -401,6 +401,10 @@
                                 <a href="//localhost:1313/cloud&#43;/practicetest1/">Practice Test 1 Flash Cards</a>
                             </li>
                         
+                            <li class="bullet">
+                                <a href="//localhost:1313/cloud&#43;/practicetest2/">Practice Test 2 Flash Cards</a>
+                            </li>
+                        
                     
                 
             
@@ -620,10 +624,10 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <h3 id="table-of-contents">Table of contents</h3>
 <p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
 <p>If you prefer not to display a table of contents, you can disable them site-wide in your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hideToc</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#66d9ef">true</span></span></span></code></pre></div>
 <p>Alternatively, you can choose to disable the table of contents on a per-post basis by putting the flag in the frontmatter of an individual post.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to hide the table of contents on a single post&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2023-07-10</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
@@ -638,12 +642,12 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <li><a href="https://remark42.com/demo/" target="_blank">Remark42 Demo Site</a></li>
 </ul>
 <p><em><strong>Disqus</strong></em> is free and easy to use.  Checkout the <a href="https://gohugo.io/content-management/comments/" target="_blank">Hugo docs</a> to get started.  Once you&rsquo;ve created a <em>Disqus</em> account, you can activate it in the <em>Poison</em> theme by adding a single line to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>disqusShortname = &#39;yourDisqusShortname&#39;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>disqusShortname = &#39;yourDisqusShortname&#39;</span></span></code></pre></div>
 <p>This is a great option for people that don&rsquo;t want to bother with self-hosting their own commenting engine; however, it has some drawbacks.  Because <em>Disqus</em> provides this service for free, they recoup any financial loss by injecting third-party ad trackers onto your website.  These trackers help to collect and sell information about your users, while also negatively affecting your site&rsquo;s speed.</p>
 <p>Even still, <em>Disqus</em> may be the best solution depending on your situation (we use it on this demo site).  The above paragraph is only meant to highlight its trade-offs and not meant to discourage its use entirely.</p>
 <p><em><strong>Remark42</strong></em> is a lightweight, open source commenting engine that doesn&rsquo;t spy on your users.  The downside is that you must host it yourself.  Checkout the <em>Remark42</em> <a href="https://remark42.com/" target="_blank">documentation</a> to get started.  I also found <a href="https://www.devbitsandbytes.com/setting-up-remark42-from-scratch/" target="_blank">this blog post</a> helpful when setting it up on <a href="https://lukeorth.com" target="_blank">my site</a>.</p>
 <p>Once everything is set up, you can activate it in the <em>Poison</em> theme by including the following in the <code>[params]</code> section of your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[params]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[params]
 </span></span><span style="display:flex;"><span>    remark42 = true
 </span></span><span style="display:flex;"><span>    remark42_host = &#34;https://yourhost.com&#34;
 </span></span><span style="display:flex;"><span>    remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
@@ -652,13 +656,13 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p><strong>Note</strong>: <em>Enabling analytics will add external dependencies.</em></p>
 <p><strong>Check out our demo site&rsquo;s Plausible analytics <a href="https://plausible.lukeorth.com/poison.lukeorth.com" target="_blank">here</a>!</strong></p>
 <p>Once you&rsquo;ve established your Plausible instance, you can activate it by adding three lines to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible</span> = <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_domain</span> = <span style="color:#e6db74">&#34;myblog.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_script</span> = <span style="color:#e6db74">&#34;https://plausible.myblog.com/js/script.js&#34;</span></span></span></code></pre></div>
 <p>This will insert the necessary code in the <code>&lt;head&gt;</code> on each page and will allow your Plausible instance to collect a limited set of data on your users.</p>
 <p>For reference, the configuration above would add the following code to each page.  Adjust according to your specific environment.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;script defer data-domain=&#34;myblog.com&#34; src=&#34;https://plausible.myblog.com/js/script.js&#34;&gt;&lt;/script&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;script defer data-domain=&#34;myblog.com&#34; src=&#34;https://plausible.myblog.com/js/script.js&#34;&gt;&lt;/script&gt;</span></span></code></pre></div>
 <h3 id="email-newsletters">Email newsletters</h3>
 <p>Allow users to subscribe to your blog newsletters via email.
 Poison currently supports <a href="https://listmonk.app/" target="_blank">Listmonk</a> which is available via <a href="https://github.com/knadh/listmonk" target="_blank">self-hosting</a>.
@@ -666,7 +670,7 @@ Listmonk is a standalone, self-hosted, newsletter and mailing list manager.
 The downside is that you must host it yourself.
 Checkout the Listmonk <a href="https://listmonk.app/docs/" target="_blank">documentation</a> to get started.</p>
 <p>Once you&rsquo;ve established your Listmonk instance, activate it by adding these lines to your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk</span> = <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_host</span> = <span style="color:#e6db74">&#34;https://listmonk.your_domain.tld&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_list_uiid</span> = <span style="color:#e6db74">&#34;YOUR_NEWSLETTERS_LIST_UIID&#34;</span>
@@ -678,7 +682,7 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
 <h3 id="series">Series</h3>
 <p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
 <p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to use series&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-10-04</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
@@ -704,7 +708,7 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
 	    
         
             
-            <button class="tab active" id="bfaecd">
+            <button class="tab active" id="fdebca">
             
 
                 First Tab
@@ -713,7 +717,7 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
 	    
         
             
-            <button class="tab" id="fdbeca">
+            <button class="tab" id="aefbdc">
             
 
                 Second Tab
@@ -726,7 +730,7 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
     
     
         
-            <div class="tabcontent bfaecd" style="display:block;">
+            <div class="tabcontent fdebca" style="display:block;">
         
 
         <p>This is <strong>markdown</strong> content.</p>
@@ -737,11 +741,11 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
     
     
         
-            <div class="tabcontent fdbeca">
+            <div class="tabcontent aefbdc">
         
 
         
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a code block.</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a code block.</span></span></code></pre></div>
 
         
         
@@ -751,7 +755,7 @@ The user will be subscribed to the newsletter specified in the <code>listmonk_su
 
 <hr>
 <p>Here&rsquo;s the code for the tabs above&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; tabs tabTotal=&#34;2&#34; &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; tabs tabTotal=&#34;2&#34; &gt;}}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>{{% tab tabName=&#34;First Tab&#34; %}}
 </span></span><span style="display:flex;"><span>This is markdown content.
@@ -798,7 +802,7 @@ Bob-->>John: Jolly good!
 </div>
 
 <p>Here&rsquo;s the code for the diagram above:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; mermaid &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; mermaid &gt;}}
 </span></span><span style="display:flex;"><span>sequenceDiagram
 </span></span><span style="display:flex;"><span>participant Alice
 </span></span><span style="display:flex;"><span>participant Bob
@@ -828,7 +832,7 @@ b -&gt; c
 <img class="plantuml" id="plantuml-foo">
 
 <p>Here&rsquo;s the code for the diagram above:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; plantuml id=&#34;foo&#34; &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; plantuml id=&#34;foo&#34; &gt;}}
 </span></span><span style="display:flex;"><span>a -&gt; b
 </span></span><span style="display:flex;"><span>b -&gt; c
 </span></span><span style="display:flex;"><span>{{&lt; /plantuml &gt;}}</span></span></code></pre></div>
@@ -843,16 +847,16 @@ b -&gt; c
 </details>
 
 <p>Here&rsquo;s the code for the detail dropdown above:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; details summary=&#34;A detail dropdown&#34; &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; details summary=&#34;A detail dropdown&#34; &gt;}}
 </span></span><span style="display:flex;"><span>Markdown content
 </span></span><span style="display:flex;"><span>{{&lt; /details &gt;}}</span></span></code></pre></div>
 <h2 id="installation">Installation</h2>
 <p>First, clone this repository into your <code>themes</code> directory:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git clone https://github.com/lukeorth/poison.git themes/poison --depth=1</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git clone https://github.com/lukeorth/poison.git themes/poison --depth=1</span></span></code></pre></div>
 <p>Next, specify <code>poison</code> as the default theme in your config.toml file by adding the following line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>theme = &#34;poison&#34;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>theme = &#34;poison&#34;</span></span></code></pre></div>
 <p>Lastly, if there are any future updates to this repository that you wish to include in your local copy, these can be retrieved by running:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd themes/poison
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd themes/poison
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git pull</span></span></code></pre></div>
 <p>For more information on how to get started with Hugo and themes, read the official <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">quick start guide</a>.</p>
@@ -871,7 +875,7 @@ b -&gt; c
 </ol>
 <p>The sidebar menu items are configured with a dictionary value in your <em>config.toml</em> file.  I&rsquo;ve included an example below.  Additionally, there is a placeholder for this in the <em>config.toml</em> file shown in the next section.</p>
 <p><strong>Remember</strong>: You must have a markdown file present at the path specified for the menu item to be displayed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">menu</span> = [
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">menu</span> = [
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Dict keys:</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Name:         The name to display on the menu.</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#75715e"># URL:          The directory relative to the content directory.</span>
@@ -899,12 +903,12 @@ b -&gt; c
 </span></span><span style="display:flex;"><span>    ]</span></span></code></pre></div>
 <h3 id="the-front-page">The front page</h3>
 <p>When visiting the base url for the site, i.e. <code>your.domain.com/</code>, a paginated feed of your recently added content is displayed in reverse chronological order. By default, only content in the &ldquo;posts&rdquo; <a href="https://gohugo.io/content-management/page-bundles/" target="_blank">page bundle</a> is displayed. You can configure a list of page bundle names to be included on this page by adding the <code>front_page_content</code> parameter to your config.toml file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">front_page_content</span> = [<span style="color:#e6db74">&#34;posts&#34;</span>, <span style="color:#e6db74">&#34;projects&#34;</span>]</span></span></code></pre></div>
 <h3 id="example-config">Example config</h3>
 <p>I recommend starting by copying/pasting the following code into your config.toml file.  Once you see how it looks, play with the settings as needed.</p>
 <p><strong>NOTE</strong>: To display an image in your sidebar, you&rsquo;ll need to uncomment the <code>brand_image</code> path below and have it point to an image file in your project.  The path is relative to the <code>static</code> directory.  If you don&rsquo;t have an image, just leave this line commented out.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;/&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;poison&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
@@ -1009,7 +1013,7 @@ b -&gt; c
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tags</span> = <span style="color:#e6db74">&#39;tags&#39;</span></span></span></code></pre></div>
 <h3 id="custom-css">Custom CSS</h3>
 <p>You can override any setting in Poison&rsquo;s static CSS files by adding your own <code>/assets/css/custom.css</code> file. For example, if you want to override the title font and font size, you could add this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar-about</span> <span style="color:#a6e22e">h1</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar-about</span> <span style="color:#a6e22e">h1</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">1.4</span><span style="color:#a6e22e">em</span><span style="color:#960050;background-color:#1e0010">;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-family</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Monaco&#34;</span>, <span style="color:#a6e22e">monospace</span><span style="color:#960050;background-color:#1e0010">;</span>
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
