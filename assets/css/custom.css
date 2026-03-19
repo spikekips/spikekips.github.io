@@ -31,3 +31,7 @@ img[title=elecPic] { max-width: 18rem; }
   line-height: 1.4em;
   max-height: 100%;
 }
+
+.sidebar-sticky {
+  width: 15rem
+}
