@@ -428,20 +428,20 @@ What is Object storage good for in the cloud?
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+Where would you IaaS
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    You would use IaaS when you want to manage the guest OS and images on provider managed compute
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    IaaS provides virtualized compute where you control the guest OS while the provider manages the underlying infrastructure.
     
 
     {{< /tab >}}
@@ -452,20 +452,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What modern network virtualization technology addresses issues with namespace size and layer 3 routhing support
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Virtual Extensible Local Area Networks (VXLANs)
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Virtual Extensible Local Area Networks (VxLANs) address issues with namespace size and layer 3 routing support by providing a way to extend Layer 2 networks over Layer 3 networks. VXlANs use encapsulation techniques to create virtual networks that can scale to accommodate larger network sizes and support layer 3 routing, making them an ideal solution for modern network virtualization challenges.
     
 
     {{< /tab >}}
@@ -476,20 +476,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What does metadata provide in cloud storage?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Metadata provides descriptive information about data, such as creation date and permissions.
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Metadata provides descriptive data such as creation date, permissions, file type, size, and other attributes.
     
 
     {{< /tab >}}
@@ -500,20 +500,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What virtual machine concept permits the restoration of a server to a specific moment in time?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Snapshot
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Snapshots are a virtual machine concept that allows the restoration of a server to a specific moment in time by capturing the current state of the virtual machine, including its disk, memory, and settings.
     
 
     {{< /tab >}}
@@ -524,20 +524,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What is the primary function of the ELK Stack in cloud monitoring and logging.
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    To collect, store, search and visualize log data from multiple sources.
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    self explanitory.
     
 
     {{< /tab >}}
@@ -548,20 +548,22 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What two reasons might an organization have multiple VPCs in their own private cloud infrastructure?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Public/private access
+    Prod/Dev environments
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Multiple VPCs may be used to esablish public and private access control for resources.
+    They may also be used to provide a produciton and development environment. This helps in seperating critical production systems from the development and testing environments. This reduces risk of accidental changes.
     
 
     {{< /tab >}}
@@ -572,20 +574,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What type of cloud deployment represents a partnership between multiple different organizations?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Community Cloud
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Community cloud deployment involves a partnership between multiple organizations that have shared intersts, such as regulatory concerns or security requirements.
     
 
     {{< /tab >}}
@@ -596,20 +598,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What is the main issue with security in SNMP version 2c
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    The password information is sent in clear text.
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    The main issue with security in SNMP version 2c is that password information is sent in clear text, making it vulnerable to interception and unauthorized access.
     
 
     {{< /tab >}}
@@ -620,20 +622,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What is often considered the ultimate solution for highly available cloud-services
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Clustered servers
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Clustered servers are often considered the ultimate solution for highly available cloud services because they provide redundancy and load balancing. Multiple servers can continue operating by distributing the workload.
     
 
     {{< /tab >}}
@@ -644,20 +646,24 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What two common benefits occur when implementing a cloud resource tagging strategy?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    Improved cost allocation and racking
+
+    Simplified automation and resource management.
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    Cost allocation uses tagging to watch resources based on their usage, department, or project. This helps in tracking expenses and optimizing resource utilization effectively.
+
+    Simplified automation and resource management provides a structured way to identify and classify resources.
     
 
     {{< /tab >}}
@@ -668,20 +674,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What is a frequent system and platform concern when considering a cloud deployment for existing server resources
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    64-bit vs 32-bit
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    It is crucial to ensure compatibility and performance optimization when transitioning existing server resources to the cloud environment.
     
 
     {{< /tab >}}
@@ -692,20 +698,20 @@ Question
 1. {{< tabs tabTotal="3" >}}
     {{% tab tabName="Question" %}}
     
-Question
+What security technology might feature signature-based attack prevention?
     
     {{% /tab %}}
     {{< tab tabName="Answer" >}}
     
 
-    Answer
+    IPS (Intrusion Prevention System)
     
 
     {{< /tab >}}
     {{< tab tabName="Explanation" >}}
     
 
-    Explanation
+    IPS is a security technology that can feature signature-based attack prevention. IPS monitors network traffic for malicious activities or security policy violations and can block or prevent these attacks based on predefined signatures of known threats.
     
 
     {{< /tab >}}
